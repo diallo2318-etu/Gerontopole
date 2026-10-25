@@ -58,9 +58,10 @@ perimetre = pd.DataFrame({
 })
 
 # 5. Âge des tests en alerte et sans alerte
-age = tests.groupby('en_alerte')['age'].describe()[['count', 'mean', '50%', 'min', 'max']].reset_index()
+age = tests.groupby('en_alerte')['age'].describe()[['count', 'mean', 'min', '25%', '50%', '75%', 'max']].reset_index()
 age['en_alerte'] = age['en_alerte'].map({True: 'Avec au moins une alerte', False: 'Sans alerte'})
-age.columns = ['Groupe', 'Nombre de tests', 'Âge moyen', 'Âge médian', 'Âge minimum', 'Âge maximum']
+age.columns = ['Groupe', 'Nombre de tests', 'Âge moyen', 'Âge minimum', '1er quartile', 'Âge médian',
+               '3e quartile', 'Âge maximum']
 age['Âge moyen'] = age['Âge moyen'].round(1)
 age[['Nombre de tests', 'Âge minimum', 'Âge maximum']] = age[['Nombre de tests', 'Âge minimum', 'Âge maximum']].astype(int)
 
