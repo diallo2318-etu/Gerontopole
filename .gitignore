@@ -1,0 +1,12 @@
+# Donnees du Gerontopole : ne pas deposer
+*.xlsx
+*.xls
+*.csv
+*.odt
+*.db
+*.sqlite
+
+# Environnement Python
+mon_env/
+__pycache__/
+.~lock.*
