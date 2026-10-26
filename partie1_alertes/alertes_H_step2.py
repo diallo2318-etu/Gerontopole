@@ -81,7 +81,7 @@ alertes_site = con.sql("""
     SELECT coalesce(v.experimentation, 'Hors sites') AS site, count(*) AS alertes,
            count(*) FILTER (WHERE v.modalite_test = 'par un professionnel') AS alertes_test_pro
     FROM v_alerte_issue v JOIN icope_depistage d USING (id_depistage)
-    WHERE d.retenu AND NOT d.test_probable GROUP BY 1
+    WHERE d.retenu AND NOT d.test_probable GROUP BY 1 ORDER BY alertes DESC
 """).df()
 couverture = step2.groupby('site').agg(step2=('id_evaluation', 'size'),
                                        personnes=('participant', 'nunique')).reset_index()
