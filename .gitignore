@@ -5,8 +5,21 @@
 *.odt
 *.db
 *.sqlite
+*.duckdb
+*.duckdb.wal
+bdi_*
+*etape1*
+*etape2*
+*professionnels*
+
+# Sauf les bases publiques de Normandie et les referentiels de l'entrepot
+!bases/*.csv
+!bases/observatoire_fragilites/*.csv
+!entrepot/*.csv
 
 # Environnement Python
 mon_env/
+.venv/
+.env
 __pycache__/
 .~lock.*

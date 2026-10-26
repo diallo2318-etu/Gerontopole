@@ -1,0 +1,504 @@
+﻿nom;adresse;cp;ville;region;profession;numero_de_telephone;site_internet;identifiant_activite_rpps;identifiant_rpps;identifiant_finess;modifie
+Ah Hone Elodie;10 Rue du Château d’Eau;14000;Caen;FR-FR-NOR;Infirmier;02 21 00 22 00;;1013489387;10106118119;;11/07/2026 00:35:12
+Ben Assen Amelie;17 Place Saint-Sauveur;14000;Caen;FR-FR-NOR;Infirmier;;;1013088936;10102935466;;27/08/2026 12:01:41
+Chouraqui Pauline;7 Rue Saint-Laurent;14000;Caen;FR-FR-NOR;Infirmier;02 31 50 06 38;;1012512286;10107262965;;05/07/2026 06:40:25
+Debons Noemie;3 Boulevard André Detolle;14000;Caen;FR-FR-NOR;Infirmier;06 50 89 85 80;https://www.doctolib.fr/cabinet-infirmier/caen/cabinet-infirmier-julie-ricci;1014146498;10103033733;;01/09/2026 12:00:14
+Delaunay Melanie;16 Rue de Suède et Norvège;14000;Caen;FR-FR-NOR;Infirmier;;;1013378102;10104840706;;16/09/2026 12:01:03
+GRANDE PHARMACIE DU PROGRES;2 Boulevard des Alliés;14000;Caen;FR-NOR;;02 31 27 70 17;https://www.doctolib.fr/;;;140009416;2022-03-02 18:12:45
+Gouabault Fabienne;11 Rue des Courts Carreaux;14000;Caen;FR-FR-NOR;Infirmier;02 31 74 43 13;;1011870335;10102360780;;13/08/2026 12:00:35
+Hamel Stephanie;11 Rue des Courts Carreaux;14000;Caen;FR-FR-NOR;Infirmier;;;1012460191;10106640302;;06/10/2026 12:01:02
+Haus Julien;28 Rue du Pot d’Etain;14000;Caen;FR-FR-NOR;Masseur-Kinésithérapeute;09 77 67 21 74;;1014083694;10005778203;;10/07/2026 16:54:42
+Leblanc Marion;10 Rue du Château d’Eau;14000;Caen;FR-FR-NOR;Infirmier;02 21 00 22 00;;1013489174;10103326657;;11/07/2026 00:35:12
+Mebarki Aurore;4 Place Saint-Sauveur;14000;Caen;FR-FR-NOR;Infirmier;06 19 18 44 24;;1013939176;10105281215;;13/08/2026 12:00:35
+Monnier Line;Place Venoise;14000;Caen;FR-FR-NOR;Infirmier;06 13 63 11 79;;1014409781;10103574850;;03/07/2026 23:44:16
+PHARMACIE  DE  LA  GUERINIERE;1 Rue Lamartine place de la Liberté;14000;Caen;FR-NOR;;02 31 82 39 80;;;;140009606;2026-10-01 13:12:03
+PHARMACIE BEAULIEU;12 Boulevard Georges Pompidou;14000;Caen;FR-NOR;;02 31 86 09 12;;;;140012212;2022-03-02 18:12:45
+PHARMACIE DE VENOIX;102 Avenue Henry Chéron;14000;Caen;FR-NOR;;02 31 74 62 91;;;;140009408;2025-01-01 14:15:35
+PHARMACIE DU CHATEAU;6 Rue Montoir-Poissonnerie;14000;Caen;FR-NOR;;02 31 93 64 78;;;;140009382;2022-03-02 18:12:45
+PHARMACIE DU PARC;107 Avenue GUYNEMER;14000;Caen;FR-NOR;;02 31 52 01 43;;;;140009390;2022-03-02 18:12:45
+PHARMACIE DU THEATRE;6 Rue Paul Doumer;14000;Caen;FR-NOR;;02 31 86 07 37;;;;140009358;2022-03-02 18:12:45
+PHARMACIE SAINT-OUEN;14 Boulevard Yves Guillou;14000;Caen;FR-NOR;;02 31 74 56 28;;;;140009622;2025-01-20 14:18:40
+SSE Université de Caen - Caen;boulevard du Maréchal Juin;14000;Caen;FR-NOR;;;;;;;2025-10-07 09:06:14
+SSE Université de Caen - Caen;Rue Anton TCHEKHOV;14000;Caen;FR-NOR;;;;;;;2025-10-07 09:06:26
+SSE Université de Caen - Caen;boulevard du Maréchal Juin;14000;Caen;FR-NOR;;;;;;;2025-10-07 09:06:14
+SSE Université de Caen - Caen;Rue Anton TCHEKHOV;14000;Caen;FR-NOR;;;;;;;2025-10-07 09:06:26
+SSE Université de Caen - Site Principal - Caen;Esplanade de la paix;14000;Caen;FR-NOR;;;;;;;2025-10-07 09:06:00
+Berthin Liliane;3 Place des Moutiers;14100;Firfol;FR-FR-NOR;Infirmier;;;1014013615;10103552211;;05/07/2026 06:40:25
+PHARMACIE CENTRALE;42 Rue Henri Cheron;14100;Lisieux;FR-NOR;;02 31 48 62 50;;;;140010430;2024-01-01 14:15:11
+PHARMACIE DU LYCÉE;4 Rue Alexandre Piel;14100;Lisieux;FR-NOR;;02 31 62 02 75;https://pharmacies.giphar.fr/normandie/calvados/lisieux/pharmacie-du-lycee-440;;;140010380;2025-03-17 14:20:08
+PHARMACIE MOZART;15 Place Mozart;14100;Lisieux;FR-NOR;;02 31 31 07 56;;;;140010364;2024-10-01 15:20:40
+PHARMACIE OURSEL;34 Rue Pont Mortain;14100;Lisieux;FR-NOR;;02 31 62 03 57;;;;140010406;2022-03-02 18:12:45
+Boucaut Sandrine;9bis Rue du Pont Cel;14110;Condé-en-Normandie;FR-FR-NOR;Infirmier;02 31 69 05 41;;1013306815;10105465297;;21/08/2026 12:03:02
+PHARMACIE DU VIEUX CHATEAU;8 Rue du Vieux Château;14110;Condé-en-Normandie;FR-NOR;;02 31 69 01 40;;;;140009879;2023-12-01 14:12:05
+Ruault Emeline;9 Rue du Pont Cel;14110;Condé-en-Normandie;FR-FR-NOR;Infirmier;06 40 95 09 47;;1014146473;10104138135;;06/07/2026 23:47:41
+Caumont Sandy;9 Place Marlene Dietrich;14111;Louvigny;FR-FR-NOR;Infirmier;;;1012391104;10106615262;;03/07/2026 23:44:16
+PHARMACIE DU CENTRE;48 Rue Chapron;14120;Mondeville;FR-NOR;;02 31 52 15 71;https://www.pharmacie-mondeville.fr/;;;140010562;2022-03-02 18:12:45
+PHARMACIE GIROT;53 Rue Camille Blaisot;14120;Mondeville;FR-NOR;;02 31 52 10 62;;;;140010588;2024-03-25 14:28:27
+Corgnet Pauline;41b Route d’Harcourt;14123;Fleury-sur-Orne;FR-FR-NOR;Infirmier;02 31 82 27 31;;1013729016;10107053687;;04/07/2026 09:12:08
+Dr Tanguy Jonathan;5 Rue de Navarre;14123;Cormelles-le-Royal;FR-FR-NOR;Médecin généraliste;02 14 74 57 20;;1013158760;10100346971;;03/07/2026 12:24:17
+Morin Severine;41b Route d’Harcourt;14123;Fleury-sur-Orne;FR-FR-NOR;Infirmier;02 31 82 27 31;;1012708421;10104055099;;13/07/2026 12:00:15
+PHARMACIE D'IFS C. CIAL ROCADE SUD;190 Rue de Rocquancourt;14123;Ifs;FR-NOR;;02 31 82 77 44;https://www.pharmaciedifsrocadesud.fr/;;;140016932;2024-02-01 14:38:47
+PHARMACIE DE LA PAGNOLÉE;2 Rue de la Pagnolée;14123;Cormelles-le-Royal;FR-NOR;;02 31 52 01 52;;;;140009887;2023-01-23 14:05:53
+PHARMACIE DE LA PANACEE;41 Route d’Harcourt;14123;Fleury-sur-Orne;FR-NOR;;02 31 52 10 66;;;;140010083;2022-03-02 18:12:45
+Petri Esther;41b Route d’Harcourt;14123;Fleury-sur-Orne;FR-FR-NOR;Infirmier;02 31 82 27 31;;1012285477;10105914195;;04/07/2026 09:12:08
+PHARMACIE DE SAINT GATIEN DES BOIS;1 Place du Marché;14130;Saint-Gatien-des-Bois;FR-NOR;;02 31 65 29 49;;;;140015629;2023-06-15 14:04:17
+PHARMACIE DES  GABARRES;15 Place Jean Bureau;14130;Pont-l’Évêque;FR-NOR;;02 31 64 10 95;;;;140010703;2022-03-02 18:12:45
+Bousselaire Christelle;2 Route d’Orbec;14140;Livarot-Pays-d’Auge;FR-FR-NOR;Infirmier;02 31 62 97 16;;1012665747;10102833067;;08/07/2026 12:00:27
+Baudonnet Garance;10 Avenue Pasteur;14150;Ouistreham;FR-FR-NOR;Masseur-Kinésithérapeute;02 31 96 25 27;;1014750630;10108821991;;11/07/2026 13:55:09
+PHARMACIE DU PORT;1 Place General de Gaulle;14150;Ouistreham;FR-NOR;;02 31 96 25 41;https://www.doctolib.fr;;;140011115;2022-03-02 18:12:45
+PHARMACIE OLIVIER;61 Avenue de la Mer;14150;Ouistreham;FR-NOR;;02 31 97 18 28;;;;140010661;2022-03-02 18:12:45
+Dr Letorey Julien;9 Rue de la Dives;14170;Saint-Pierre-en-Auge;FR-FR-NOR;Médecin généraliste;02 31 20 84 74;;1011533374;10101548419;;03/07/2026 17:46:12
+Dr Salaun Hugues;9 Rue Marcel Maizeret;14170;Saint-Pierre-en-Auge;FR-FR-NOR;Médecin généraliste;02 31 20 84 74;;1012862549;10100593770;;03/07/2026 17:46:12
+PHARMACIE DES HALLES;36 Rue de Falaise;14170;Saint-Pierre-en-Auge;FR-NOR;;02 31 20 74 77;https://saint-pierre-sur-dives.normandiepharma.fr/;;;140010802;2024-01-08 14:46:26
+PHARMACIE SAINT PIERRE;12 Rue de Falaise;14170;Saint-Pierre-en-Auge;FR-NOR;;02 31 20 71 20;https://st-pierre-en-auge.normandiepharma.fr/;;;140011131;2022-03-02 18:12:45
+Dr Raginel Thibaut;1405 La Grande Delle;14200;Hérouville-Saint-Clair;FR-FR-NOR;Médecin généraliste;02 31 43 61 37;;1011233427;10100394559;;03/07/2026 23:44:16
+PHARMACIE CENTRALE;2 Avenue de la Grande Cavée;14200;Hérouville-Saint-Clair;FR-NOR;;02 31 54 07 35;;;;140010166;2022-03-02 18:12:45
+PHARMACIE DE LA GRANDE DELLE;Boulevard de la Grande Delle;14200;Hérouville-Saint-Clair;FR-NOR;;02 31 47 61 44;;;;140010141;2026-07-01 20:55:19
+PHARMACIE DU CENTRE COMMERCIAL SAINT;1 Centre COMMERCIAL ST CLAIR;14200;Hérouville-Saint-Clair;FR-NOR;;02 31 94 53 51;;;;140011073;2024-07-08 14:18:51
+Jouninet Christelle;18 Rue des Cerisiers;14210;Évrecy;FR-FR-NOR;Sage-Femme;09 86 22 69 75;;1013952902;10000215060;;05/07/2026 06:40:25
+Maraine Christophe;49 Route de Bretagne;14210;Tourville-sur-Odon;FR-FR-NOR;Infirmier;02 31 08 26 22;https://www.doctolib.fr/cabinet-paramedical/verson/cabinet-infirmier-verson;1012954571;10102658597;;12/09/2026 12:00:16
+PHARMACIE MARAIS;40 Route de Bretagne;14210;Tourville-sur-Odon;FR-NOR;;02 31 80 97 81;;;;140010893;2022-03-02 18:12:45
+PHARMACIE DES DUCS;15 Place Saint Sauveur;14220;Thury-Harcourt-le-Hom;FR-NOR;;02 31 79 72 33;;;;140010877;2023-05-12 14:13:19
+PHARMACIE D'ISIGNY SUR MER;2 Avenue de Versailles;14230;Isigny-sur-Mer;FR-NOR;;02 31 22 03 99;;;;140010257;2022-03-02 18:12:45
+Lemare Isabelle;7 Route de Torigni;14240;Caumont-sur-Aure;FR-FR-NOR;Infirmier;02 31 77 88 34;;1013077393;10103728712;;09/07/2026 00:49:38
+PHARMACIE DU PRE BOCAGE;24 Rue Saint Martin;14240;Caumont-sur-Aure;FR-NOR;;02 31 77 50 99;;;;140009788;2025-12-31 14:19:21
+Dr Oblin Joachim;5 Rue de Juvigny;14250;Tilly-sur-Seulles;FR-FR-NOR;Médecin généraliste;;;1013886746;10102190765;;03/07/2026 17:46:12
+Droullon Lauriane;5 Rue de Juvigny;14250;Tilly-sur-Seulles;FR-FR-NOR;Sage-Femme;02 31 82 80 52;;1012609287;10005046148;;06/07/2026 23:47:41
+PHARMACIE DU VAL DE SEULLES;3 Rue de Juvigny;14250;Tilly-sur-Seulles;FR-NOR;;;;;;140012089;2024-04-01 14:17:31
+Le Buan Alex;9 Place de l’Hôtel de Ville;14260;Les Monts d’Aunay;FR-FR-NOR;Infirmier;02 31 37 86 22;;1014049249;10108286138;;15/07/2026 12:38:48
+Dr Bonhomme Coralie;2a Rue Paul Mathieu;14320;Saint-Martin-de-Fontenay;FR-FR-NOR;Médecin généraliste;02 31 79 81 35;;1010746115;10100694792;;03/07/2026 23:44:16
+Dr Bourgoin Amandine;1 Rue Saint-André;14320;Saint-Martin-de-May;FR-FR-NOR;Médecin généraliste;;;1011410270;10101284247;;03/07/2026 23:44:16
+PHARMACIE DE FONTENAY;17 Rue de la République;14320;Fontenay-le-Marmion;FR-NOR;;02 31 79 81 60;;;;140010091;2023-11-27 14:30:28
+PHARMACIE DE SAINT MARTIN;6 Route d’Harcourt (Saint-Martin-de-Fontenay);14320;Saint-Martin-de-May;FR-NOR;;02 31 79 83 67;;;;140010778;2026-03-25 14:21:58
+Paulmier Audrey;1 Rue Yves Bernard;14330;Le Molay-Littry;FR-FR-NOR;Infirmier;;;1014124570;10103318043;;15/09/2026 12:00:19
+Leballeur Marie;8 Avenue des Tilleuls;14340;Cambremer;FR-FR-NOR;Infirmier;;;1013734845;10105510316;;04/07/2026 19:11:27
+Hary Cecile;4 Rue des Peupliers;14350;Souleuvre en Bocage;FR-FR-NOR;Infirmier;02 31 68 63 97;;1011872810;10102383931;;15/08/2026 12:01:02
+SSE Université de Caen - Lisieux;11 boulevard Jules FERRY;14366;Lisieux;FR-NOR;;;;;;;2025-10-07 09:08:38
+PHARMACIE DU BEFFROI;46 Place President Albert Lebrun;14380;Noues de Sienne;FR-NOR;;02 31 68 82 44;;;;140019498;2022-03-02 18:12:45
+Dudouet Malassis Natacha;4 Boulevard Sadi Carnot;14400;Bayeux;FR-FR-NOR;Infirmier;;;1013726194;10103595665;;08/07/2026 12:00:27
+Maudet Caroline;4 Boulevard Sadi Carnot;14400;Bayeux;FR-FR-NOR;Infirmier;;;1013726026;10107515529;;10/07/2026 16:54:42
+PHARMACIE D'ARGOUGES;43 Rue de Beauvais;14400;Bayeux;FR-NOR;;02 31 92 34 59;;;;140009168;2022-03-02 18:12:45
+PHARMACIE DU BESSIN;5 Route de Vaux-sur-Aure;14400;Bayeux;FR-NOR;;02 31 92 02 84;;;;140009150;2025-08-01 14:20:19
+PHARMACIE DU PONT SAINT JEAN;1 Rue ST JEAN;14402;Bayeux;FR-NOR;;02 31 92 07 63;;;;140009184;2022-05-23 10:05:21
+PHARMACIE DE VALDALLIERE;20 Rue Joseph Requeut;14410;Valdallière;FR-NOR;;02 31 68 51 08;;;;140010968;2023-12-11 14:30:30
+PHARMACIE  DERVIN;46 Rue du Général Leclerc;14420;Potigny;FR-NOR;;02 31 90 84 59;;;;140010729;2022-03-02 18:12:45
+Jouan Charles;132 Grande Rue;14430;Dozulé;FR-FR-NOR;Masseur-Kinésithérapeute;06 68 54 56 63;;1014586667;10101266749;;05/07/2026 16:12:58
+PHARMACIE DE DOZULÉ;111 Grande Rue;14430;Dozulé;FR-NOR;;02 31 79 20 64;;;;140010000;2022-03-02 18:12:45
+Croisy Noelle;6 Avenue de la Basilique;14440;Douvres-la-Délivrande;FR-FR-NOR;Sage-Femme;02 31 37 14 81;;1002512898;10000221522;;06/07/2026 03:23:14
+PHARMACIE DE LA BASILIQUE;78 Rue du General de Gaulle;14440;Douvres-la-Délivrande;FR-NOR;;02 31 37 29 60;;;;140009994;2022-03-02 18:12:45
+Guillard Laetitia;2 Place de la République;14450;Grandcamp-Maisy;FR-FR-NOR;Infirmier;06 15 87 57 08;;1012372320;10106506891;;04/07/2026 09:12:08
+PHARMACIE LAZZARO;49 Avenue de la Liberté;14460;Colombelles;FR-NOR;;02 31 72 40 07;;;;140009838;2025-10-01 14:17:22
+PHARMACIE DE LA DROME;5 Rue des Forges (Balleroy);14490;Balleroy-sur-Drôme;FR-NOR;;02 31 21 60 10;https://www.doctolib.fr/pharmacie/balleroy-sur-drome/pharmacie-de-la-drome;;;140009226;2022-03-02 18:12:45
+Angot Isabelle;Route de Condé (Vire);14500;Vire Normandie;FR-FR-NOR;Infirmier;06 33 09 24 65;;1011872360;10102379699;;08/09/2026 12:00:20
+Oudin Melanie;1 Place Georges Patard;14500;Vire Normandie;FR-FR-NOR;Infirmier;06 37 21 20 96;;1011925606;10102727574;;04/07/2026 09:12:08
+PHARMACIE DE VAUDRY;24 Route de Conde;14500;Vire Normandie;FR-NOR;;02 31 67 77 10;;;;140015223;2022-09-07 14:09:32
+Potel Jean-Christophe;21 Rue Armand Gasté;14500;Vire Normandie;FR-FR-NOR;Infirmier;02 31 67 54 24;;1011870053;10102358099;;06/07/2026 23:47:41
+SSE Université de Caen - Vire;rue des Noës;14500;Vire;FR-NOR;;;;;;;2025-10-07 09:06:37
+PHARMACIE MONFORT MARIS;5 Rue Docteur Camille Huet;14520;Port-en-Bessin-Huppain;FR-NOR;;02 31 21 70 86;;;;140010711;2022-03-02 18:12:45
+PHARMACIE DE LA MER;1 Place de l’Etoile;14530;Luc-sur-Mer;FR-NOR;;02 31 97 32 10;;;;140010497;2022-03-02 18:12:45
+PHARMACIE CAEN SUD;14 Rue des Tilleuls;14540;Soliers;FR-NOR;;02 31 23 14 34;;;;140010851;2022-03-02 18:12:45
+PHARMACIE COLBERT;20 Rue du Général Leclerc;14550;Blainville-sur-Orne;FR-NOR;;02 31 44 64 22;;;;140009267;2022-03-02 18:12:45
+Dr Brullard-Delamare Sandrine;45 Cours Albert Manuel;14600;Honfleur;FR-FR-NOR;Médecin généraliste;02 31 98 81 00;;1011700310;10002131976;;03/07/2026 17:46:12
+Dr Maupu Emmanuel;45 Cours Albert Manuel;14600;Honfleur;FR-FR-NOR;Médecin généraliste;02 31 98 81 00;;1011700192;10005192207;;09/10/2026 12:00:18
+PHARMACIE DE LA REPUBLIQUE;45 Cours Albert Manuel;14600;Honfleur;FR-NOR;;02 31 89 05 30;;;;140011099;2022-03-02 18:12:45
+PHARMACIE DE LA RIVIERE;29 Rue du Bourg;14600;La Rivière-Saint-Sauveur;FR-NOR;;02 31 98 70 20;;;;140010307;2024-10-01 15:20:40
+PHARMACIE DU DAUPHIN;7 Rue de la République;14600;Honfleur;FR-NOR;;02 31 89 10 80;;;;140010216;2026-06-02 15:11:08
+Dr Eckart Ingrid;8 Allée du Grand Pré;14610;Anisy;FR-FR-NOR;Médecin généraliste;;;1013112575;10002138856;;03/07/2026 17:46:12
+PHARMACIE DE THAON;Rue de Barbières;14610;Thaon;FR-NOR;;02 31 80 01 88;;;;140010869;2024-01-01 14:15:11
+PHARMACIE DES MONTS D'ERAINES;10 Rue des Ecoles;14620;Morteaux-Coulibœuf;FR-NOR;;02 31 90 76 55;;;;140010596;2022-03-02 18:12:45
+Boulin Laura;45 Rue Jacques Brel;14630;Cagny;FR-FR-NOR;Infirmier;06 50 56 37 24;;1012212926;10105464803;;06/07/2026 23:47:41
+PHARMACIE DE LA PLAINE;50 Route de Paris;14630;Cagny;FR-NOR;;02 31 23 41 71;https://pharmacie-de-la-plaine-cagny.pharmacorp.fr/;;;140009754;2024-10-01 15:20:39
+PHARMACIE DE CARPIQUET;51 Route de Caumont;14650;Carpiquet;FR-NOR;;02 31 26 58 71;;;;140009770;2022-10-05 14:11:58
+Dr Boquet Gérald;3 Passage des Deux Porches;14690;Pont-d’Ouilly;FR-FR-NOR;Médecin généraliste;02 31 68 64 99;;1010273394;10002138047;;10/07/2026 08:09:31
+PHARMACIE MAURIN-DUPUIS; Place GENERAL DE GAULLE;14690;Pont-d’Ouilly;FR-NOR;;02 31 69 80 38;;;;140010687;2022-03-02 18:12:45
+Colmant Gaetane;25 Rue Amiral Courbet;14700;Tour-en-Bessin;FR-FR-NOR;Infirmier;02 31 90 18 59;;1013077617;10102555371;;09/10/2026 13:47:08
+PHARMACIE DU VAL D'ANTE;1 Rue Georges Clémenceau;14700;Falaise;FR-NOR;;02 31 90 09 27;;;;140010067;2022-03-02 18:12:45
+PHARMACIE OMAHA-BEACH-TREVIERES;92 Rue Jean Pierre Richard;14710;Trévières;FR-NOR;;02 31 22 50 07;;;;140010901;2022-03-02 18:12:45
+PHARMACIE DE L'EGLISE;Place Marin;14740;Thue et Mue;FR-NOR;;02 31 80 71 06;https://www.doctolib.fr/pharmacie/thue-et-mue/pharmacie-de-l-eglise-thue-et-mue?pid=practice-328102;;;140009291;2022-07-01 10:05:52
+PHARMACIE DE L'ODON;62 Route de Bretagne;14760;Bretteville-sur-Odon;FR-NOR;;02 31 73 47 36;;;;140009317;2024-12-02 14:18:11
+PHARMACIE LION-SUR-MER;26 Boulevard Paul Doumer;14780;Lion-sur-Mer;FR-NOR;;02 31 97 20 32;;;;140010331;2022-03-02 18:12:45
+Bouilland Sabine;72 Avenue Michel d’Ornano;14800;Saint-Arnoult;FR-FR-NOR;Masseur-Kinésithérapeute;02 31 87 17 42;;1010868251;10005922363;;21/09/2026 12:00:16
+Perchey Claudie;49 Rue Olliffe;14800;Deauville;FR-FR-NOR;Infirmier;02 31 88 58 47;;1011869459;10102352506;;06/07/2026 13:05:25
+Callard Jennifer;40 Avenue de la Mer;14810;Merville-Franceville-Plage;FR-FR-NOR;Infirmier;;;1013768922;10103056387;;05/07/2026 06:40:25
+Mesnil Celine;5 Rue Malassis;14840;Démouville;FR-FR-NOR;Infirmier;02 31 72 39 33;;1014190666;10103627906;;13/08/2026 12:00:35
+PHARMACIE TREICH;13 Rue du Centre;14840;Démouville;FR-NOR;;02 31 72 36 26;;;;140009960;2022-03-02 18:12:45
+PHARMACIE DE RANVILLE;3 Rue du stade de Ranville;14860;Ranville;FR-NOR;;02 31 78 76 87;;;;140011123;2022-03-02 18:12:45
+PHARMACIE DU COEUR DE BOURG;41 Grande Rue;14880;Hermanville-sur-Mer;FR-NOR;;02 31 96 12 21;https://pharmacie-hermanville.mesoigner.fr/rendez-vous/bilan-de-medication;;;140010133;2022-03-02 18:12:45
+PHARMACIE DE MATHIEU;23 Rue de la Chaussée;14920;Mathieu;FR-NOR;;02 31 44 17 79;;;;140010505;2022-03-02 18:12:45
+PHARMACIE  PEGASUS;Avenue de Caen;14970;Bénouville;FR-NOR;;02 31 44 45 44;;;;140017559;2022-03-02 18:12:45
+Dr Aboo Sophie;6bis Rue Haute Bonny;14980;Rots;FR-FR-NOR;Médecin généraliste;02 61 53 65 33;;1013322326;10100681310;;03/07/2026 12:24:17
+Boulnois Claire;1 Place de la République;27000;Évreux;FR-FR-NOR;Infirmier;;;1012028844;10103719141;;11/07/2026 00:35:12
+Cruchet Fabienne;18 Rue de Rugby;27000;Évreux;FR-FR-NOR;Infirmier;;;1012530026;10106623969;;05/07/2026 16:12:58
+Jean Benedicte;Place Kennedy;27000;Évreux;FR-FR-NOR;Infirmier;02 32 23 29 22;;1012374221;10106523227;;10/07/2026 08:09:31
+MORIN-TERROIR;Rue de Saint-André;27000;Évreux;FR-NOR;;02 32 23 18 18;;;;270020043;2025-06-05 14:19:32
+PHARMACIE DE NETREVILLE;Rue de Fauville;27000;Évreux;FR-NOR;;02 32 31 60 63;https://www.doctolib.fr/pharmacie/evreux/pharmacie-de-netreville;;;270019797;2025-11-03 14:19:08
+PHARMACIE DES ARCANES - DRIVE;1 Voie de la Ferme;27100;Val-de-Reuil;FR-NOR;;02 32 59 41 98;https://pharmacie-arcanes-valdereuil.mesoigner.fr/rendez-vous/bilan-de-medication;;;270022395;2023-03-01 14:15:00
+Chevallier Clemence;22 Rue Albert Camus;27120;Pacy-sur-Eure;FR-FR-NOR;Infirmier;06 07 88 15 39;;1013305046;10105188790;;17/07/2026 12:00:20
+LA GRANDE PHARMACIE DU CENTRE;34 Rue Edouard Isambard;27120;Pacy-sur-Eure;FR-NOR;;02 32 36 01 10;;;;270021124;2026-09-21 13:08:30
+Mouchard Florence;5bis Rue de la Mairie;27120;Le Val-David;FR-FR-NOR;Infirmier;02 32 35 01 40;;1011898692;10102506192;;03/07/2026 23:44:16
+PHARMACIE FERRAND-GAILLARD;18 Rue Edouard Isambard;27120;Pacy-sur-Eure;FR-NOR;;02 32 36 01 08;;;;270021090;2022-03-02 18:12:45
+Mekibes Farid;Rue Albert Leroy;27140;Gisors;FR-FR-NOR;Infirmier;;https://www.doctolib.fr/cabinet-paramedical/gisors/cabinet-infirmier-farid-mekib;1013135463;10104751853;;09/07/2026 10:44:48
+PHARMACIE DU MARCHÉ DE GISORS;4 Rue de Vienne;27140;Gisors;FR-NOR;;02 32 55 26 68;https://www.doctolib.fr/pharmacie/gisors/pharmacie-du-marche-de-gisors;;;270020290;2023-02-01 14:06:35
+PHARMACIE  HUE;19 Boulevard Georges de Boisgelin;27170;Beaumont-le-Roger;FR-NOR;;02 32 45 22 96;;;;270018765;2022-03-02 18:12:45
+Perier Julien;17 Route de Bernay;27170;Beaumont-le-Roger;FR-FR-NOR;Infirmier;;;1012604537;10102919338;;06/07/2026 13:05:25
+PHARMACIE DE L'EGLISE;134 Place du General Leclerc;27210;Beuzeville;FR-NOR;;02 32 57 70 36;;;;270018914;2024-10-01 15:20:40
+PHARMACIE DE LA MORELLE;100 Rue Constant Fouché;27210;Beuzeville;FR-NOR;;02 32 57 70 64;;;;270018930;2022-03-02 18:12:45
+Rault Pauline;106 Place de l’Eglise;27210;Saint-Maclou;FR-FR-NOR;Infirmier;07 70 22 47 57;;1014885316;10103325105;;01/10/2026 12:00:17
+Lalouat Quentin;2 Rue de la Harpe;27220;Bois-le-Roi;FR-FR-NOR;Infirmier;06 18 75 55 39;;1013704084;10104248330;;09/07/2026 20:43:26
+Mabire Charlotte;62 Route de Saint-André;27240;Mesnils-sur-Iton;FR-FR-NOR;Infirmier;;;1011881005;10102398210;;06/07/2026 03:23:14
+Marchand Audrey;6 Rue Georges Clemenceau;27250;Rugles;FR-FR-NOR;Infirmier;;;1012029970;10103728266;;09/07/2026 20:43:26
+PHARMACIE  DE  RUGLES;La Campagne du Petit Hanoy;27250;Rugles;FR-NOR;;02 32 24 73 11;https://pharmaciederugles.santalis.fr/ordo_connect/?from=ordo_calendrier;;;270021561;2025-09-30 15:24:48
+PHARMACIE SOHIER-CARON;15 Rue Saint Louis;27290;Pont-Authou;FR-NOR;;02 32 42 71 25;;;;270021330;2022-03-02 18:12:45
+PHARMACIE DE LA CHARENTONNE;54 Rue du Général de Gaulle;27300;Bernay;FR-NOR;;02 32 43 00 45;;;;270018781;2022-03-02 18:12:45
+PHARMACIE DE LA COUTURE;Avenue du 8 Mai 1945;27300;Bernay;FR-NOR;;02 32 45 85 36;;;;270018831;2022-03-02 18:12:45
+PHARMACIE BOURG ACHARD;530 Rue du Docteur Duvrac;27310;Bourg-Achard;FR-NOR;;02 32 56 20 22;https://www.doctolib.fr/pharmacie/bourg-achard/phamarcie-bourg-achard?pid=practice-298454&utm_source=google_appointment_redirect&utm_campaign=gmb&utm_medium=organic&rwg_token=AFd1xnEbw-fqJUgaB7Qt8_5OZ5NVGPkrbJN_ce03Fv2pTCfiwYwt9ODNI1m3VnHSZDt5n4sljQVMZBhoLWT0aMroLEIzx2IQ8w%3D%3D;;;270019045;2025-08-01 14:20:19
+PHARMACIE DE SAINT-OUEN;1 La Miraie;27310;Saint-Ouen-de-Thouberville;FR-NOR;;02 32 56 26 48;https://www.doctolib.fr/pharmacie/saint-ouen-de-thouberville/pharmacie-de-saint-ouen?pid=practice-296412&phs=true&page=1&index=1;;;270021744;2025-06-30 14:17:49
+Vandermeersch Elodie;777 Rue Abbé Eliot;27310;Bourg-Achard;FR-FR-NOR;Infirmier;02 32 41 76 79;;1011923229;10102708707;;05/07/2026 16:12:58
+Dr Boudier Julien;4 Chemin de la Procession;27340;Pont-de-l’Arche;FR-FR-NOR;Médecin généraliste;02 35 23 02 28;;1012932954;10100974459;;10/07/2026 08:09:31
+PHARMACIE HAIMET-LEROY;52 Grande Rue;27360;Pont-Saint-Pierre;FR-NOR;;02 32 49 70 45;;;;270021413;2022-03-02 18:12:45
+PHARMACIE CUZON;9 Rue de la République;27370;Amfreville-Saint-Amand;FR-NOR;;02 32 35 30 34;;;;270018542;2024-09-06 14:19:54
+PHARMACIE DE FLEURY;63 Rue Pouyer Quertier;27380;Fleury-sur-Andelle;FR-NOR;;02 32 49 04 31;;;;270020142;2022-04-04 10:04:10
+Vigneron Fanny;1 Rue du Catelier;27380;Charleval;FR-FR-NOR;Sage-Femme;;;1011855881;10100370484;;04/07/2026 09:12:08
+Liyaki Cindy;8 Rue François le Camus;27400;Louviers;FR-FR-NOR;Infirmier;06 52 45 99 48;;1014192480;10108065813;;09/10/2026 12:00:18
+Mbongo Mbappe Camille;Rue de la Croix Roger;27400;Heudebouville;FR-FR-NOR;Infirmier;07 85 80 89 47;;1011899574;10102514154;;06/07/2026 13:05:25
+PHARMACIE D'HEUDEBOUVILLE;22 Route Nationale;27400;Heudebouville;FR-NOR;;02 32 25 95 11;;;;270020464;2024-10-03 14:20:35
+PHARMACIE DU CHAMP DE VILLE;49 Rue du Général de Gaulle;27400;Louviers;FR-NOR;;02 32 40 00 76;https://www.doctolib.fr/pharmacie/louviers/pharmacie-du-champ-de-ville;;;270020662;2022-03-02 18:12:45
+PHARMACIE DU MUSEE;8 Place Ernest Thorel;27400;Louviers;FR-NOR;;02 32 25 27 80;;;;270020761;2026-02-02 14:19:59
+PHARMACIE DU PARVIS;48 Rue du Maréchal Foch;27400;Louviers;FR-NOR;;02 32 40 33 00;;;;270020712;2022-03-02 18:12:45
+PHARMACIE LABICHE-LEDOUX;27 Rue du Genéral de Gaulle;27400;Hondouville;FR-NOR;;02 32 50 47 25;;;;270020480;2022-03-02 18:12:45
+PHARMACIE LE ROY;51 Rue de Louviers;27400;Acquigny;FR-NOR;;02 32 50 21 81;;;;270018526;2022-03-02 18:12:45
+PHARMACIE MAILHAN;4 Boulevard Georges Clemenceau;27400;Louviers;FR-NOR;;02 32 40 00 06;;;;270020647;2022-03-02 18:12:45
+Prunieres Axelle;5 Route de Paris;27440;Écouis;FR-FR-NOR;Infirmier;02 32 69 44 06;;1012056740;10103964341;;11/07/2026 00:35:12
+Champroux Stephanie;13 Rue de l’Hotel de Ville;27480;Lyons-la-Forêt;FR-FR-NOR;Infirmier;02 32 48 21 12;;1012212667;10105462534;;09/07/2026 10:44:48
+Duparc Sandrine;Route de Lisieux (Pont-Audemer);27500;Pont-Audemer;FR-FR-NOR;Infirmier;02 32 41 03 44;;1011881095;10102399036;;03/07/2026 23:44:16
+PHARMACIE DE L'EGLISE;23 Rue Thiers;27500;Pont-Audemer;FR-NOR;;02 32 41 00 58;;;;270021314;2024-04-08 14:28:40
+PHARMACIE DE L'EUROPE;2 Avenue Jean Monnet;27500;Pont-Audemer;FR-NOR;;02 32 41 21 74;https://pharmacie-europe-pontaudemer.mesoigner.fr/;;;270021181;2022-07-08 16:20:58
+PHARMACIE DU POT D'ETAIN;11 Place du Pot d’Etain;27500;Pont-Audemer;FR-NOR;;02 32 41 04 20;;;;270021231;2024-07-01 14:17:31
+PHARMACIE GAMBETTA;26 Rue Gambetta;27500;Pont-Audemer;FR-NOR;;02 32 41 10 57;;;;270021215;2025-01-01 14:15:35
+Thomas Delphine;2 Voie Georges Triplet;27500;Pont-Audemer;FR-FR-NOR;Infirmier;02 32 41 23 67;;1012056379;10103960901;;08/07/2026 12:00:27
+Thomas Marianne;1556 Route de Lisieux;27500;Les Préaux;FR-FR-NOR;Infirmier;06 40 81 86 38;;1013068276;10106222382;;09/07/2026 20:43:26
+Gaudet Laura;127 Rue du Neubourg;27520;Grand Bourgtheroulde;FR-FR-NOR;Infirmier;;;1014633830;10107799701;;02/10/2026 12:01:02
+PHARMACIE DE LA GARE;11 Boulevard de la Gare;27540;Ivry-la-Bataille;FR-NOR;;02 32 36 40 34;;;;270020530;2022-03-02 18:12:45
+Lecointre Thomas;10 Place de la Mairie;27560;Lieurey;FR-FR-NOR;Infirmier;;;1012542045;10106395386;;13/08/2026 12:00:35
+PHARMACIE CHARE;4 Rue de Chandai;27580;Bourth;FR-NOR;;02 32 32 60 22;;;;270019110;2025-07-01 15:01:35
+PHARMACIE DE LA MAIRIE;4 Rue du Général de Gaulle;27600;Gaillon;FR-NOR;;02 32 53 07 24;;;;270020191;2025-07-01 15:01:35
+PHARMACIE DECEUNINCK NELLY;13 Rue du Chesnay;27630;Vexin-sur-Epte;FR-NOR;;02 32 52 31 30;;;;270022015;2024-03-25 14:28:27
+Gaudet Laura;9 Place Jean Guenier;27670;Bosroumois;FR-FR-NOR;Infirmier;;;1014775099;10107799701;;09/10/2026 12:00:18
+PHARMACIE DU TILLEUL;40 Rue des Canadiens;27670;Saint-Ouen-du-Tilleul;FR-NOR;;02 35 87 72 32;https://pharmaciedutilleul27.fr/;;;270021777;2022-07-01 10:05:52
+PHARMACIE DE LERY;45 Rue du 11 Novembre;27690;Léry;FR-NOR;;02 32 59 04 60;https://app.bimedoc.com/interface/calendar;;;270020563;2022-03-02 18:12:45
+Bloquel Christelle;20 Rue Pinard;27750;La Couture-Boussey;FR-FR-NOR;Infirmier;;;1011928628;10102746103;;08/09/2026 12:00:20
+PHARMACIE BREARD;6 Rue de Saint Andre;27750;La Couture-Boussey;FR-NOR;;02 32 36 76 56;https://pharmaciebreard.pharmavie.fr;;;270019474;2022-03-02 18:12:45
+PHARMACIE CHAMPNEUF;8 Rue des Huchiers;27760;La Ferrière-sur-Risle;FR-NOR;;02 32 30 70 08;;;;270020126;2022-03-02 18:12:45
+Ahnou Audrey;Rue de la Gare;27810;Marcilly-sur-Eure;FR-FR-NOR;Infirmier;07 63 76 02 78;;1013402383;10105663511;;09/07/2026 10:44:48
+PHARMACIE DUHAMEL;82 Rue du General de Gaulle;27910;Perriers-sur-Andelle;FR-NOR;;02 32 49 07 22;;;;270021140;2022-03-02 18:12:45
+Abid Sanaa;Rue de la Gatine;27930;Gauciel;FR-FR-NOR;Infirmier;06 85 28 78 83;;1014847353;10102683157;;12/09/2026 12:00:16
+PHARMACIE DE CAER;Route de Gaillon;27930;Normanville;FR-NOR;;02 32 39 39 04;;;;270021074;2023-04-03 14:10:15
+PHARMACIE DE LA PLACE;31 Place Francois Mitterrand;27940;Le Val d’Hazey;FR-NOR;;02 32 52 33 24;;;;270018674;2022-03-02 18:12:45
+PHARMACIE DES 2 TERRES;5 Route des Andelys;27940;Courcelles-sur-Seine;FR-NOR;;02 32 77 98 92;;;;270019441;2022-03-02 18:12:45
+Lajoye Geraldine;5 Place du Champ de Mars;50000;Saint-Lô;FR-FR-NOR;Infirmier;;;1013120274;10102558599;;06/07/2026 23:47:41
+PHARMACIE DU CHAMPS DE MARS;4 Rue DU DR LETURC;50000;Saint-Lô;FR-NOR;;02 33 57 01 89;;;;500011929;2022-03-02 18:12:45
+PHARMACIE DU VAL SAINT JEAN;40 Rue de la Trapinière;50000;Saint-Lô;FR-NOR;;02 33 57 22 27;;;;500011911;2026-07-01 20:55:19
+Despierres Vincent;145 Avenue de Paris;50100;Cherbourg-en-Cotentin;FR-FR-NOR;Infirmier;02 33 43 18 95;;1013802773;10107057068;;06/07/2026 13:05:25
+Hericher Marion;48 Rue de l’Ancien Quai;50100;Cherbourg-en-Cotentin;FR-FR-NOR;Masseur-Kinésithérapeute;02 33 04 53 79;;1014692423;10101712759;;09/07/2026 00:49:38
+Isoird Valerie;40 Rue du Maupas;50100;Cherbourg-en-Cotentin;FR-FR-NOR;Infirmier;;;1013138245;10106397390;;09/07/2026 20:43:26
+PHARMACIE DE LA FAUCONNIERE;31 Rue de Lorraine;50100;Cherbourg-en-Cotentin;FR-NOR;;02 33 20 08 65;https://pharmacie-de-la-fauconniere.pharmaciereference.fr/;;;500010764;2022-04-01 10:07:36
+PHARMACIE DU CENTRE;25 Rue Albert Mahieu;50100;Cherbourg-en-Cotentin;FR-NOR;;02 33 53 12 86;;;;500010814;2022-03-02 18:12:45
+PHARMACIE DU VAL DE SAIRE;73 Rue Val de Saire;50100;Cherbourg-en-Cotentin;FR-NOR;;02 33 20 41 31;;;;500010822;2022-03-02 18:12:45
+PHARMACIE DE PONT MARAIS;550 Rue du Grand Pré;50110;Cherbourg-en-Cotentin;FR-NOR;;02 33 22 37 40;;;;500011796;2024-09-02 14:19:41
+PHARMACIE DE QUERQUEVILLE;118 Rue Roger Glinel;50110;Cherbourg-en-Cotentin;FR-NOR;;02 33 03 57 10;;;;500011432;2024-07-01 14:17:28
+Groult Aurelie;1a Rue des Claires;50120;Cherbourg-en-Cotentin;FR-FR-NOR;Infirmier;;;1012197142;10102581203;;01/10/2026 12:00:17
+Noel Anne-Laure;Rue de la Mer (Équeurdreville-Hainneville);50120;Cherbourg-en-Cotentin;FR-FR-NOR;Sage-Femme;02 33 53 31 46;;1010223423;10000127893;;11/07/2026 07:46:37
+Dr Goupille Eric;11 Rue Joliot Curie;50130;Cherbourg-en-Cotentin;FR-FR-NOR;Médecin généraliste;09 73 06 03 02;;1013368191;10002123742;;11/07/2026 19:50:35
+PHARMACIE LA PHARMILLE;11 Rue Joliot Curie;50130;Cherbourg-en-Cotentin;FR-NOR;;02 33 53 27 15;;;;500011325;2023-08-28 14:43:12
+Bouet Stephanie;10 Rue de Verdun;50150;Sourdeval;FR-FR-NOR;Infirmier;02 33 59 70 71;;1014777249;10102659504;;13/08/2026 12:00:35
+PHARMACIE DE SOURDEVAL;18 Place Charles de Gaulle;50150;Sourdeval;FR-NOR;;02 33 59 60 21;;;;500011705;2023-01-02 14:06:03
+Luce Soizig;2bis Rue Matignon;50160;Torigny-les-Villes;FR-FR-NOR;Infirmier;02 33 56 74 89;;1012756227;10102419859;;05/07/2026 16:12:58
+Dr Hellegouarch Martin;3 Place des Tilleuls;50180;Thèreval;FR-FR-NOR;Médecin généraliste;02 33 72 81 65;;1013074240;10101386943;;03/07/2026 17:46:12
+PHARMACIE DU BOCAGE;2 Place Pierre de Gouville;50180;Agneaux;FR-NOR;;02 33 05 30 30;;;;500010467;2022-03-02 18:12:45
+Anne Valentine;11 Rue Ambroise Pare;50200;Coutances;FR-FR-NOR;Sage-Femme;;;1013531731;10101260064;;21/09/2026 12:00:16
+Castric Valerie;3bis Rue de la Croûte;50200;Coutances;FR-FR-NOR;Infirmier;09 83 28 53 78;;1014642027;10106281917;;13/08/2026 12:00:35
+Coulon Nadege;3bis Rue de la Croûte;50200;Coutances;FR-FR-NOR;Infirmier;;;1014631796;10106680274;;06/07/2026 03:23:14
+Marie Annabelle;5 Rue Perthuis Trouard;50200;Coutances;FR-FR-NOR;Infirmier;02 33 45 08 64;;1012897495;10106766040;;06/07/2026 03:23:14
+PHARMACIE CENTRALE;18 Rue Tancrède;50200;Coutances;FR-NOR;;02 33 45 17 14;;;;500010889;2022-03-02 18:12:45
+Sallandre Annabelle;8 Rue Saint-maur;50200;Coutances;FR-FR-NOR;Sage-Femme;07 85 85 55 00;;1014334174;10100527190;;04/07/2026 19:11:27
+PHARMACIE PHARMANATURA;15 Rue de la Liberté;50210;Roncey;FR-NOR;;02 33 46 92 77;;;;500011473;2024-03-25 14:28:27
+Lepetit Yoann;1 Rue des Pommiers;50230;Agon-Coutainville;FR-FR-NOR;Infirmier;02 33 47 97 15;;1011942511;10102861837;;06/07/2026 13:05:25
+PHARMACIE DE L'ESTRAN;4 Avenue DES ANCIENS DE LA 2EME D.B.;50230;Agon-Coutainville;FR-NOR;;02 33 47 08 11;;;;500010475;2022-03-02 18:12:45
+Dr Bignon Marie-Estelle;13bis Rue d’Antrain;50240;Saint-James;FR-FR-NOR;Médecin généraliste;02 33 48 25 88;;1010285955;10002125630;;03/07/2026 17:46:12
+Lunet Florence;Route de Saint - Senier;50240;Saint-Aubin-de-Terregatte;FR-FR-NOR;Infirmier;;;1014013536;10104271134;;25/08/2026 12:00:17
+Crespin Sophie;9 Chemin des Aubépines;50250;La Haye;FR-FR-NOR;Infirmier;;;1012674000;10103353396;;06/07/2026 03:23:14
+PHARMACIE DE LA HAYE;55 Place du General de Gaulle;50250;La Haye;FR-NOR;;02 33 46 04 32;;;;500011143;2026-04-01 14:23:00
+Calbry Berengere;15 Avenue de la Gare;50260;Bricquebec-en-Cotentin;FR-FR-NOR;Infirmier;;;1013884318;10105115074;;21/09/2026 12:00:16
+Lamort Bantignies Veronique;Rue des Halles;50270;Barneville-Carteret;FR-FR-NOR;Infirmier;02 33 04 60 62;;1012630385;10107556002;;04/07/2026 09:12:08
+Herbert Benedicte;18 Rue de la Libération;50290;Bréhal;FR-FR-NOR;Infirmier;02 33 61 61 84;;1011946912;10102902078;;09/07/2026 10:44:48
+Weiss Elodie;18 Rue de la Libération;50290;Bréhal;FR-FR-NOR;Infirmier;02 33 61 61 84;;1012765880;10103989041;;18/07/2026 12:01:03
+Dr Duquennoy Simon;56 Rue de la Liberté;50300;Avranches;FR-FR-NOR;Néphrologue;02 33 79 53 30;;1011085681;10100794584;;03/07/2026 06:44:21
+Eudes Elise;9 Rue du Docteur Gilbert;50300;Avranches;FR-FR-NOR;Infirmier;;;1014093165;10107701335;;11/07/2026 13:55:09
+PHARMACIE DES M;Boulevard du Luxembourg (Avranches);50300;Avranches;FR-NOR;;02 33 68 32 55;;;;500011606;2022-03-02 18:12:45
+PHARMACIE DES MANUSCRITS;42 Rue Jean de Vittel;50300;Avranches;FR-NOR;;02 33 58 15 04;;;;500020789;2026-05-26 15:11:36
+Goubert Noemie;1 Rue de la Liberation;50320;La Haye-Pesnel;FR-FR-NOR;Infirmier;02 33 69 53 86;;1014567848;10105498520;;04/07/2026 19:11:27
+PHARMACIE LEQUERTIER-BONNAL;1 Rue du Général de Gaulle;50330;Saint-Pierre-Église;FR-NOR;;02 33 54 31 27;;;;500011630;2022-03-02 18:12:45
+Kucheida Audrey;35 Route de Flamanville;50340;Les Pieux;FR-FR-NOR;Infirmier;;;1013773022;10103736566;;06/07/2026 03:23:14
+PHARMACIE DES CAPS;Impasse des Bouvreuils;50340;Les Pieux;FR-NOR;;02 33 52 44 16;;;;500011168;2023-03-22 14:09:07
+PHARMACIE LEFRANC - LEVEQUE;178 Route de Coutances;50350;Donville-les-Bains;FR-NOR;;02 33 50 22 68;https://www.pharmacie-lefranc-leveque-granville.com;;;500010913;2026-06-01 15:14:34
+PHARMACIE LEFAUCONNIER MÉHEUT;13 Rue de la Marne;50360;Picauville;FR-NOR;;02 33 41 04 92;;;;500011382;2025-02-28 14:19:17
+PHARMACIE DE LA SEE;10 Rue des Pélerins;50370;Brécey;FR-NOR;;02 33 48 72 40;;;;500010582;2022-03-02 18:12:45
+Chanteloup Antoine;58 Rue de Sercq;50380;Saint-Pair-sur-Mer;FR-FR-NOR;Infirmier;;;1012025803;10103694112;;06/07/2026 13:05:25
+Leveque Elodie;437 Rue du Vieux Château;50380;Saint-Pair-sur-Mer;FR-FR-NOR;Infirmier;06 08 21 72 05;;1011921346;10102693685;;06/07/2026 13:05:25
+Capelle Caroline;3 Rue Clément Desmaisons;50400;Granville;FR-FR-NOR;Infirmier;;;1012303698;10106067399;;10/07/2026 08:09:31
+Dr Pontoizeau Pierre;13 Place Pierre Sémard;50400;Granville;FR-FR-NOR;Dermatologue;02 33 50 74 68;;1010378344;10002123395;;03/07/2026 00:21:47
+Edot Mathilde;35 Rue des Routils;50400;Granville;FR-FR-NOR;Sage-Femme;06 04 05 19 05;;1014011988;10101587557;;03/07/2026 23:44:16
+Lemesle Berenice;3 Rue Clément Desmaisons;50400;Granville;FR-FR-NOR;Infirmier;;;1014254485;10107203654;;06/07/2026 23:47:41
+PHARMACIE DES MATIGNON;1720 Avenue des Matignons;50400;Granville;FR-NOR;;02 33 61 73 24;;;;500013008;2022-03-02 18:12:45
+PHARMACIE SAINT NICOLAS;Rue Saint Nicolas;50400;Granville;FR-NOR;;02 33 50 04 50;;;;500011028;2022-03-02 18:12:45
+Robert Aude;5 Place Jean-Claude Lemoine;50420;Tessy-Bocage;FR-FR-NOR;Infirmier;02 33 56 36 18;;1013234035;10105823859;;04/07/2026 09:12:08
+Tricard Patricia;5 Place Jean-Claude Lemoine;50420;Tessy-Bocage;FR-FR-NOR;Infirmier;02 33 56 36 18;;1012763181;10105004096;;04/07/2026 09:12:08
+Languille Azélie;2 A Zone activite Les Chevres;50470;Tollevast;FR-FR-NOR;Masseur-Kinésithérapeute;02 33 20 55 87;;1014700344;10111937149;;10/07/2026 16:54:42
+PHARMACIE CENTRE COMMERCIAL COTENTIN;Cherbourg-en-Cotentin;50470;Cherbourg-en-Cotentin;FR-NOR;;02 33 20 49 87;https://www.doctolib.fr/pharmacie/cherbourg-en-cotentin/pharmacie-centre-commercial-cotentin?pid=practice-368944;;;500011119;2024-03-25 14:28:27
+PHARMACIE MONTMARTRE;10 Rue Saint Exupery (La Glacerie);50470;Cherbourg-en-Cotentin;FR-NOR;;02 33 44 10 99;;;;500011127;2023-07-03 14:25:54
+Andre Gregory;Route du Pont Vert;50490;Saint-Sauveur-Villages;FR-FR-NOR;Infirmier;;;1012704894;10106950438;;22/07/2026 12:01:03
+PHARMACIE SAINT SAUVEURAISE;1 Rue Général Bradley;50490;Saint-Sauveur-Villages;FR-NOR;;02 33 07 60 39;;;;500011655;2022-03-02 18:12:45
+Dr Poullain Pierre;2 Avenue Qui Qu En Grogne;50500;Carentan-les-Marais;FR-FR-NOR;Médecin généraliste;;;1010626267;10100508927;;01/09/2026 12:00:14
+LE BPC;31 Place de la République;50500;Carentan-les-Marais;FR-NOR;;02 33 42 13 33;;;;500010673;2022-03-02 18:12:45
+PHARMACIE DU MARAIS;Rue de la Guinguette;50500;Carentan-les-Marais;FR-NOR;;02 33 42 29 50;;;;500010657;2024-04-23 14:13:45
+Pharmacie PERON;34 Place de la République;50500;Carentan-les-Marais;FR-NOR;;02 33 42 11 55;;;;500010665;2023-03-23 14:08:15
+Barrain Brigitte;5 Route d’Avranches;50530;Genêts;FR-FR-NOR;Infirmier;06 84 73 80 49;;1012483015;10107150186;;09/07/2026 10:44:48
+Fourreau Jean;99 Grande Rue;50530;Sartilly-Baie-Bocage;FR-FR-NOR;Infirmier;02 33 58 32 60;;1011887541;10102409355;;04/07/2026 19:11:27
+Vallee Delphine;99 Grande Rue;50530;Sartilly-Baie-Bocage;FR-FR-NOR;Infirmier;02 33 58 32 60;;1011924626;10102719902;;08/07/2026 12:00:27
+Bigot Marina;Place Pierre l’Orphelin;50570;Carantilly;FR-FR-NOR;Infirmier;02 33 56 62 39;;1012711595;10105480296;;09/07/2026 00:49:38
+PHARMACIE GIRARD;5 Place Westport;50570;Marigny-Le-Lozon;FR-NOR;;02 33 55 15 77;;;;500011226;2026-01-01 14:17:24
+Boscher Alice;1 Allée de la Collière;50590;Hauteville-sur-Mer;FR-FR-NOR;Masseur-Kinésithérapeute;;;1014694243;10101086295;;05/07/2026 06:40:25
+PHARMACIE DU CENTRE;17 Avenue du Marechal Leclerc;50600;Saint-Hilaire-du-Harcouët;FR-NOR;;02 33 49 10 54;;;;500011515;2022-03-02 18:12:45
+PHARMACIE DU VAUPREUX;1 Place Clemenceau;50630;Quettehou;FR-NOR;;02 33 54 11 39;;;;500011457;2023-10-02 14:24:09
+Wolf Adrien;9 Rue Guillaume Morel;50640;Le Teilleul;FR-FR-NOR;Masseur-Kinésithérapeute;;;1013943023;10107317850;;27/08/2026 12:01:41
+Buron Thomas;3 Rue des Ecoles;50670;Saint-Laurent-de-Cuves;FR-FR-NOR;Masseur-Kinésithérapeute;09 50 49 45 10;;1011575913;10101850104;;18/09/2026 12:02:02
+PHARMACIE DE MARTINVAST;20 Rue Maurice Brisset;50690;Martinvast;FR-NOR;;02 33 52 13 79;https://www.doctolib.fr/pharmacie/martinvast/pharmacie-de-martinvast/booking/motive-categories?specialityId=3097&telehealth=false&placeId=practice-427467&bookingFunnelSource=profile;;;500011234;2024-03-25 14:28:27
+PHARMACIE COEUR COTENTIN;1 Avenue du Quesnay;50700;Valognes;FR-NOR;;02 33 21 69 21;;;;500011820;2025-02-03 14:20:06
+Sanson Anne-Laure;42 Rue de Poterie;50700;Valognes;FR-FR-NOR;Infirmier;02 33 95 01 71;;1012637771;10106307852;;08/07/2026 12:00:27
+PHARMACIE LAUNAY;132 Rue du Haut Chemin;50710;Créances;FR-NOR;;02 33 46 30 21;;;;500010905;2022-03-02 18:12:45
+PHARMACIE DE BOURGVALLEES;35 Rue des Ifs;50750;Bourgvallées;FR-NOR;;02 33 55 70 75;;;;500012067;2025-01-13 14:19:22
+Gohier Catherine;10 Place des Chevaliers de Malte;50800;Villedieu-les-Poêles-Rouffigny;FR-FR-NOR;Infirmier;02 33 61 00 10;;1012619515;10107053521;;04/07/2026 19:11:27
+Lejeune Sabrina;Rue de Bahais;50880;Pont-Hébert;FR-FR-NOR;Infirmier;02 33 56 42 51;;1012153554;10104882534;;09/10/2026 12:00:18
+PHARMACIE DES BORDS DE VIRE;34 Rue de Mesnil Durand;50880;Pont-Hébert;FR-NOR;;02 33 56 47 95;;;;500011390;2025-01-06 14:18:37
+Dr Buruiana Violeta;37 Avenue de Quakenbrück;61000;Alençon;FR-FR-NOR;Médecin généraliste;02 55 42 30 80;;1013399844;10101800257;;03/07/2026 12:24:17
+Lemercier Chantal;22 Rue de Vicques;61000;Alençon;FR-FR-NOR;Sage-Femme;;;1014601751;10000027143;;04/07/2026 09:12:08
+PHARMACIE DE PERSEIGNE;22 Rue Paul Verlaine;61000;Alençon;FR-NOR;;02 33 80 26 80;;;;610785966;2022-03-02 18:12:45
+Dr Boquet Gérald;1 Rue des Terriers;61100;Athis-Val de Rouvre;FR-FR-NOR;Médecin généraliste;02 31 68 64 99;;1011684891;10002138047;;10/07/2026 08:09:31
+Guillot Mathieu;4 Rue de la Chaussee;61100;Flers;FR-FR-NOR;Infirmier;02 33 65 87 64;;1011911264;10102616025;;09/07/2026 10:44:48
+PHARMACIE CENTRALE;9 Place CHARLES DE GAULLE;61100;Flers;FR-NOR;;02 33 65 20 24;;;;610786386;2024-01-01 14:15:11
+PHARMACIE DE LA GARE;46 Place Mal de Lattre de Tassigny;61100;Flers;FR-NOR;;02 33 65 04 34;;;;610786410;2022-03-02 18:12:45
+PHARMACIE LE SECQ-DUVAL;5 Place du Commerce;61100;Saint-Georges-des-Groseillers;FR-NOR;;02 33 65 31 80;;;;610786733;2022-03-02 18:12:45
+Touati Stephanie;71 Rue du Mont Saint Michel;61100;Flers;FR-FR-NOR;Infirmier;02 33 66 95 77;;1012321242;10106240525;;09/07/2026 00:49:38
+Alao Fary Lise;5 Avenue de la 2e Db;61200;Argentan;FR-FR-NOR;Masseur-Kinésithérapeute;09 67 04 59 16;;1013970727;10102291290;;05/07/2026 06:40:25
+Cuiller Manon;Place du Docteur Couinaud;61200;Argentan;FR-FR-NOR;Sage-Femme;;;1011501144;10100436970;;06/07/2026 03:23:14
+Lambert Eudes;5 Avenue de la 2e Db;61200;Argentan;FR-FR-NOR;Masseur-Kinésithérapeute;06 83 27 65 11;;1013193556;10005494868;;05/07/2026 06:40:25
+PHARMACIE DU FORUM;3 Rue de Champagne;61200;Argentan;FR-NOR;;02 33 36 22 89;;;;610786105;2022-10-04 14:09:32
+Pio Lauranne;5 Avenue de la 2e Db;61200;Argentan;FR-FR-NOR;Masseur-Kinésithérapeute;09 67 04 59 16;;1013651972;10102263976;;05/07/2026 06:40:25
+Machado Marie;9 Rue de la Forge;61210;Putanges-le-Lac;FR-FR-NOR;Infirmier;02 33 35 01 41;;1012160683;10104955553;;09/07/2026 20:43:26
+PHARMACIE BRIOUZAINE;17 Rue de Falaise;61220;Briouze;FR-NOR;;02 33 66 02 31;;;;610786220;2022-06-01 10:05:18
+Poussier Justine;5 Chemin du Vieux Moulin;61220;Briouze;FR-FR-NOR;Infirmier;02 33 66 12 58;;1012392835;10106628810;;05/07/2026 06:40:25
+Prigent Stephanie;5 Chemin du Vieux Moulin;61220;Briouze;FR-FR-NOR;Infirmier;02 33 66 12 58;;1012636441;10103320049;;05/07/2026 06:40:25
+Royer Isabelle;5 Chemin du Vieux Moulin;61220;Briouze;FR-FR-NOR;Infirmier;02 33 66 12 58;;1011940073;10102840674;;05/07/2026 06:40:25
+Vardon Celine;5 Chemin du Vieux Moulin;61220;Briouze;FR-FR-NOR;Infirmier;02 33 66 12 58;;1011898729;10102506556;;05/07/2026 16:12:58
+PHARMACIE DE GACÉ;8 Place de la Libération;61230;Gacé;FR-NOR;;02 33 35 52 16;https://app.bimedoc.com/application/scheduler/80316f74-9494-471d-97dd-cee914d175f0;;;610786436;2023-02-06 14:06:47
+PHARMACIE DE CONDE-SUR-SARTHE;50 Rue d’Alençon;61250;Condé-sur-Sarthe;FR-NOR;;02 33 32 08 55;;;;610786873;2022-03-02 18:12:45
+Renard Valerie;Damigny;61250;Damigny;FR-FR-NOR;Infirmier;02 30 32 36 00;;1014135000;10110258836;;11/07/2026 19:50:35
+PHARMACIE DE CETON;19 Rue du Theil;61260;Ceton;FR-NOR;;02 37 29 77 37;;;;610786261;2022-03-02 18:12:45
+Tortevoix Robillot Valerie;6 Rue du Theil;61260;Ceton;FR-FR-NOR;Infirmier;;;1012031239;10103738851;;03/07/2026 23:44:16
+Tortevoix Robillot Valerie;Impasse des Quatre Vents;61260;Val-au-Perche;FR-FR-NOR;Infirmier;02 37 49 61 63;;1012826944;10103738851;;08/07/2026 12:00:27
+PHARMACIE DU PROG'RAI;Rue Pierre Quentin;61270;Rai;FR-NOR;;02 33 24 03 53;;;;610788028;2025-12-05 14:20:22
+Laurent Anne-Lise;19bis Rue du Général de Gaulle;61290;Longny les Villages;FR-FR-NOR;Infirmier;02 33 73 43 08;;1012393599;10106634826;;04/07/2026 19:11:27
+PHARMACIE DE LA MADELEINE;6 Avenue DE L’ILE DE FRANCE;61300;Saint-Sulpice-sur-Risle;FR-NOR;;02 33 24 22 15;;;;610788523;2022-03-02 18:12:45
+PHARMACIE DE LA VALLEE DE LA RISLE;27 Grande Rue;61370;Sainte-Gauburge-Sainte-Colombe;FR-NOR;;02 33 34 04 18;;;;610786725;2023-06-01 14:13:32
+Anacleto Natacha;33 Rue de Montgacel;61400;Le Pin-la-Garenne;FR-FR-NOR;Infirmier;;;1012028690;10103717863;;10/07/2026 08:09:31
+Gautier Ludivine;33 Rue de Montgacel;61400;Le Pin-la-Garenne;FR-FR-NOR;Infirmier;06 71 57 61 27;;1014332424;10104856033;;11/07/2026 00:35:12
+PHARMACIE DU BOCAGE;6 Rue Alfred Riégler;61440;Messei;FR-NOR;;02 33 96 71 89;;;;610786592;2024-10-01 15:20:40
+PHARMACIE CARPENTIER;5 Place du Marche;61470;Sap-en-Auge;FR-NOR;;02 33 39 40 31;;;;610786915;2022-03-02 18:12:45
+Fage Geraldine;10 Rue Auguste Loutreuil;61500;Sées;FR-FR-NOR;Infirmier;02 33 27 18 26;;1014294539;10102454781;;08/07/2026 12:00:27
+Lemaitre Morgan;1bis Rue des Ferrons;61550;La Ferté-en-Ouche;FR-FR-NOR;Infirmier;02 33 84 66 91;;1012304750;10106077216;;06/07/2026 23:47:41
+PHARMACIE DE LA FERTÉ;16 Rue Grande;61550;La Ferté-en-Ouche;FR-NOR;;02 33 34 81 22;;;;610786477;2022-03-02 18:12:45
+PHARMACIE DU PAYS D'O;37 Grande Rue;61570;Mortrée;FR-NOR;;02 33 35 30 93;;;;610786634;2022-03-02 18:12:45
+Lorin Mathilde;49 Rue de la Victoire;61600;La Ferté Macé;FR-FR-NOR;Infirmier;06 88 45 59 35;;1013153843;10105813819;;06/07/2026 23:47:41
+PHARMACIE CENTRALE FERTOISE;9 Place du Général Leclerc;61600;La Ferté Macé;FR-NOR;;02 33 37 19 18;;;;610786493;2026-10-01 13:12:03
+PHARMACIE DES ANDAINES;51 Rue de l’Abbe Felix Desaunay;61600;La Ferté Macé;FR-NOR;;02 33 37 10 00;;;;610786485;2022-03-02 18:12:45
+Rahouly Vanessa;12 Place du Général Leclerc;61600;La Ferté Macé;FR-FR-NOR;Infirmier;06 33 40 44 27;;1013239644;10105899339;;11/07/2026 00:35:12
+Serais Emilie;49 Rue de la Victoire;61600;La Ferté Macé;FR-FR-NOR;Infirmier;06 88 45 59 35;;1012208645;10105425556;;08/09/2026 12:00:20
+PHARMACIE KRANZLIN;10 Rue du Maréchal Foch;61700;Domfront en Poiraie;FR-NOR;;02 33 38 50 19;;;;610786345;2022-03-02 18:12:45
+Bernard Stephanie;96 Rue Saint Hilaire;76000;Rouen;FR-FR-NOR;Infirmier;02 35 71 30 40;;1011896583;10102493532;;10/07/2026 08:09:31
+Berthomier Geraldine;10bis Rue Bouquet;76000;Rouen;FR-FR-NOR;Infirmier;;;1012954876;10107253329;;09/07/2026 10:44:48
+Flahaut Severine;36bis Place des Carmes;76000;Rouen;FR-FR-NOR;Infirmier;06 86 70 34 48;;1011905841;10102569562;;05/07/2026 06:40:25
+Foutrel Juliette;5 Rue Herbière;76000;Rouen;FR-FR-NOR;Infirmier;02 35 98 80 82;;1012835853;10105113970;;09/07/2026 20:43:26
+PHARMACIE DE LA GARE;21 Rue Verte;76000;Rouen;FR-NOR;;02 35 71 57 26;;;;760021204;2022-07-01 10:05:52
+PHARMACIE DE LA GRAND MARE;19 Rue Cesar Franck;76000;Rouen;FR-NOR;;02 35 60 00 14;https://www.doctolib.fr/pharmacie/rouen/pharmacie-de-la-grand-mare;;;760020784;2026-06-01 15:14:34
+PHARMACIE DE LA PREFECTURE;23 Avenue Pasteur;76000;Rouen;FR-NOR;;02 35 71 21 51;;;;760021535;2026-06-01 15:14:34
+PHARMACIE DE LA REPUBLIQUE;21 Rue de la Republique;76000;Rouen;FR-NOR;;02 35 70 61 11;;;;760021071;2024-11-01 14:19:41
+PHARMACIE DU CLOS SAINT MARC;38 Rue Armand Carrel;76000;Rouen;FR-NOR;;02 35 71 20 78;https://www.doctolib.fr/pharmacie/rouen/pharmacie-du-clos-saint-marc;;;760020586;2023-02-16 14:08:44
+PHARMACIE GIMONET;12 Rue Saint Vivien;76000;Rouen;FR-NOR;;02 35 71 43 06;;;;760021501;2022-03-02 18:12:45
+PHARMACIE GRENOT;90 Rue de Niki de Saint-Phalle;76000;Rouen;FR-NOR;;02 35 71 25 64;;;;760020966;2026-02-02 14:19:59
+PHARMACIE JOUVENET;26 Rue de Bihorel;76000;Rouen;FR-NOR;;02 35 07 35 97;https://www.doctolib.fr/pharmacie/rouen/pharmacie-jouvenet/booking/motives?specialityId=3097&telehealth=false&placeId=practice-163131&motiveCategoryIds%5B%5D=503614&bookingFunnelSource=profile;;;760020685;2024-03-25 14:28:27
+PHARMACIE SAINT HILAIRE;1 Rue Saint Hilaire;76000;Rouen;FR-NOR;;07 66 31 02 25;;;;760021154;2025-04-04 14:20:19
+PHARMACIE SAINT MARC;1 Rue Alsace Lorraine;76000;Rouen;FR-NOR;;02 35 71 29 76;www.doctolib.fr;;;760020537;2022-03-02 18:12:45
+PHILEOGAT;63 Rue Jeanne d’Arc;76000;Rouen;FR-NOR;;02 35 71 32 69;;;;760021451;2022-03-02 18:12:45
+Benard Alexis;31 Avenue de Caen;76100;Rouen;FR-FR-NOR;Masseur-Kinésithérapeute;02 59 16 23 62;;1014043012;10108831321;;01/10/2026 12:00:17
+Benard Alexis;31 Avenue de Caen;76100;Rouen;FR-FR-NOR;Masseur-Kinésithérapeute;02 59 16 23 62;;1014043013;10108831321;;01/10/2026 12:00:17
+Dupont Marie;18 Rue de Malherbe;76100;Rouen;FR-FR-NOR;Sage-Femme;02 32 18 82 76;;1011317907;10100343713;;06/07/2026 13:05:25
+PHARMACIE DE L'EUROPE;17 Rue de Sotteville;76100;Rouen;FR-NOR;;02 35 72 83 37;https://www.doctolib.fr/pharmacie/rouen/pharmacie-de-l-europe-sotteville-les-rouen;;;760021352;2023-02-17 14:06:30
+PHARMACIE DES FAIENCIERS;50 Avenue de Caen;76100;Rouen;FR-NOR;;02 35 72 82 83;;;;760021287;2022-03-02 18:12:45
+PHARMACIE DES QUAIS DE SEINE;20 Avenue Jacques Cartier;76100;Rouen;FR-NOR;;02 35 73 03 06;http://www.pharmaciedesquaisdeseine.fr;;;760021303;2025-08-01 14:20:19
+Heranval Sabrina;84 Place de la Mairie;76110;Écrainville;FR-FR-NOR;Infirmier;06 42 40 15 63;;1012537272;10104456073;;15/07/2026 12:01:03
+PHARMACIE FOLLAIN TERRE DE CAUX;8 Place Célestin Bellet;76110;Goderville;FR-NOR;;02 35 27 77 94;;;;760016022;2023-12-01 14:12:05
+PHARMACIE GEULIN;7 Place Verdun;76110;Goderville;FR-NOR;;02 35 27 77 83;;;;760016006;2022-03-02 18:12:45
+Rousselin Cyril;Route des 2 Eglises;76110;Saint-Sauveur-d’Émalleville;FR-FR-NOR;Infirmier;06 69 09 75 17;;1012844306;10107446865;;09/07/2026 20:43:26
+SEL PHARMACIE YPORT;61 Rue Emmanuel Foy;76111;Yport;FR-NOR;;02 35 27 31 37;;;;760023135;2025-09-01 14:17:33
+Poupon Sebastien;39 Grand Rue;76116;Ry;FR-FR-NOR;Infirmier;02 35 23 69 23;;1012583975;10104536379;;11/07/2026 07:46:37
+Caillebotte Ludovic;15 Rue Molière;76120;Le Grand-Quevilly;FR-FR-NOR;Infirmier;;;1012687881;10107640723;;06/10/2026 12:01:02
+Diarra Djeneba;22 Rue Henri Matisse;76120;Le Grand-Quevilly;FR-FR-NOR;Infirmier;;;1014834046;10108235168;;12/09/2026 12:00:16
+PHARMACIE DU BOIS CANY;Le Grand-Quevilly;76120;Le Grand-Quevilly;FR-NOR;;02 35 68 19 43;;;;760016352;2022-03-02 18:12:45
+PHARMACIE DU CHANT DES OISEAUX;4 Boulevard de Verdun;76120;Le Grand-Quevilly;FR-NOR;;02 35 68 38 30;;;;760016501;2025-10-15 14:16:53
+PHARMACIE EUGENE DELACROIX;42 Place Eugene Delacroix;76120;Le Grand-Quevilly;FR-NOR;;02 35 69 67 27;https://www.doctolib.fr/pharmacie/le-grand-quevilly/pharmacie-eugene-delacroix;;;760016402;2023-11-23 14:23:13
+Mana Salem;2 Impasse d’Inkermann;76130;Mont-Saint-Aignan;FR-FR-NOR;Masseur-Kinésithérapeute;06 27 74 34 59;;1014838350;10102108023;;12/09/2026 12:00:16
+PHARMACIE DES COQUETS; Carrefour DE LA VATINE;76130;Mont-Saint-Aignan;FR-NOR;;02 35 70 43 13;https://www.doctolib.fr/pharmacie/mont-saint-aignan/pharmacie-des-coquets;;;760019273;2025-07-01 15:01:35
+PHARMACIE DU VILLAGE;17 Rue Robert Lehman;76130;Mont-Saint-Aignan;FR-NOR;;02 35 74 12 56;https://www.doctolib.fr/pharmacie/mont-saint-aignan/pharmacie-du-village-mont-saint-aignan;;;760019422;2022-03-02 18:12:45
+PHARMACIE D'ÉPOUVILLE;1 Rue du Commerce;76133;Épouville;FR-NOR;;02 35 30 08 56;https://www.doctolib.fr/pharmacie/epouville/pharmacie-d-epouville?pid=practice-205836;;;760015321;2026-07-01 20:55:19
+Canu Celine;82b Rue des Limites;76140;Le Petit-Quevilly;FR-FR-NOR;Infirmier;02 35 62 31 40;;1014170998;10103071816;;06/07/2026 03:23:14
+PHARMACIE DE LA MAIRIE;6 Rue Jacquard;76140;Le Petit-Quevilly;FR-NOR;;02 35 72 34 66;;;;760020206;2024-01-01 14:15:11
+PHARMACIE DES CHARTREUX;3 Boulevard Charles de Gaulle;76140;Le Petit-Quevilly;FR-NOR;;02 35 72 31 77;http://www.doctolib.fr/;;;760020172;2022-03-02 18:12:45
+PHARMACIE DU C.C. JEAN JAURES;96 Avenue Jean Jaurès;76140;Le Petit-Quevilly;FR-NOR;;02 35 62 02 27;;;;760020255;2022-03-02 18:12:45
+PHARMACIE DU QUARTIER PREVERT;107 Rue Jacquard;76140;Le Petit-Quevilly;FR-NOR;;02 35 72 30 99;https://www.doctolib.fr/pharmacie/le-petit-quevilly/pharmacie-du-quartier-prevert/booking/motives?specialityId=3097&telehealth=false&placeId=practice-305181&pid=practice-305181;;;760020222;2022-03-02 18:12:45
+Petrel Cyrille;82b Rue des Limites;76140;Le Petit-Quevilly;FR-FR-NOR;Infirmier;02 35 62 31 40;;1014169382;10102787685;;06/07/2026 03:23:14
+Sroka Quesnel Stephanie;126 Avenue Jean Jaurès;76140;Le Petit-Quevilly;FR-FR-NOR;Infirmier;02 35 72 66 88;;1011896479;10102492559;;06/07/2026 13:05:25
+PHARMACIE DE BINCHE;40 Rue de Binche;76150;Maromme;FR-NOR;;02 32 10 76 76;;;;760019000;2024-06-03 14:18:27
+SEL PHARMACIE DE LA MAINE;1 Rue Frédéric Lemaitre;76150;Maromme;FR-NOR;;02 35 74 34 63;;;;760018986;2022-03-02 18:12:45
+Laurent Thierry;2 Rue Ferdinand Aoustin;76160;Darnétal;FR-FR-NOR;Infirmier;;;1014062854;10105442767;;05/07/2026 16:12:58
+Potdevin Francois;Place Foch;76160;Darnétal;FR-FR-NOR;Infirmier;06 65 53 51 70;;1012305187;10106081259;;09/07/2026 00:49:38
+Lecouvreur Valerie;29 Rue du Havre;76170;Lillebonne;FR-FR-NOR;Infirmier;02 35 31 51 07;;1014544658;10105488166;;11/07/2026 13:55:09
+PHARMACIE DE LA FRENAYE;49 Rue Félix Faure;76170;La Frénaye;FR-NOR;;02 35 31 97 80;;;;760015917;2022-06-01 10:05:18
+Deschamps Lucie;Avenue du Marechal Foch;76190;Yvetot;FR-FR-NOR;Infirmier;06 27 68 69 86;;1012390715;10106612251;;04/07/2026 09:12:08
+Leprince Carine;8 Le Bout du Haut;76190;Les Hauts-de-Caux;FR-FR-NOR;Infirmier;06 73 39 39 03;;1014228101;10108852269;;11/07/2026 07:46:37
+PHARMACIE DE L'HOTEL DE VILLE;15 Place de l’Hotel de Ville;76190;Yvetot;FR-NOR;;02 35 56 56 73;https://www.pharmaciebrunel-yvetot.fr;;;760023184;2022-03-02 18:12:45
+PHARMACIE DELAMARE;2 Rue Guy de Maupassant;76190;Yvetot;FR-NOR;;02 35 95 80 83;;;;760023234;2023-03-06 14:17:03
+PHARMACIE DES VICTOIRES;5 Rue des Victoires;76190;Yvetot;FR-NOR;;02 35 95 18 79;;;;760023200;2022-03-02 18:12:45
+Dr Huynh Frédéric;Avenue Pasteur;76200;Dieppe;FR-FR-NOR;Médecin généraliste;02 32 90 20 40;;1013574566;10101592896;;03/07/2026 23:44:16
+PHARMACIE CALINE;21 Rue Valentin Feldmann;76200;Dieppe;FR-NOR;;02 35 82 15 59;;;;760014753;2022-03-02 18:12:45
+PHARMACIE DU BELVEDERE;Avenue des Canadiens;76200;Dieppe;FR-NOR;;02 35 84 37 82;;;;760014654;2022-03-02 18:12:45
+PHARMACIE DU POLLET;34 Grande Rue du Pollet;76200;Dieppe;FR-NOR;;02 35 84 18 85;;;;760014803;2023-02-17 14:06:30
+Cavelier Sophie;37bis Rue Léon Gambetta;76210;Bolbec;FR-FR-NOR;Infirmier;06 52 36 08 75;;1014576902;10103525548;;06/07/2026 03:23:14
+PHARMACIE DU BOLBEC;22 Rue de la République;76210;Bolbec;FR-NOR;;02 35 31 06 88;;;;760013771;2023-01-02 14:06:03
+Andrieu Eve;7 Rue de Ferrières;76220;Gournay-en-Bray;FR-FR-NOR;Infirmier;;;1013941992;10103570791;;01/09/2026 12:00:14
+Aumont Rachel;28 Rue du Docteur Duchesne;76220;Gournay-en-Bray;FR-FR-NOR;Infirmier;02 35 09 90 60;;1012684728;10106661217;;01/10/2026 12:00:17
+Dathy Emmanuelle;9 Boulevard Montmorency;76220;Gournay-en-Bray;FR-FR-NOR;Infirmier;;;1014624168;10103453717;;06/07/2026 23:47:41
+Lammerant Gabrielle;69 Rue Principale;76220;Bosc-Hyons;FR-FR-NOR;Infirmier;;;1014442593;10106098964;;01/10/2026 12:00:17
+PHARMACIE DE LA FEUILLIE;25 Rue du Centre;76220;La Feuillie;FR-NOR;;02 35 90 80 12;https://pharmacielafeuillie.fr;;;760015735;2023-05-17 14:13:22
+Berquier Pascale;43 Avenue Persée;76230;Bois-Guillaume;FR-FR-NOR;Sage-Femme;06 83 49 81 16;;1011660263;10000176619;;10/07/2026 16:54:42
+Capitaine Florie;43 Avenue Persée;76230;Bois-Guillaume;FR-FR-NOR;Infirmier;06 48 84 42 96;;1011925007;10102722930;;09/07/2026 20:43:26
+PHARMACIE DE LA PLACE;188 Place de la Mairie;76230;Quincampoix;FR-NOR;;02 35 34 70 71;https://www.doctolib.fr/pharmacie/quincampoix/pharmacie-de-quincampoix;;;760020404;2025-12-31 14:19:21
+PHARMACIE DU CHAMP DES OISEAUX;40 Chemin de Clères;76230;Bois-Guillaume;FR-NOR;;02 35 71 06 10;;;;760013607;2024-12-02 14:18:11
+Bouqueret Delphine;61 Route de Paris;76240;Le Mesnil-Esnard;FR-FR-NOR;Infirmier;;;1013709219;10107365438;;21/08/2026 12:03:02
+Burel Anne-Charlotte;61 Route de Paris;76240;Le Mesnil-Esnard;FR-FR-NOR;Infirmier;02 35 23 42 19;;1014513378;10102941910;;09/07/2026 10:44:48
+Crespi Philippe;2 Chemin de la Poterie;76240;Belbeuf;FR-FR-NOR;Infirmier;;;1012277420;10105839855;;13/08/2026 12:00:35
+PHARMACIE GUAY;74 Route de Paris;76240;Le Mesnil-Esnard;FR-NOR;;02 35 79 86 44;;;;760019067;2022-03-02 18:12:45
+PHARMACIE BAZIN;310 Route de Dieppe;76250;Déville-lès-Rouen;FR-NOR;;02 35 74 28 21;;;;760014621;2024-09-02 14:19:41
+PHARMACIE NODITZA;2 Grande Rue Notre Dame;76270;Neufchâtel-en-Bray;FR-NOR;;02 35 93 00 61;;;;760019554;2022-03-02 18:12:45
+Goulet Julie;1 Rue du 8 mai 1945;76280;Saint-Jouin-Bruneval;FR-FR-NOR;Infirmier;02 35 55 90 00;;1013585684;10105352230;;01/10/2026 21:49:18
+Lhomme Flavien;4 Rue des Héllandes;76280;Angerville-l’Orcher;FR-FR-NOR;Infirmier;06 48 84 31 33;;1012390452;10106610230;;04/07/2026 19:11:27
+PHARMACIE DES HALLES;12 Rue Jules Lethuillier;76280;Gonneville-la-Mallet;FR-NOR;;02 35 20 71 45;;;;760016121;2026-05-01 15:12:55
+PHARMACIE DE FONTAINE LA MALLET;32 Avenue Jean Jaurès;76290;Fontaine-la-Mallet;FR-NOR;;02 35 55 91 31;;;;760015750;2024-02-13 14:48:41
+PHARMACIE DE LA BELLE ETOILE;9  Impasse Edgar DEGAS;76290;Montivilliers;FR-NOR;;02 35 30 58 82;;;;760019133;2022-04-04 10:04:10
+PHARMACIE DU CENTRE;16 Place François Mitterrand;76290;Montivilliers;FR-NOR;;02 35 30 23 93;;;;760019257;2024-02-19 14:17:32
+Martin Sophie;28 Rue Eugene Tilloy;76300;Sotteville-lès-Rouen;FR-FR-NOR;Infirmier;02 35 79 81 08;;1012366159;10106482341;;09/07/2026 20:43:26
+PHARMACIE DU JARDIN DES PLANTES;1 Pl des Martyrs de la Resistance;76300;Sotteville-lès-Rouen;FR-NOR;;02 35 72 58 45;;;;760022723;2022-03-02 18:12:45
+PHARMACIE PRINCIPALE;247 Rue Pierre Mendes-france;76300;Sotteville-lès-Rouen;FR-NOR;;02 35 72 51 93;;;;760022582;2025-09-22 14:17:07
+LA PHARMACIE DIONYSIENNE;1 Place de la Broche à Rotir;76310;Sainte-Adresse;FR-NOR;;02 35 46 38 45;;;;760021683;2025-04-01 15:27:42
+PHARMACIE DU MORTIER D'OR;146 Rue de la République;76320;Caudebec-lès-Elbeuf;FR-NOR;;02 35 77 03 57;;;;760014266;2024-08-01 14:19:54
+Lechevalier Emilie;505 Rue Edouard Branly;76330;Port-Jérôme-sur-Seine;FR-FR-NOR;Masseur-Kinésithérapeute;02 32 84 26 52;;1013564177;10005788764;;12/10/2026 12:00:02
+PHARMACIE SAINT GEORGES;15 Rue Henri Messager;76330;Port-Jérôme-sur-Seine;FR-NOR;;02 35 38 25 24;;;;760019703;2022-03-02 18:12:45
+Lefrancois Loisel Aurelie;46a Rue Jean Jacques Rousseau;76350;Oissel;FR-FR-NOR;Infirmier;;;1012025843;10103694468;;06/07/2026 13:05:25
+PHARMACIE DE LA GARE;13 Rue du Maréchal Foch;76350;Oissel;FR-NOR;;02 35 64 71 16;;;;760019935;2026-06-01 15:14:34
+PHARMACIE DES LANDAUS;Place Francisco Ferrer;76350;Oissel;FR-NOR;;02 35 66 57 57;;;;760019851;2025-04-01 15:27:42
+PHARMACIE DES ARTS;10 Rue de la République;76360;Barentin;FR-NOR;;02 35 91 78 11;;;;760013334;2023-06-01 14:13:32
+PHARMACIE FASQUEL;46 Rue DES MARTYRS;76360;Barentin;FR-NOR;;02 35 91 23 17;;;;760013300;2022-03-02 18:12:45
+PHARMACIE DE PETIT CAUX;28 Rue Camille Pissarro;76370;Petit-Caux;FR-NOR;;02 35 83 61 92;;;;760013367;2022-07-01 10:05:52
+PHARMACIE  PORTAIL;10 Rue Alexandre Dumas;76380;Canteleu;FR-NOR;;02 35 36 30 60;;;;760013987;2022-03-02 18:12:45
+PHARMACIE DE LA BEGUINIERE;257 Rue du Commandant Georges Ledru;76380;Canteleu;FR-NOR;;02 35 36 37 98;https://www.pharmaciedelabeguiniere.fr/;;;760014035;2022-03-02 18:12:45
+PHARMACIE HADEF-AGOU;2 Route de Duclair;76380;Canteleu;FR-NOR;;02 35 36 04 50;;;;760014001;2022-03-02 18:12:45
+PHARMACIE CENTRALE;8 Rue de l’Abbaye d’Auchy;76390;Aumale;FR-NOR;;02 35 93 40 44;https://www.giphar.fr/8277/pharmacie-centrale.html;;;760013151;2022-03-02 18:12:45
+Coquin Delphine;38 Rue Georges Cuvier;76400;Fécamp;FR-FR-NOR;Infirmier;02 35 28 08 79;;1011902465;10102540118;;10/07/2026 08:09:31
+Maraine Jean-Louis;8 Place du General Leclerc;76400;Fécamp;FR-FR-NOR;Infirmier;02 35 28 30 40;;1012278683;10105852718;;09/07/2026 00:49:38
+PHARMACIE DA CUNHA NUNEZ;58 Rue Paul Lhonore;76400;Fécamp;FR-NOR;;02 35 28 06 35;;;;760015651;2022-03-02 18:12:45
+PHARMACIE DE LA MARINE;65 Quai Berigny;76400;Fécamp;FR-NOR;;02 35 28 00 68;;;;760015552;2022-03-02 18:12:45
+PHARMACIE DES GALERIES;35 Rue Jacques Huet;76400;Fécamp;FR-NOR;;02 35 28 07 15;https://fecamp.normandiepharma.fr/ordonnance;;;760015636;2025-10-06 15:18:36
+PHARMACIE SAINT ETIENNE;2 Rue Saint - Etienne;76400;Fécamp;FR-NOR;;02 35 28 26 11;https://www.doctolib.fr/;;;760015685;2022-03-02 18:12:45
+PHARMACIE DE TOURVILLE;3 Parc En Seine;76410;Tourville-la-Rivière;FR-NOR;;02 35 77 33 33;;;;760022822;2026-07-31 15:13:48
+Le Hete Claire;Rue de Verdun;76420;Bihorel;FR-FR-NOR;Infirmier;06 88 60 95 61;;1012584307;10104524953;;06/09/2026 16:08:25
+PHARMACIE DUCATEL - HERLAKIAN;Place Théodule Benoist;76430;Saint-Romain-de-Colbosc;FR-NOR;;02 35 20 50 32;https://saint-romain-de-colbosc.normandiepharma.fr/fr/;;;760022301;2022-03-02 18:12:45
+PHARMACIE RENARD;45 Avenue Maréchal de Lattre de Tassigny;76430;Saint-Romain-de-Colbosc;FR-NOR;;02 35 20 01 36;;;;760022335;2025-10-22 14:17:30
+Jouanne Christophe;21 Place Breviere;76440;Forges-les-Eaux;FR-FR-NOR;Infirmier;06 71 65 62 69;;1012926301;10102931754;;04/07/2026 19:11:27
+Houlbreque Antoine;6 Place du 8 Mai 1945;76450;Cany-Barville;FR-FR-NOR;Infirmier;07 88 14 88 28;;1012524982;10106640799;;05/07/2026 16:12:58
+PHARMACIE DU MARCHE;96 Rue du Général de Gaulle;76450;Cany-Barville;FR-NOR;;02 35 97 73 21;;;;760014167;2022-03-02 18:12:45
+Pharmacie de la Seine;34 Rue des Martyrs;76500;Elbeuf;FR-NOR;;02 35 77 01 26;;;;760015156;2022-03-02 18:12:45
+Lamy Nathalie;201 Route de Paris;76520;Boos;FR-FR-NOR;Infirmier;06 24 49 19 81;;1012332973;10106308264;;08/07/2026 12:00:27
+PHARMACIE LACROIX;6 Avenue de la Reine Mathilde;76530;Grand-Couronne;FR-NOR;;02 35 67 80 80;;;;760016303;2022-03-02 18:12:45
+PHARMACIE  DE VALMONT;16 Place ROBERT GREVERIE;76540;Valmont;FR-NOR;;02 35 29 83 69;https://www.doctolib.fr/pharmacie/valmont/pharmacie-savalle;;;760023002;2026-10-01 13:12:03
+PHARMACIE HAUCHECORNE-BENARD;81 Rue de la Mairie;76540;Saint-Pierre-en-Port;FR-NOR;;02 35 27 41 10;;;;760022202;2022-03-02 18:12:45
+PHARMACIE DE SAINT-LAURENT;8 Route de Veules les Roses;76560;Saint-Laurent-en-Caux;FR-NOR;;02 35 96 52 89;;;;760022053;2026-04-16 15:13:35
+PHARMACIE FAURE;24 Place de la Mairie;76560;Héricourt-en-Caux;FR-NOR;;02 35 96 53 77;;;;760018523;2022-03-02 18:12:45
+S.E.L.A.R.L PHARMACIE ZOLLI;870 Rue Raymond Brétéché;76580;Le Trait;FR-NOR;;02 35 37 20 26;;;;760022855;2024-01-31 14:52:26
+Ba Diagha;273 Boulevard François 1er;76600;Le Havre;FR-FR-NOR;Infirmier;06 68 83 51 80;;1012606533;10104623045;;09/07/2026 20:43:26
+Hanin Benedicte;7 Rue de Verdun;76600;Le Havre;FR-FR-NOR;Infirmier;02 35 51 26 94;;1012390677;10106611923;;12/09/2026 12:00:16
+Lecointre Clotilde;132 Boulevard François 1er;76600;Le Havre;FR-FR-NOR;Infirmier;06 18 71 21 40;;1011945757;10102889663;;13/08/2026 12:00:35
+PHARMACIE  LEONARD;27 Rue Maréchal Joffre;76600;Le Havre;FR-NOR;;02 35 43 63 94;https://pharmacienormande.wellpharma.com/;;;760017301;2022-03-02 18:12:45
+PHARMACIE BRINDEAU;87 Rue Gustave Brindeau;76600;Le Havre;FR-NOR;;02 35 25 12 56;;;;760017152;2022-05-16 10:05:35
+PHARMACIE DE L'EGLISE;57 Rue de l’Eglise;76600;Le Havre;FR-NOR;;02 35 25 11 55;;;;760016972;2024-07-01 14:17:31
+PHARMACIE DE L'HOTEL DE VILLE;10 Avenue René Coty;76600;Le Havre;FR-NOR;;;;;;760017434;2023-02-01 14:06:33
+PHARMACIE DE LA PORTE OCEANE;37 Avenue Foch;76600;Le Havre;FR-NOR;;02 35 42 35 76;;;;760017053;2022-03-02 18:12:45
+PHARMACIE DES HALLES CENTRALES;70 Rue Voltaire;76600;Le Havre;FR-NOR;;02 35 42 67 67;https://www.doctolib.fr/pharmacie/le-havre/pharmacie-des-halles-centrales;;;760017707;2022-03-02 18:12:45
+PHARMACIE DROUET-LABADIE;173 Rue de Verdun;76600;Le Havre;FR-NOR;;02 35 47 26 11;;;;760017657;2022-03-02 18:12:45
+PHARMACIE LEROY;98 Rue Paul Doumer;76600;Le Havre;FR-NOR;;02 35 42 27 45;;;;760018507;2022-03-02 18:12:45
+PHARMACIE MONTMORENCY;403 Rue Aristide Briand;76600;Le Havre;FR-NOR;;02 35 24 03 28;;;;760017632;2023-02-17 14:06:30
+PHARMACIE NOTRE DAME;69 Rue de Paris;76600;Le Havre;FR-NOR;;02 35 41 33 41;;;;760017350;2025-07-01 15:01:35
+Platel Matthieu;132 Boulevard François 1er;76600;Le Havre;FR-FR-NOR;Infirmier;;;1012508161;10106493405;;05/07/2026 06:40:25
+Portier Nicolas;245 Rue Aristide Briand;76600;Le Havre;FR-FR-NOR;Infirmier;02 35 22 54 77;;1012354725;10106423253;;09/07/2026 00:49:38
+Anquetil Vanessa;9 Avenue Paul Verlaine;76610;Le Havre;FR-FR-NOR;Infirmier;06 62 48 61 89;https://www.doctolib.fr/cabinet-paramedical/le-havre/cabinet-infirmier-le-havre;1013141778;10105187164;;06/07/2026 23:47:41
+Blin Nicolas;248 Rue Pablo Neruda;76610;Le Havre;FR-FR-NOR;Infirmier;07 60 91 98 98;;1013294359;10104186910;;05/07/2026 06:40:25
+Bretteville Aurelie;50 Rue Maurice Bouchor;76610;Le Havre;FR-FR-NOR;Infirmier;06 98 16 94 63;;1012651453;10105280928;;09/07/2026 10:44:48
+Ferric Charlene;76 Avenue Paul Bert;76610;Le Havre;FR-FR-NOR;Infirmier;07 72 55 83 85;;1012983580;10103745328;;04/07/2026 19:11:27
+PHARMACIE D'APLEMONT;54 Rue Eugène Boudin;76610;Le Havre;FR-NOR;;02 35 47 25 03;;;;760017772;2023-03-15 14:09:43
+Pharmacie des Ecoles;78 Avenue Paul Bert;76610;Le Havre;FR-NOR;;02 35 47 26 98;;;;760017954;2022-03-02 18:12:45
+Arnold Carine;2 Rue Théophile Gautier;76620;Le Havre;FR-FR-NOR;Infirmier;06 66 00 57 93;;1014468215;10102705034;;09/10/2026 12:00:18
+Benkrama Wefa;222 Avenue du Mont Gaillard;76620;Le Havre;FR-FR-NOR;Sage-Femme;09 78 27 05 90;;1013836481;10108803858;;04/07/2026 09:12:08
+Comes Jonas;337 Avenue du Bois au Coq;76620;Le Havre;FR-FR-NOR;Masseur-Kinésithérapeute;09 81 17 96 91;;1014207250;10102107579;;09/07/2026 20:43:26
+Dallon Carole;2 Rue du Vornier;76620;Le Havre;FR-FR-NOR;Infirmier;06 27 00 16 27;;1012025554;10103692033;;04/07/2026 09:12:08
+Drouet Carole;87 Rue Louis Blanc;76620;Le Havre;FR-FR-NOR;Infirmier;02 32 79 01 74;;1011892036;10102451456;;08/07/2026 12:00:27
+Guillerey Valentin;337 Avenue du Bois au Coq;76620;Le Havre;FR-FR-NOR;Masseur-Kinésithérapeute;09 81 17 96 91;;1014279310;10108019877;;09/07/2026 20:43:26
+Leperchey Yann;70 Rue Hannès Montlairy;76620;Le Havre;FR-FR-NOR;Infirmier;;;1012375813;10106536906;;21/09/2026 12:00:16
+PHARMACIE DE LA MARE AU CLERC;24 Place de la Mare-au-Clerc;76620;Le Havre;FR-NOR;;02 35 46 34 16;http://pharmacie-de-la-mare-au-clerc.epharmacie.pro;;;760018150;2022-03-02 18:12:45
+PHARMACIE DU GRAND CAP;Avenue DU BOIS AU COQ PROLONGEE;76620;Le Havre;FR-NOR;;02 35 46 04 30;;;;760017723;2023-11-30 14:06:02
+PHARMACIE LEBRETON;104 Rue de la sous Bretonne;76620;Le Havre;FR-NOR;;02 35 46 17 17;;;;760018432;2022-03-02 18:12:45
+PHARMACIE LES PÉPINIÈRES;222 Avenue du Mont Gaillard;76620;Le Havre;FR-NOR;;02 35 48 52 26;www.doctolib.fr;;;760018234;2022-07-01 10:05:52
+PHARMACIE TEYNIE;2 Rue Pierre Farcis;76620;Le Havre;FR-NOR;;02 35 46 02 50;;;;760018200;2024-12-16 14:17:40
+Pinchon Berenice;337 Avenue du Bois au Coq;76620;Le Havre;FR-FR-NOR;Infirmier;;;1012393494;10106634040;;09/07/2026 20:43:26
+Gendron Dominique;12 Rue des Canadiens;76630;Envermeu;FR-FR-NOR;Infirmier;;;1012206314;10105404031;;10/07/2026 08:09:31
+PHARMACIE CURCI MARC;Place Fernand Auger;76640;Yébleron;FR-NOR;;02 35 96 33 50;;;;760023507;2022-03-02 18:12:45
+Habbeddine Hedi;110 Rue de la Pierre d’Etat;76650;Petit-Couronne;FR-FR-NOR;Masseur-Kinésithérapeute;02 35 68 14 26;;1014637857;10111031570;;04/07/2026 09:12:08
+Habbeddine Hedi;110 Rue de la Pierre d’Etat;76650;Petit-Couronne;FR-FR-NOR;Masseur-Kinésithérapeute;02 35 68 14 26;;1014637858;10111031570;;04/07/2026 19:11:27
+PHARMACIE ARISTIDE BRIAND;1027 Rue Aristide Briand;76650;Petit-Couronne;FR-NOR;;02 35 68 10 14;https://www.doctolib.fr/pharmacie/petit-couronne/pharmacie-aristide-briand;;;760020073;2022-03-02 18:12:45
+PHARMACIE LONDINIÈRES;Place DU MARCHE;76660;Londinières;FR-NOR;;02 35 93 80 16;;;;760018804;2024-10-30 14:18:23
+PHARMACIE DU VILLAGE;3 Rue de l’Abreuvoir;76690;Cailly;FR-NOR;;02 35 34 90 16;;;;760013953;2023-01-02 14:06:03
+PHARMACIE NORODOM;589 Rue Delamare Deboutteville;76690;Fontaine-le-Bourg;FR-NOR;;02 35 34 83 55;;;;760015784;2022-03-02 18:12:45
+Gbiorczyk Sophie;18 Rue de la Briqueterie;76700;Gainneville;FR-FR-NOR;Masseur-Kinésithérapeute;06 31 02 45 17;;1014796282;10005252837;;12/10/2026 12:00:02
+PHARMACIE DE GOURNAY;1 Rue de l’Eglise;76700;Gonfreville-l’Orcher;FR-NOR;;02 35 20 64 00;;;;760016071;2024-07-01 14:17:31
+PHARMACIE BEAUCAMP;27 Rue André Martin;76710;Montville;FR-NOR;;02 35 33 71 54;;;;760019471;2025-12-01 14:18:40
+PHARMACIE DE BUCHY;182 Grande Rue;76750;Buchy;FR-NOR;;02 35 34 40 41;;;;760013920;2022-07-01 10:05:52
+PHARMACIE DE YERVILLE;2 Rue Jacques Ferny;76760;Yerville;FR-NOR;;02 32 70 49 49;;;;760023101;2023-11-07 14:24:41
+Dr Boisdin Guillaume;34 Route de la Capelle;76780;Croisy-sur-Andelle;FR-FR-NOR;Médecin généraliste;02 32 86 87 17;;1010741847;10004429865;;03/07/2026 12:24:17
+Beucher Lucille;17 Avenue de Felling;76800;Saint-Étienne-du-Rouvray;FR-FR-NOR;Infirmier;06 47 21 34 82;;1012517971;10106646945;;09/07/2026 10:44:48
+PHARMACIE DU PARC;59 Rue Jean Racine;76800;Saint-Étienne-du-Rouvray;FR-NOR;;02 35 72 55 67;;;;760021923;2022-03-02 18:12:45
+PHARMACIE OUVRY;17 Rue du General de Gaulle;76810;Luneray;FR-NOR;;02 35 85 30 12;;;;760018853;2022-03-02 18:12:45
+Alligny-Candon Florence;111 Place du Marché;76850;Bosc-le-Hard;FR-FR-NOR;Infirmier;02 35 33 30 08;;1011894311;10102472510;;10/07/2026 08:09:31
+PHARMACIE DU PETIT CHATEAU;Place du Marché;76850;Bosc-le-Hard;FR-NOR;;02 35 33 30 50;;;;760013854;2023-03-13 14:42:40
+PHARMACIE  D'OUVILLE;118 Route de Dieppe;76860;Ouville-la-Rivière;FR-NOR;;02 35 83 00 65;;;;760019984;2026-03-13 14:18:08
+Morin Betty;Rue des 4 Vents;76890;Tôtes;FR-FR-NOR;Infirmier;;;1011923892;10102714010;;04/07/2026 19:11:27
+PHARMACIE MAUPASSANT;3  rue des Quatre Vents;76890;Tôtes;FR-NOR;;02 32 87 38 22;;;;760022806;2022-03-02 18:12:45
+Buquet Estelle;566 Rue de Mesnil-esnard;76920;Amfreville-la-Mi-Voie;FR-FR-NOR;Infirmier;02 35 23 70 68;;1012346029;10105442346;;09/07/2026 00:49:38
+PHARMACIE  LA  MIVOIE;147 Rue François Mitterrand;76920;Amfreville-la-Mi-Voie;FR-NOR;;02 35 23 70 35;;;;760012971;2025-12-01 14:18:40
+PHARMACIE OUVRY;230 Route de Dieppe;76960;Notre-Dame-de-Bondeville;FR-NOR;;02 35 74 11 59;;;;760019604;2022-03-02 18:12:45

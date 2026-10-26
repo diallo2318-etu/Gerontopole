@@ -1,0 +1,36 @@
+domaine;source;valeur;role
+mobilite;rpps_profession;Masseur-Kinésithérapeute;professionnel
+mobilite;rpps_profession;Ergothérapeute;professionnel
+mobilite;rpps_profession;Pédicure-Podologue;professionnel
+mobilite;rpps_profession;Psychomotricien;professionnel
+mobilite;a_obtenir;Enseignant en activité physique adaptée (EAPA : libéraux, maisons sport-santé, clubs, associations);professionnel
+nutrition;rpps_profession;Diététicien;professionnel
+nutrition;rpps_profession;Chirurgien-Dentiste;professionnel
+nutrition;rpps_profession;Orthophoniste;professionnel
+cognition;rpps_profession;Médecin|Gériatrie;professionnel
+cognition;rpps_profession;Médecin|Neurologie;professionnel
+cognition;a_obtenir;Neuropsychologue (consultation mémoire);professionnel
+cognition;a_obtenir;Consultation mémoire;structure
+psychologie;rpps_profession;Psychologue;professionnel
+psychologie;rpps_profession;Médecin|Psychiatrie;professionnel
+vision;rpps_profession;Médecin|Ophtalmologie;professionnel
+vision;rpps_profession;Orthoptiste;professionnel
+vision;rpps_profession;Opticien-Lunetier;professionnel
+audition;rpps_profession;Médecin|Oto-rhino-laryngologie;professionnel
+audition;rpps_profession;Médecin|O.R.L et chirurgie cervico faciale;professionnel
+audition;rpps_profession;Audio-Prothésiste;professionnel
+incontinence;rpps_profession;Médecin|Chirurgie urologique;professionnel
+incontinence;rpps_profession;Médecin|Gynécologie médicale;professionnel
+incontinence;rpps_profession;Médecin|Gynécologie-obstétrique;professionnel
+incontinence;rpps_profession;Masseur-Kinésithérapeute;professionnel
+incontinence;rpps_profession;Sage-Femme;professionnel
+social;rpps_profession;Assistant de service social;professionnel
+social;finess_categorie;Centres Locaux Information Coordination P.A .(C.L.I.C.);structure
+social;a_obtenir;CCAS;structure
+social;a_obtenir;Conseil départemental;structure
+social;a_obtenir;CPAM;structure
+social;a_obtenir;Carsat;structure
+social;a_obtenir;MSA;structure
+aidant;a_obtenir;Plateforme de répit;structure
+aidant;rpps_profession;Psychologue;professionnel
+aidant;rpps_profession;Assistant de service social;professionnel
