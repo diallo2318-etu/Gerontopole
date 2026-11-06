@@ -394,6 +394,10 @@ def charger_alertes(con, loc):
 
 
 def creer_vues(con):
+    def vrai(col):
+        """Convertit une colonne texte ou booléenne en vrai/faux (vide ou inconnu = faux)."""
+        return f"coalesce(lower(trim(CAST({col} AS VARCHAR))) IN ('oui', 'true', 'vrai', '1'), false)"
+
     # Parcours d'une personne : premier dépistage, suivis, alertes, étape 2
     con.execute("""
         CREATE VIEW v_parcours_participant AS
@@ -446,7 +450,7 @@ def creer_vues(con):
     # personne est dirigée vers un professionnel ou une structure.
     tables = {t for (t,) in con.execute("SELECT table_name FROM information_schema.tables").fetchall()}
     if {"icope_alerte_statut", "icope_traitement"} <= tables:
-        con.execute("""
+        con.execute(f"""
             CREATE VIEW v_alerte_issue AS
             WITH t AS (
                 SELECT id_alerte,
@@ -456,14 +460,19 @@ def creer_vues(con):
                        arg_min(id_auteur, date_prise_en_charge) AS id_auteur_premiere_action,
                        bool_or(veracite IS NOT NULL) AS levee_doute_faite,
                        bool_or(veracite = 'alerte_vraie') AS alerte_confirmee,
-                       bool_or(orientation_rdv_medecin OR orientation_contact_medecin OR orientation_oriente_etape2
-                               OR orientation_fait_etape2 OR orientation_structure_hospitaliere) AS oriente,
-                       bool_or(orientation_autre) AS oriente_autre,
-                       bool_or(orientation_infos) AS informations,
-                       bool_or(pas_orientation_domaines_deja_pris_en_charge) AS deja_pris_en_charge,
-                       bool_or(pas_orientation_pas_necessaire OR pas_orientation_refus) AS pas_necessaire_ou_refus,
+                       bool_or({vrai('orientation_rdv_medecin')}
+                               OR {vrai('orientation_contact_medecin')}
+                               OR {vrai('orientation_oriente_etape2')}
+                               OR {vrai('orientation_fait_etape2')}
+                               OR {vrai('orientation_structure_hospitaliere')}) AS oriente,
+                       bool_or(orientation_autre IS NOT NULL
+                               AND lower(trim(CAST(orientation_autre AS VARCHAR))) NOT IN ('non', 'dm', '', 'false')) AS oriente_autre,
+                       bool_or({vrai('orientation_infos')}) AS informations,
+                       bool_or({vrai('pas_orientation_domaines_deja_pris_en_charge')}) AS deja_pris_en_charge,
+                       bool_or({vrai('pas_orientation_pas_necessaire')}
+                               OR {vrai('pas_orientation_refus')}) AS pas_necessaire_ou_refus,
                        bool_or(veracite = 'alerte_fausse') AS fausse_alerte,
-                       bool_and(coalesce(distance_participant_non_joignable, false)) AS seulement_injoignable
+                       bool_and({vrai('distance_participant_non_joignable')}) AS seulement_injoignable
                 FROM icope_traitement GROUP BY id_alerte
             )
             SELECT a.id_alerte, a.id_depistage, a.participant, a.date_alerte, a.statut_alerte,
@@ -497,6 +506,8 @@ def main():
     charger_observatoire(con)
     charger_offre_publique(con, loc)
     charger_icope(con, loc)
+    from charger_prevention import charger_prevention  # importé ici : les deux fichiers s'importent l'un l'autre
+    charger_prevention(con, loc)
     creer_vues(con)
     for nom in ("communes_df", "mbp_df", "dep_df", "ev_df", "pro_df"):
         con.unregister(nom)
