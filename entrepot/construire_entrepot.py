@@ -114,6 +114,20 @@ def localiser(df, loc, col_cp, col_ville):
     return df
 
 
+def site_experimentation(code_postal, code_insee):
+    """Site d'expérimentation de chaque ligne.
+
+    Un site dont on a la liste des communes (communes_experimentation.csv, ex. Centre Manche, liste
+    reçue du Gérontopôle le 06/11/2026) est reconnu par le code INSEE de la commune ; les autres
+    (Elbeuf, Lisieux) restent reconnus par code postal (territoires_experimentation.csv)."""
+    communes = pd.read_csv(DEPOT / "entrepot" / "communes_experimentation.csv", sep=";", dtype=str)
+    par_cp = pd.read_csv(DEPOT / "entrepot" / "territoires_experimentation.csv", sep=";", dtype=str)
+    par_cp = par_cp[~par_cp.experimentation.isin(communes.experimentation)]
+    site = pd.Series(code_insee).map(dict(zip(communes.code_insee, communes.experimentation)))
+    site = site.fillna(pd.Series(code_postal).map(dict(zip(par_cp.code_postal, par_cp.experimentation))))
+    return site.astype("string")
+
+
 # --------------------------------------------------------------------------
 # Chargement
 # --------------------------------------------------------------------------
@@ -265,8 +279,7 @@ def charger_icope(con, loc):
     dep["test_probable"] = raisons["age_moins_50"]
     dep["hors_cible_moins_60"] = dep["age"].fillna(99) < 60
 
-    exp = pd.read_csv(DEPOT / "entrepot" / "territoires_experimentation.csv", sep=";", dtype=str)
-    dep["experimentation"] = dep["code_postal"].map(dict(zip(exp.code_postal, exp.experimentation))).astype("string")
+    dep["experimentation"] = site_experimentation(dep["code_postal"], dep["code_insee"])
     con.register("dep_df", dep)
     con.execute("CREATE TABLE icope_depistage AS SELECT * FROM dep_df")
 
@@ -288,7 +301,7 @@ def charger_icope(con, loc):
         "code_postal": sans_dm(e2["cp"]),
         "departement": sans_dm(e2["cp"]).str[:2],
         "code_insee": e2["code_insee"],
-        "experimentation": sans_dm(e2["cp"]).map(dict(zip(exp.code_postal, exp.experimentation))).astype("string"),
+        "experimentation": site_experimentation(sans_dm(e2["cp"]), e2["code_insee"]),
         "centre": e2["centre"],
         "protocole_fragilite": oui_non(e2["protocole_fragilite_ou_51"]),
         "visite_domicile": oui_non(e2["visite_domicile"]),
@@ -320,7 +333,7 @@ def charger_icope(con, loc):
     con.register("pro_df", pro)
     con.execute("CREATE TABLE icope_professionnel AS SELECT * FROM pro_df")
 
-    charger_alertes(con, loc, exp)
+    charger_alertes(con, loc)
 
 
 # Colonnes jamais chargées (données identifiantes, en attendant l'avis du Gérontopôle) :
@@ -339,14 +352,13 @@ def oui_non_partout(df):
     return df
 
 
-def charger_alertes(con, loc, exp):
+def charger_alertes(con, loc):
     """Statut des alertes et traitements (levée de doute, orientations) : fichiers du 17/10/2026."""
     f_alertes = sorted(DONNEES.glob("bdi_alertes_*.xlsx"))
     f_traitements = sorted(DONNEES.glob("bdi_traitements_alertes_*.xlsx"))
     if not f_alertes or not f_traitements:
         print("(fichiers bdi_alertes / bdi_traitements_alertes absents : tables d'alertes non créées)")
         return
-    sites = dict(zip(exp.code_postal, exp.experimentation))
 
     def commun(df):
         df = localiser(df, loc, "cp", "ville")
@@ -355,7 +367,7 @@ def charger_alertes(con, loc, exp):
         df["age"] = ((date - naissance).dt.days // 365.25).astype("Int64")  # on garde l'âge, pas la date de naissance
         df["code_postal"] = sans_dm(df["cp"])
         df["departement"] = df["code_postal"].str[:2]
-        df["experimentation"] = df["code_postal"].map(sites).astype("string")
+        df["experimentation"] = site_experimentation(df["code_postal"], df["code_insee"]).values
         df["modalite_test"] = df["saisie"].map({"participant": "auto-évaluation", "aide": "avec un aidant",
                                                 "professionnel": "par un professionnel"})
         df["sexe"] = df["sexe"].map({"feminin": "F", "masculin": "M"})

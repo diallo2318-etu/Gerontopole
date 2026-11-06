@@ -16,6 +16,8 @@ bdi_*
 !bases/*.csv
 !bases/observatoire_fragilites/*.csv
 !entrepot/*.csv
+# Sauf les scripts Python de la partie 1 (du code, jamais des données)
+!partie1_alertes/*.py
 
 # Environnement Python
 mon_env/

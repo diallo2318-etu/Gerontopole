@@ -165,7 +165,7 @@ Règle 4 : Fenêtre de suivi (pour les cohortes)
 
 # Partie 1 – Alertes et profils patients (`partie1_alertes/`)
 
-Ces scripts analysent les alertes ICOPE : leur fréquence, le profil des personnes, ce que deviennent les alertes, la levée de doute, les professionnels, le Step 2, les profils types et l'âge selon le territoire. Ils lisent tous **l'entrepôt de données ICOPE** (dossier `entrepot/`) et produisent chacun un fichier Excel.
+Ces scripts analysent les alertes ICOPE : leur fréquence, le profil des personnes, ce que deviennent les alertes, la levée de doute, les professionnels, le Step 2, les profils types, l'âge selon le territoire, qui traite les alertes (où, quand) et les professionnels « one-shot ». Ils lisent tous **l'entrepôt de données ICOPE** (dossier `entrepot/`) et produisent chacun un fichier Excel.
 
 ## 1. Installer (une seule fois)
 
@@ -204,29 +204,25 @@ Le fichier `~/donnees_icope/entrepot_icope.duckdb` est créé. Il réunit les ex
 Depuis le dossier du projet. Un script :
 
 ```bash
-python3 partie1_alertes/alertes_A_frequence.py
+python3 partie1_alertes/1_personnes_en_alerte.py
 ```
 
-Tous les scripts d'un coup :
+Les 4 scripts d'un coup :
 
 ```bash
-for f in partie1_alertes/alertes_*.py; do python3 "$f"; done
+for f in partie1_alertes/[1-4]_*.py; do python3 "$f"; done
 ```
 
-Chaque script affiche ses résultats dans le terminal et écrit son fichier Excel dans `~/donnees_icope/`. Les scripts sont indépendants : on peut les lancer dans n'importe quel ordre.
+Chaque script affiche ses résultats dans le terminal et écrit **un** fichier Excel dans `~/donnees_icope/`. Le premier onglet, `Sommaire`, dit à quelle question répond chaque onglet ; le début du nom d'un onglet dit la question (`Freq_`, `Profil_`…). Les scripts sont indépendants : on peut les lancer dans n'importe quel ordre.
 
-| Script | Question | Fichier produit |
+| Script | Questions | Fichier produit |
 |---|---|---|
-| `alertes_A_frequence.py` | Quelles alertes sont les plus fréquentes, et ensemble ? | `Partie1_A_Frequence_Alertes.xlsx` |
-| `alertes_B_profils.py` | Qui est en alerte (âge, sexe, modalité, territoire) ? | `Partie1_B_Profils_Alertes.xlsx` |
-| `alertes_C_devenir.py` | Que deviennent les alertes, et en combien de temps ? | `Partie1_C_Devenir_Alertes.xlsx` |
-| `alertes_D_levee_doute.py` | Levée de doute, alertes confirmées, orientations | `Partie1_D_Levee_Doute_Orientation.xlsx` |
-| `alertes_E_qualite_fichiers.py` | Cases vides et données sensibles des exports alertes | `Partie1_E_Qualite_Fichiers.xlsx` |
-| `alertes_F_professionnels.py` | Quels professionnels traitent les alertes ? | `Partie1_F_Professionnels.xlsx` |
-| `alertes_G_evolution.py` | Évolution par mois et par trimestre | `Partie1_G_Evolution.xlsx` |
-| `alertes_H_step2.py` | Le Step 2 : où, par qui, pour qui ? | `Partie1_H_Step2.xlsx` |
-| `alertes_I_profils_types.py` | Profils patients types et format d'entrée du modèle | `Partie1_I_Profils_Types.xlsx` |
-| `alertes_J_age_territoires.py` | Âge des personnes selon le territoire | `Partie1_J_Age_Territoires.xlsx` |
+| `1_personnes_en_alerte.py` | Combien d'alertes et dans quels domaines ? Qui est en alerte ? Quel âge selon le territoire ? Quels profils types et quel format d'entrée pour le modèle ? | `Partie1_1_Personnes_en_alerte.xlsx` |
+| `2_devenir_des_alertes.py` | Que deviennent les alertes ? Levée de doute et orientation ? Où, par qui et quand ? Les fichiers d'alertes sont-ils complets ? | `Partie1_2_Devenir_des_alertes.xlsx` |
+| `3_professionnels.py` | Quels professionnels traitent les alertes, et où ? Lesquels n'ont testé qu'une personne ? | `Partie1_3_Professionnels.xlsx` |
+| `4_step2_et_evolution.py` | Qui va jusqu'au Step 2, où, par qui ? Comment tout cela évolue-t-il mois par mois ? | `Partie1_4_Step2_et_evolution.xlsx` |
+
+`commun.py` regroupe ce qui sert à tous les scripts (ouvrir l'entrepôt, choisir les tests analysés, écrire le fichier Excel) : il ne se lance pas seul.
 
 ## 5. Règles communes aux scripts de la partie 1
 
@@ -234,7 +230,8 @@ Chaque script affiche ses résultats dans le terminal et écrit son fichier Exce
 - Les **moins de 60 ans sont gardés** dans l'analyse (ils sont seulement exclus du parcours).
 - Les pourcentages par domaine sont calculés sur les tests où la question a été posée.
 - Les cases calculées sur **moins de 30 tests** restent vides (trop peu pour être fiables).
-- Les **professionnels et les équipes sont anonymisés** dans les fichiers Excel (« Professionnel 1 », « Équipe A »…).
+- Les **professionnels et les équipes sont anonymisés** dans les fichiers Excel (« Professionnel 1 », « Équipe A »…), sauf dans l'onglet `OQQ_Qui` (fichier 2) où Marine a demandé leur nom : ce fichier ne doit circuler qu'avec le Gérontopôle.
+- **Sites d'expérimentation** : Centre Manche est reconnu par commune (`entrepot/communes_experimentation.csv`, 162 communes reçues du Gérontopôle le 06/11/2026) ; Elbeuf et Lisieux par code postal (`entrepot/territoires_experimentation.csv`), en attendant leur liste de communes.
 
 ## En cas de problème
 
