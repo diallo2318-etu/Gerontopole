@@ -13,7 +13,7 @@ import os
 import pandas as pd
 
 from commun import (DOMAINES, DOSSIER, actions_analysees, alertes_analysees, classe_age, connecter,
-                    departement_lisible, ecrire_excel, khi2, lire, pct, site_lisible)
+                    departement_lisible, ecrire_excel, khi2, lire, pct, site_lisible, tests_analyses)
 
 ALERTES_DU_TEST = ", ".join(f"d.alerte_{d}" for d in DOMAINES)
 ORIENTATIONS_PRECISES = ['orientation_rdv_medecin', 'orientation_contact_medecin', 'orientation_oriente_etape2',
@@ -321,6 +321,72 @@ def ou_qui_quand(con):
             ('OQQ_Orientation_precisee', [resume, detail])]
 
 
+def terrain(con):
+    """Ce que dit une professionnelle chargée des alertes (entretien rapporté par le Gérontopôle, réunion
+    du 06/11/2026) se voit-il dans les données ?"""
+    alertes = alertes_analysees(con, "v.id_alerte, v.statut_alerte, v.date_alerte")
+    actions = actions_analysees(con, "t.*")
+    cases = [c for c in actions.columns if c.startswith(('distance_', 'orientation_', 'pas_orientation_'))]
+    cases += ['prise_en_charge_connue']
+    for c in cases:
+        actions[c] = actions[c] == True
+    par_alerte = actions.groupby('id_alerte').agg(
+        nb_actions=('id_traitement', 'size'), **{c: (c, 'max') for c in cases},
+        vraie=('veracite', lambda x: (x == 'alerte_vraie').any()),
+        fausse=('veracite', lambda x: (x == 'alerte_fausse').any()),
+        non_verifiable=('veracite', lambda x: (x == 'alerte_non_verifiable').any())).reset_index()
+    par_alerte = par_alerte.merge(alertes, on='id_alerte')
+    par_alerte['orientee'] = par_alerte[[c for c in cases if c.startswith('orientation_')]].any(axis=1)
+    par_alerte['injoignable'] = par_alerte['distance_participant_non_joignable'] & ~par_alerte['distance_contact_participant']
+    par_alerte['deja_suivie'] = par_alerte['prise_en_charge_connue'] | par_alerte['pas_orientation_domaines_deja_pris_en_charge']
+
+    # « Traitée » : orientée, ou seulement « on a essayé » ?
+    traitees = par_alerte[par_alerte['statut_alerte'] == 'traitee']
+    issue = pd.DataFrame({
+        'Alertes traitées': ["Une orientation est notée", "La personne n'a jamais été jointe",
+                             "Ni l'un ni l'autre (déjà suivie, pas nécessaire, conseils…)"],
+        "Nombre d'alertes": [int(traitees['orientee'].sum()), int((traitees['injoignable'] & ~traitees['orientee']).sum()),
+                             int((~traitees['orientee'] & ~traitees['injoignable']).sum())]})
+    issue['%'] = pct(issue["Nombre d'alertes"], len(traitees))
+
+    # Rappels : plusieurs actions quand la personne ne répond pas ?
+    rappels = pd.crosstab(par_alerte['injoignable'].map({True: 'Personne jamais jointe', False: 'Personne jointe'}),
+                          par_alerte['nb_actions'].clip(upper=3).map({1: '1 action', 2: '2 actions', 3: '3 actions ou plus'}))
+    rappels = rappels.rename_axis(None, axis=1).rename_axis('Alertes avec action').reset_index()
+    rappels['2 actions ou plus (%)'] = pct(rappels['2 actions'] + rappels['3 actions ou plus'],
+                                           rappels[['1 action', '2 actions', '3 actions ou plus']].sum(axis=1))
+
+    # Évolution : alertes non vérifiables, fausses, déjà suivies
+    par_alerte['annee'] = pd.to_datetime(par_alerte['date_alerte']).dt.year
+    recent = par_alerte[par_alerte['annee'] >= 2024]
+    annee = recent.groupby('annee').agg(
+        alertes=('id_alerte', 'size'), vraie=('vraie', 'mean'), fausse=('fausse', 'mean'),
+        non_verifiable=('non_verifiable', 'mean'), deja_suivie=('deja_suivie', 'mean')).reset_index()
+    for c in ['vraie', 'fausse', 'non_verifiable', 'deja_suivie']:
+        annee[c] = (annee[c] * 100).round(1)
+    annee.columns = ['Année', 'Alertes avec action', 'Vraie (%)', 'Fausse (%)', 'Non vérifiable (%)',
+                     'Personne déjà suivie (%)']
+
+    # « Autre » dans l'orientation : souvent une personne déjà suivie ?
+    autre = par_alerte[par_alerte['orientation_autre']]
+    medecin = par_alerte['orientation_rdv_medecin'] | par_alerte['orientation_contact_medecin']
+    orientation = pd.DataFrame({
+        'Indicateur': ["Alertes avec une orientation", "dont orientées vers le médecin",
+                       "Alertes avec « autre » dans l'orientation", "dont personne déjà suivie"],
+        "Nombre d'alertes": [int(par_alerte['orientee'].sum()), int(medecin.sum()), len(autre),
+                             int(autre['deja_suivie'].sum())]})
+
+    # Problèmes sociaux : question posée depuis mars 2026 (version 4)
+    tests = tests_analyses(con, "d.alerte_social")
+    social = pd.DataFrame({
+        'Indicateur': ["Tests où la question sociale a été posée", "dont en alerte sociale"],
+        'Nombre de tests': [int(tests['alerte_social'].notna().sum()), int((tests['alerte_social'] == True).sum())]})
+    social['%'] = pct(social['Nombre de tests'], social['Nombre de tests'].iloc[0])
+
+    return [('Terrain_Traitees', issue), ('Terrain_Rappels', rappels), ('Terrain_Annee', annee),
+            ('Terrain_Orientation', orientation), ('Terrain_Social', social)]
+
+
 # Qualité des fichiers : vides « normaux », quand la question ne concerne pas tout le monde
 EXPLICATIONS = {
     'alerte_audition': "Souvent sautée en auto-évaluation (voir tâche A)",
@@ -385,5 +451,7 @@ if __name__ == "__main__":
         ("Que deviennent les alertes, et en combien de temps ?", devenir(con)),
         ("Comment se passent la levée de doute et l'orientation ?", levee_de_doute(con)),
         ("Où, par qui et quand les alertes sont-elles traitées ? L'orientation est-elle précisée ?", ou_qui_quand(con)),
+        ("Ce que dit le terrain (entretien d'une professionnelle chargée des alertes) se voit-il dans les données ?",
+         terrain(con)),
         ("Les fichiers d'alertes sont-ils complets ?", qualite_fichiers(con)),
     ])

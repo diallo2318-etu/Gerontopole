@@ -1,4 +1,4 @@
-"""Outils communs aux scripts de la partie 1 (alertes et profils patients).
+"""Outils communs aux scripts de la partie 1 (alertes et profils des personnes).
 
 Tout ce qui se répétait dans chaque script est ici, écrit une seule fois :
 ouvrir l'entrepôt, choisir les tests analysés, rendre les valeurs lisibles, écrire le fichier Excel.
@@ -115,4 +115,4 @@ def ecrire_excel(nom_fichier, titre, parties):
                     tableau.to_excel(writer, sheet_name=onglet, index=False, startrow=ligne)
                     ligne += len(tableau) + 2
                     print(f"\n--- {onglet} ---\n{tableau.to_string(index=False)}")
-    print(f"\n✅ Fichier écrit : {chemin}")
+    print(f"\n Fichier écrit : {chemin}")

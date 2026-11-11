@@ -53,7 +53,7 @@ Crée `~/donnees_icope/entrepot_icope.duckdb`.
 ### 2. Partie 1 – Alertes
 
 ```bash
-for f in partie1_alertes/[1-4]_*.py; do python3 "$f"; done
+for f in partie1_alertes/[1-5]_*.py; do python3 "$f"; done
 ```
 
 | Script | Fichier produit |
@@ -62,6 +62,7 @@ for f in partie1_alertes/[1-4]_*.py; do python3 "$f"; done
 | `2_devenir_des_alertes.py` | `Partie1_2_Devenir_des_alertes.xlsx` |
 | `3_professionnels.py` | `Partie1_3_Professionnels.xlsx` |
 | `4_step2_et_evolution.py` | `Partie1_4_Step2_et_evolution.xlsx` |
+| `5_carte_alertes.py` | `Partie1_5_Carte_alertes_traitees.png` (télécharge une fois les contours des communes, 20 Mo, depuis geo.api.gouv.fr) |
 
 Les scripts sont indépendants. Fichiers écrits dans `~/donnees_icope/`.
 
