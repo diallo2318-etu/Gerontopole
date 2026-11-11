@@ -1,240 +1,138 @@
-# Projet ICOPE Normandie - Partie d'Aissatou (Nettoyage et suivi)
+# Projet ICOPE Normandie – Gérontopôle
 
-Ce dossier contient les scripts et les livrables de la **Personne 2** (nettoyage de la base ICOPE, statistiques descriptives et cohortes de suivi).
+Entrepôt de données régional et outil d'orientation du programme ICOPE (OMS) : proposer à une personne âgée les professionnels et actions de prévention les plus proches.
 
-L'objectif est de permettre à toute l'équipe de récupérer les mêmes données et de relancer les scripts pour obtenir exactement les mêmes résultats.
+| Partie | Sujet | Emplacement |
+|---|---|---|
+| 1 | Alertes et profils patients | `partie1_alertes/` |
+| 2 | Nettoyage, statistiques, cohortes | `scripts_aissatou/` |
+| 3 | Offre de prévention et professionnels | `entrepot/` |
 
----
+## Installation
 
-## 1. Les fichiers utilisés
-
-Pour que les scripts fonctionnent, vous devez disposer du fichier source suivant :
-
-- **Nom exact :** `bdi_etape1_2026-10-09_12-10_969191.xlsx`
-- **Origine :** Export ICOPE Monitor, transmis par Marine Le Roux (Gérontopôle Normandie).
-- **Date de l'export :** 09/10/2026.
-- **Nombre de lignes :** 2 971 tests (avant nettoyage).
-
-*Ce fichier contient des données de santé. Il ne doit jamais être poussé sur le dépôt.*
-
----
-
-## 2. Où ranger les fichiers
-
-Placez le fichier source à la racine du projet `Gerontopole`, à côté du dossier `scripts_aissatou/`.
-erontopole/
-│
-├── bdi_etape1_2026-10-09_12-10_969191.xlsx <-- LE FICHIER SOURCE (à la racine)
-│
-├── scripts_aissatou/
-│ ├── mon_script.py
-│ ├── nettoyage.py
-│ ├── statistiques.py
-│ ├── statistiques_completes.py
-│ └── cohortes.py
-│
-├── mon_env/ <-- L'environnement virtuel
-└── README.md
-
-**⚠️ Important :** Le fichier `bdi_etape1_...xlsx` et le dossier `mon_env/` doivent être ajoutés au fichier `.gitignore` pour ne jamais être publiés.
-
----
-
-## 3. Installation
-
-### 3.1. Créer l'environnement virtuel
-Ouvrez un terminal, placez-vous dans le dossier `Gerontopole` et tapez :
 ```bash
 python3 -m venv mon_env
-3.2. Activer l'environnement virtuel
 source mon_env/bin/activate
-ous verrez (mon_env) apparaître au début de votre ligne de commande).
-3.3. Installer les bibliothèques nécessaires
-bash
-
-pip install pandas openpyxl
-
-4. Ordre de lancement des scripts
-
-Les scripts doivent être lancés dans cet ordre précis, depuis le dossier Gerontopole (où se trouve le fichier source).
-Étape 1 : Audit de qualité
-bash
-
-python3 scripts_aissatou/mon_script.py
-
-    Ce qu'il fait : Charge la base brute et produit un rapport d'audit (types de colonnes, taux de données manquantes).
-
-    Ce qu'il produit : Rapport_Audit_Qualite.xlsx
-
-Étape 2 : Nettoyage
-bash
-
-python3 scripts_aissatou/nettoyage.py
-
-    Ce qu'il fait : Applique les règles de nettoyage (voir section 5) et marque les tests one-shot et les moins de 60 ans.
-
-    Ce qu'il produit : Base_Nettoyee.xlsx (2 909 lignes)
-
-Étape 3 : Statistiques descriptives (version simple)
-bash
-
-python3 scripts_aissatou/statistiques.py
-
-    Ce qu'il fait : Calcule les statistiques de base à partir de la base nettoyée.
-
-    Ce qu'il produit : Base_Statistiques.xlsx
-
-Étape 4 : Statistiques descriptives (version complète)
-bash
-
-python3 scripts_aissatou/statistiques_completes.py
-
-    Ce qu'il fait : Calcule toutes les statistiques (modalités, suivi, années, sexe, âge, territoires) avec les pourcentages.
-
-    Ce qu'il produit : Base_Statistiques_Completes.xlsx (7 onglets)
-
-Étape 5 : Cohortes de suivi
-bash
-
-python3 scripts_aissatou/cohortes.py
-
-    Ce qu'il fait : Définit les 3 cohortes de suivi, en excluant les entrées trop récentes (fenêtre de 1 an).
-
-    Ce qu'il produit : Resultats_Cohortes_Filtrees.xlsx
-
-5. Les règles de nettoyage appliquées
-
-Les règles ci-dessous ont été validées par Marine Le Roux (Gérontopôle) dans ses mails du 22 octobre 2026.
-Règle 1 : Un seul test par personne et par jour
-
-    Ce que ça fait : Si une personne a fait plusieurs tests le même jour, on ne garde que le dernier.
-
-    Pourquoi : Éviter les erreurs de double-clic ou de double saisie.
-
-    Impact : 62 doublons supprimés (2 971 -> 2 909 lignes).
-
-Règle 2 : Marquer les tests "one-shot" de professionnels
-
-    Ce que ça fait : On crée une colonne one_shot_pro. Si un professionnel n'a évalué qu'une seule personne, on marque "OUI".
-
-    Pourquoi : Identifier les professionnels qui ont testé l'outil une fois sans s'engager. Conformément à la consigne, ces tests ne sont pas supprimés, mais marqués comme "indicateur de suivi".
-
-    Impact : 72 tests marqués.
-
-Règle 3 : Marquer les personnes de moins de 60 ans
-
-    Ce que ça fait : On crée une colonne moins_60_ans. Si l'âge est inférieur à 60, on marque "OUI".
-
-    Pourquoi : Ces personnes restent dans l'analyse statistique, mais elles sont exclues du parcours de soins (le seuil ICOPE est fixé à 60 ans).
-
-    Impact : 218 personnes marquées.
-
-Règle 4 : Fenêtre de suivi (pour les cohortes)
-
-    Ce que ça fait : On exclut les personnes dont le premier test a moins d'un an (365 jours), car elles n'ont pas encore eu le temps de faire leur suivi.
-
-    Pourquoi : Éviter de fausser l'analyse des cohortes en comptant des personnes qui n'ont pas eu l'occasion de refaire un test.
-
-    Impact : Les effectifs des cohortes sont calculés sur les personnes avec un recul suffisant.
-
-6. Résultats clés (pour le rapport)
-
-    Lignes au départ : 2 971
-
-    Lignes après nettoyage : 2 909
-
-    Tests one-shot marqués : 72
-
-    Personnes < 60 ans marquées : 218
-
-    Répartition par modalité : 73,8 % auto-évaluation, 17,9 % par un professionnel, 8,3 % avec un aidant.
-
-    Répartition par suivi : 83,9 % initial, 16,1 % suivi.
-
-    Âge médian : 67 ans.
-
-    Répartition par sexe : 57,3 % de femmes.
-
-    Territoires : 89,9 % reste de la Normandie, 3,6 % Elbeuf, 3,6 % Centre Manche, 2,9 % Lisieux.
-
-    Cohortes (avec fenêtre de 1 an) : Cohorte 1 (par un pro) = 40,5 %, Cohorte 2 (isolés) = 39,3 %, Cohorte 3 (autonomes avec suivi) = 20,2 %.
-
-```
-
----
-
-# Partie 1 – Alertes et profils patients (`partie1_alertes/`)
-
-Ces scripts analysent les alertes ICOPE : leur fréquence, le profil des personnes, ce que deviennent les alertes, la levée de doute, les professionnels, le Step 2, les profils types, l'âge selon le territoire, qui traite les alertes (où, quand) et les professionnels « one-shot ». Ils lisent tous **l'entrepôt de données ICOPE** (dossier `entrepot/`) et produisent chacun un fichier Excel.
-
-## 1. Installer (une seule fois)
-
-Dans le dossier du projet, avec l'environnement `mon_env` activé :
-
-```bash
 pip install -r requirements.txt
 ```
 
-## 2. Ranger les exports ICOPE (une seule fois)
+## Données
 
-Créez le dossier `donnees_icope` dans votre dossier personnel (`~/donnees_icope/`), **en dehors du projet**. Mettez-y les exports ICOPE Monitor envoyés par Marine :
+⚠️ Données de santé : **jamais dans le projet ni sur GitHub** (`mon_env/` et les `.xlsx` sources sont dans le `.gitignore`).
+
+| Fichiers | Où | Partie |
+|---|---|---|
+| Exports ICOPE Monitor (`bdi_etape1`, `bdi_etape2`, `bdi_professionnels`, `bdi_alertes`, `bdi_traitements_alertes`) | à mettre dans votre dossier personnel `~/donnees_icope/` | 1, 3 |
+| 5 fichiers « Actions collectives », liste des professionnels formés, « complet bdi_professionnels » | `~/donnees_icope/` | 3 |
+| `bdi_etape1_2026-10-09_12-10_969191.xlsx` | racine du projet | 2 |
+
+Fichiers de référence versionnés dans `entrepot/` (nécessaires à la reconstruction) :
 
 | Fichier | Contenu |
 |---|---|
-| `bdi_etape1_2026-10-09_….xlsx` | les tests (étape 1) |
-| `bdi_etape2_2026-10-09_….xlsx` | les évaluations Step 2 |
-| `bdi_professionnels_2026-10-09_….xlsx` | la liste des professionnels |
-| `bdi_alertes_2026-10-17_….xlsx` | les alertes |
-| `bdi_traitements_alertes_2026-10-17_….xlsx` | les actions sur les alertes |
+| `communes_experimentation.csv` | 162 communes du Centre Manche (reçues du Gérontopôle le 06/11/2026) |
+| `territoires_experimentation.csv` | codes postaux d'Elbeuf et Lisieux, en attendant leurs listes de communes |
 
-⚠️ Ces fichiers contiennent des données de santé. **Ils ne vont jamais dans le projet ni sur GitHub.**
+Autre dossier de données : `export DONNEES_ICOPE=/chemin/vers/le/dossier`.
 
-Pour utiliser un autre dossier : `export DONNEES_ICOPE=/chemin/vers/le/dossier`.
+## Lancement
 
-## 3. Construire l'entrepôt (une fois, puis à chaque nouvel export)
+Depuis la racine du projet, environnement activé.
+
+### 1. Entrepôt (à relancer à chaque nouvel export)
 
 ```bash
 python3 entrepot/construire_entrepot.py
 ```
 
-Le fichier `~/donnees_icope/entrepot_icope.duckdb` est créé. Il réunit les exports ICOPE, les bases publiques de Normandie (`bases/`) et les règles de nettoyage décidées le 16/10. Il contient des données de patients : il reste dans `~/donnees_icope/`.
+Crée `~/donnees_icope/entrepot_icope.duckdb`.
 
-## 4. Lancer les scripts
-
-Depuis le dossier du projet. Un script :
-
-```bash
-python3 partie1_alertes/1_personnes_en_alerte.py
-```
-
-Les 4 scripts d'un coup :
+### 2. Partie 1 – Alertes
 
 ```bash
 for f in partie1_alertes/[1-4]_*.py; do python3 "$f"; done
 ```
 
-Chaque script affiche ses résultats dans le terminal et écrit **un** fichier Excel dans `~/donnees_icope/`. Le premier onglet, `Sommaire`, dit à quelle question répond chaque onglet ; le début du nom d'un onglet dit la question (`Freq_`, `Profil_`…). Les scripts sont indépendants : on peut les lancer dans n'importe quel ordre.
+| Script | Fichier produit |
+|---|---|
+| `1_personnes_en_alerte.py` | `Partie1_1_Personnes_en_alerte.xlsx` |
+| `2_devenir_des_alertes.py` | `Partie1_2_Devenir_des_alertes.xlsx` |
+| `3_professionnels.py` | `Partie1_3_Professionnels.xlsx` |
+| `4_step2_et_evolution.py` | `Partie1_4_Step2_et_evolution.xlsx` |
 
-| Script | Questions | Fichier produit |
-|---|---|---|
-| `1_personnes_en_alerte.py` | Combien d'alertes et dans quels domaines ? Qui est en alerte ? Quel âge selon le territoire ? Quels profils types et quel format d'entrée pour le modèle ? | `Partie1_1_Personnes_en_alerte.xlsx` |
-| `2_devenir_des_alertes.py` | Que deviennent les alertes ? Levée de doute et orientation ? Où, par qui et quand ? Les fichiers d'alertes sont-ils complets ? | `Partie1_2_Devenir_des_alertes.xlsx` |
-| `3_professionnels.py` | Quels professionnels traitent les alertes, et où ? Lesquels n'ont testé qu'une personne ? | `Partie1_3_Professionnels.xlsx` |
-| `4_step2_et_evolution.py` | Qui va jusqu'au Step 2, où, par qui ? Comment tout cela évolue-t-il mois par mois ? | `Partie1_4_Step2_et_evolution.xlsx` |
+Les scripts sont indépendants. Fichiers écrits dans `~/donnees_icope/`.
 
-`commun.py` regroupe ce qui sert à tous les scripts (ouvrir l'entrepôt, choisir les tests analysés, écrire le fichier Excel) : il ne se lance pas seul.
+### 3. Partie 2 – Nettoyage et suivi
 
-## 5. Règles communes aux scripts de la partie 1
+À lancer **dans cet ordre** :
 
-- On garde **un test par personne et par jour** (le dernier), et on retire les **essais probables** (moins de 50 ans) : 2 834 tests, 2 342 alertes.
-- Les **moins de 60 ans sont gardés** dans l'analyse (ils sont seulement exclus du parcours).
-- Les pourcentages par domaine sont calculés sur les tests où la question a été posée.
-- Les cases calculées sur **moins de 30 tests** restent vides (trop peu pour être fiables).
-- Les **professionnels et les équipes sont anonymisés** dans les fichiers Excel (« Professionnel 1 », « Équipe A »…), sauf dans l'onglet `OQQ_Qui` (fichier 2) où Marine a demandé leur nom : ce fichier ne doit circuler qu'avec le Gérontopôle.
-- **Sites d'expérimentation** : Centre Manche est reconnu par commune (`entrepot/communes_experimentation.csv`, 162 communes reçues du Gérontopôle le 06/11/2026) ; Elbeuf et Lisieux par code postal (`entrepot/territoires_experimentation.csv`), en attendant leur liste de communes.
+```bash
+python3 scripts_aissatou/mon_script.py             # Rapport_Audit_Qualite.xlsx
+python3 scripts_aissatou/nettoyage.py              # Base_Nettoyee.xlsx
+python3 scripts_aissatou/statistiques.py           # Base_Statistiques.xlsx
+python3 scripts_aissatou/statistiques_completes.py # Base_Statistiques_Completes.xlsx
+python3 scripts_aissatou/cohortes.py               # Resultats_Cohortes_Filtrees.xlsx
+```
 
-## En cas de problème
+Règles de nettoyage (validées par Marine Le Roux, 22/10/2026) :
 
-- `Fichier introuvable : …/bdi_etape1_*.xlsx` → les exports ne sont pas dans `~/donnees_icope/` (étape 2).
-- `IO Error: … entrepot_icope.duckdb` → l'entrepôt n'est pas construit (étape 3).
-- `ModuleNotFoundError` → l'environnement n'est pas activé ou les bibliothèques ne sont pas installées (étape 1).
+| Règle | Effet |
+|---|---|
+| Un test par personne et par jour | on garde le dernier |
+| Tests « one-shot » de professionnels | colonne `one_shot_pro` |
+| Moins de 60 ans | colonne `moins_60_ans` |
+| Fenêtre de suivi (cohortes) | exclusion des premiers tests de moins de 365 jours |
+
+### 4. Partie 3 – Offre de prévention
+
+À lancer **après** l'entrepôt, dans cet ordre :
+
+```bash
+python3 entrepot/construire_table_roles.py     # table ref_professionnel_role
+python3 entrepot/bilans_par_territoire.py      # bilans_prevention_par_departement.csv, bilans_prevention_par_epci.csv
+python3 entrepot/exporter_excel.py             # entrepot_icope.xlsx (facultatif)
+```
+
+`construire_entrepot.py` charge déjà les fichiers de prévention (`charger_prevention.py`). Chaque reconstruction de l'entrepôt efface `ref_professionnel_role` : relancer `construire_table_roles.py`.
+
+| Table | Contenu |
+|---|---|
+| `offre_action_collective` | actions de prévention |
+| `v_action_commune` | communes où chaque action est accessible |
+| `offre_pro_forme_icope` | professionnels formés à ICOPE |
+| `offre_centre_agirc_arrco` | centres Agirc-Arrco |
+| `ref_professionnel_role` | professionnels classés par rôle : `levee_de_doute`, `bilan_prevention`, `etape2` |
+
+Test du calcul de distance (commune, domaine) :
+
+```bash
+python3 entrepot/orientation.py "Vire Normandie" vision
+```
+
+Domaines : `vision`, `audition`, `cognition`, `nutrition`, `psychologie`, `mobilite`, `social`, `aidant`, `incontinence`.
+
+Rattachement des actions aux zones (UTAS, MDS, secteurs) : remplir `~/donnees_icope/territoires_a_rattacher.csv` (colonne `codes_insee`, séparateur `|`), l'enregistrer sous `ref_territoire_action.csv`, puis reconstruire l'entrepôt.
+
+## Règles
+
+**Communes**
+- Aucune ligne n'est supprimée : les lignes problématiques sont repérées par une colonne.
+- Moins de 60 ans conservés dans les analyses, exclus du parcours de soins.
+
+**Partie 1 – tests analysés**
+- Un test par personne et par jour (le dernier) ; essais probables (moins de 50 ans) retirés : 2 834 tests, 2 342 alertes.
+- Pourcentages par domaine calculés sur les tests où la question a été posée.
+- Cases calculées sur moins de 30 tests laissées vides.
+
+**Confidentialité**
+- Professionnels et équipes anonymisés dans les fichiers Excel (« Professionnel 1 », « Équipe A »…), sauf l'onglet `OQQ_Qui` (fichier 2) : ce fichier ne circule qu'avec le Gérontopôle.
+- Le `.gitignore` ignore les fichiers dont le nom contient « professionnels ».
+
+## Erreurs fréquentes
+
+| Message | Solution |
+|---|---|
+| `Fichier introuvable : …/bdi_etape1_*.xlsx` | placer les exports dans `~/donnees_icope/` |
+| `IO Error: … entrepot_icope.duckdb` | lancer `construire_entrepot.py` |
+| `ModuleNotFoundError` | activer `mon_env` et installer les bibliothèques |
+| `Table … ref_professionnel_role does not exist` | lancer `construire_table_roles.py` |
