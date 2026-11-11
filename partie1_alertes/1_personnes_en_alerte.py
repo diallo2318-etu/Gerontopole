@@ -18,9 +18,9 @@ def frequence(con):
                             JOIN icope_depistage d USING (id_depistage) WHERE {TESTS_ANALYSES}""")
     alertes['domaine'] = alertes['domaine'].map(DOMAINES)
 
-    total = con.sql("SELECT count(*) FROM icope_depistage").fetchone()[0]
-    apres = con.sql("SELECT count(*) FROM icope_depistage WHERE NOT couvert_par_alertes").fetchone()[0]
-    retenus = con.sql("SELECT count(*) FROM icope_depistage WHERE retenu AND couvert_par_alertes").fetchone()[0]
+    total = con.execute("SELECT count(*) FROM icope_depistage").fetchone()[0]
+    apres = con.execute("SELECT count(*) FROM icope_depistage WHERE NOT couvert_par_alertes").fetchone()[0]
+    retenus = con.execute("SELECT count(*) FROM icope_depistage WHERE retenu AND couvert_par_alertes").fetchone()[0]
     perimetre = pd.DataFrame({
         "Indicateur": ["Tests au départ", "Tests faits après le dernier export des alertes (analysés au prochain export)",
                        "Tests après doublons du même jour",

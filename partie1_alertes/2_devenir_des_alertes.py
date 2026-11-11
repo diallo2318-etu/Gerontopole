@@ -217,7 +217,7 @@ def ou_qui_quand(con):
     actions['action'] = True
     pros = lire(con, """SELECT id_professionnel AS id_auteur, profession, type_activite, type_etablissement,
                                departement AS departement_pro FROM icope_professionnel""")
-    toutes = con.sql("""SELECT count(*), count(*) FILTER (WHERE nb_actions > 0), count(*) FILTER (WHERE levee_doute_faite),
+    toutes = con.execute("""SELECT count(*), count(*) FILTER (WHERE nb_actions > 0), count(*) FILTER (WHERE levee_doute_faite),
                                count(*) FILTER (WHERE alerte_confirmee), count(*) FILTER (WHERE oriente)
                         FROM v_alerte_issue""").fetchone()
 

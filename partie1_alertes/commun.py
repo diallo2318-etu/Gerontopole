@@ -41,8 +41,15 @@ def connecter():
 
 
 def lire(con, requete):
-    """Exécute une requête SQL et renvoie un tableau pandas."""
-    return con.sql(requete).df()
+    """Exécute une requête SQL et renvoie un tableau pandas.
+
+    Les colonnes oui / non sont rendues comme avec DuckDB 1.0 (vrai, faux ou None) : les versions récentes
+    donnent des cases vides « NA » qui font planter `if x == True` et changent le calcul des moyennes."""
+    df = con.execute(requete).df()
+    for col in df.columns:
+        if isinstance(df[col].dtype, pd.BooleanDtype):
+            df[col] = df[col].astype(object).where(df[col].notna(), None)
+    return df
 
 
 def tests_analyses(con, colonnes="d.*", condition=""):

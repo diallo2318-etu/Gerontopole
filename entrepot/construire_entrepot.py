@@ -360,7 +360,8 @@ COLONNES_EXCLUES = {"ddn", "mt_nom", "mt_ville", "commentaires", "nom_auteur_pri
 def oui_non_partout(df):
     """Colonnes ne contenant que oui / non / dm -> vrai / faux / vide."""
     for col in df.columns:
-        if df[col].dtype != object:
+        # texte : « object » avec pandas 2, « str » avec pandas 3
+        if not (pd.api.types.is_object_dtype(df[col]) or pd.api.types.is_string_dtype(df[col])):
             continue
         valeurs = set(df[col].dropna().astype(str).str.lower())
         if valeurs and valeurs <= {"oui", "non", "dm"}:
