@@ -1,0 +1,28 @@
+domaine;etape;plan;source;valeur;distance_max_km;age_min;age_max;remarque
+tous;levee_de_doute;A;mon_bilan_prevention;Professionnel ou pharmacie inscrit à « Mon bilan prévention »;20;60;65;Bilan pris en charge de 60 à 65 ans et de 70 à 75 ans
+tous;levee_de_doute;A;mon_bilan_prevention;Professionnel ou pharmacie inscrit à « Mon bilan prévention »;20;70;75;Bilan pris en charge de 60 à 65 ans et de 70 à 75 ans
+tous;levee_de_doute;B;agirc_arrco;Centre de prévention Agirc-Arrco;60;;;Pour les retraités du privé, 5 centres en Normandie
+tous;levee_de_doute;C;ipa;Infirmier en pratique avancée, pathologies chroniques;30;;;Peut aussi faire l'évaluation gériatrique (Step 2)
+tous;etape2;A;ipa;Infirmier en pratique avancée, pathologies chroniques;30;;;Liste reçue du Gérontopôle le 11/11/2026
+tous;etape2;B;pro_forme_icope;Professionnel formé à ICOPE;30;;;Fichiers de Kadiatou (liste des professionnels formés)
+tous;etape2;C;conseil;En parler au médecin traitant à la prochaine visite;;;;Si aucun professionnel du Step 2 n'est assez proche
+tous;moins_60;A;conseil;Conseil de prévention et d'en parler au médecin traitant à la prochaine visite;;;59;Pas d'orientation avant 60 ans (décision du Gérontopôle)
+vision;orientation;A;rpps_profession;Médecin|Ophtalmologie;20;;;Spécialiste : examen complet de la vue
+vision;orientation;B;rpps_profession;Orthoptiste;20;;;Bilan de la vue, adresse à l'ophtalmologiste si besoin
+vision;orientation;C;rpps_profession;Opticien-Lunetier;;;;Contrôle de la vue et renouvellement des lunettes si l'ordonnance est encore valable
+vision;orientation;C;conseil;En parler au médecin traitant à la prochaine visite;;;;Une baisse brutale de la vue est une urgence : consulter tout de suite
+vision;sans_alerte;A;action_collective;vue|vision|yeux;;;;Atelier ou action de prévention sur la vue
+vision;sans_alerte;B;action_collective;bien vieillir|prévention;;;;Atelier de prévention générale
+audition;orientation;A;rpps_profession;Médecin|Oto-rhino-laryngologie;20;;;Spécialiste : examen de l'audition
+audition;orientation;A;rpps_profession;Médecin|O.R.L et chirurgie cervico faciale;20;;;Spécialiste : examen de l'audition
+audition;orientation;B;rpps_profession;Audio-Prothésiste;20;;;Test de l'audition, l'appareil auditif demande une ordonnance médicale
+audition;orientation;C;conseil;En parler au médecin traitant à la prochaine visite;;;;Le médecin peut vérifier un bouchon de cérumen et prescrire un bilan
+audition;sans_alerte;A;action_collective;audition|ouïe|auditi;;;;Atelier ou action de prévention sur l'audition
+audition;sans_alerte;B;action_collective;bien vieillir|prévention;;;;Atelier de prévention générale
+cognition;orientation;A;a_obtenir;Consultation mémoire;30;;;Liste des consultations mémoire à obtenir (absente de FINESS)
+cognition;orientation;A;rpps_profession;Médecin|Neurologie;30;;;Spécialiste de la mémoire
+cognition;orientation;A;rpps_profession;Médecin|Gériatrie;30;;;Spécialiste de la personne âgée
+cognition;orientation;B;ipa;Infirmier en pratique avancée, pathologies chroniques;30;;;Évaluation gériatrique, puis orientation vers un spécialiste si besoin
+cognition;orientation;C;conseil;En parler au médecin traitant à la prochaine visite;;;;
+cognition;sans_alerte;A;action_collective;mémoire|cognitiv|cerveau;;;;Atelier mémoire
+cognition;sans_alerte;B;action_collective;bien vieillir|prévention;;;;Atelier de prévention générale

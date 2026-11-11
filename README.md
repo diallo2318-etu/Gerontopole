@@ -118,6 +118,28 @@ Domaines : `vision`, `audition`, `cognition`, `nutrition`, `psychologie`, `mobil
 
 Rattachement des actions aux zones (UTAS, MDS, secteurs) : remplir `~/donnees_icope/territoires_a_rattacher.csv` (colonne `codes_insee`, séparateur `|`), l'enregistrer sous `ref_territoire_action.csv`, puis reconstruire l'entrepôt.
 
+### 5. Parcours (travail commun)
+
+Le parcours de chaque capacité est décrit dans `entrepot/parcours_capacites.csv` (une ligne par proposition) :
+
+| Colonne | Contenu |
+|---|---|
+| `domaine` | `vision`, `audition`, `cognition`… ou `tous` (levée de doute, Step 2, moins de 60 ans) |
+| `etape` | `levee_de_doute`, `etape2`, `orientation` (alerte confirmée), `sans_alerte`, `moins_60` |
+| `plan` | `A` (le plus adapté), `B` si le plan A est trop loin ou absent, puis `C` |
+| `source` | où chercher : `rpps_profession`, `finess_categorie`, `ipa`, `mon_bilan_prevention`, `agirc_arrco`, `pro_forme_icope`, `action_collective` (mots-clés séparés par `\|`), `conseil`, `a_obtenir` |
+| `valeur` | le métier (écrit comme dans `referentiel_alertes.csv`), les mots-clés ou le texte du conseil |
+| `distance_max_km` | au-delà, on passe au plan suivant (vide : pas de limite) |
+| `age_min`, `age_max` | si la proposition dépend de l'âge (ex. Mon bilan prévention : 60-65 et 70-75 ans) |
+| `remarque` | ce qu'on dit à la personne ou pourquoi ce choix |
+
+Vérifier le fichier (métiers bien écrits, plan proposé selon la commune) :
+
+```bash
+python3 entrepot/verifier_parcours.py
+python3 entrepot/verifier_parcours.py --domaine vision
+```
+
 ## Règles
 
 **Communes**
