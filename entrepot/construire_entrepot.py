@@ -66,6 +66,17 @@ def dernier_fichier(motif):
     return fichiers[-1]
 
 
+def date_export_alertes():
+    """Date du plus ancien des deux derniers exports (alertes, traitements), lue dans le nom du fichier."""
+    dates = []
+    for motif in ("bdi_alertes_*.xlsx", "bdi_traitements_alertes_*.xlsx"):
+        fichiers = sorted(DONNEES.glob(motif))
+        trouve = re.search(r"\d{4}-\d{2}-\d{2}", fichiers[-1].name) if fichiers else None
+        if trouve:
+            dates.append(pd.Timestamp(trouve.group()))
+    return min(dates) if dates else None
+
+
 def oui_non(serie):
     """'oui'/'non' -> True/False ; 'dm' (donnée manquante) et vide -> NA."""
     return serie.str.lower().map({"oui": True, "non": False}).astype("boolean")
@@ -117,9 +128,10 @@ def localiser(df, loc, col_cp, col_ville):
 def site_experimentation(code_postal, code_insee):
     """Site d'expérimentation de chaque ligne.
 
-    Un site dont on a la liste des communes (communes_experimentation.csv, ex. Centre Manche, liste
-    reçue du Gérontopôle le 06/11/2026) est reconnu par le code INSEE de la commune ; les autres
-    (Elbeuf, Lisieux) restent reconnus par code postal (territoires_experimentation.csv)."""
+    Un site dont on a la liste des communes (communes_experimentation.csv : Centre Manche, liste
+    reçue du Gérontopôle le 06/11/2026 ; Elbeuf, communes du GHT reçues le 11/11/2026) est reconnu
+    par le code INSEE de la commune ; les autres (Lisieux) restent reconnus par code postal
+    (territoires_experimentation.csv)."""
     communes = pd.read_csv(DEPOT / "entrepot" / "communes_experimentation.csv", sep=";", dtype=str)
     par_cp = pd.read_csv(DEPOT / "entrepot" / "territoires_experimentation.csv", sep=";", dtype=str)
     par_cp = par_cp[~par_cp.experimentation.isin(communes.experimentation)]
@@ -278,6 +290,10 @@ def charger_icope(con, loc):
     dep["raisons_test"] = raisons.apply(lambda r: ", ".join(c for c in raisons.columns if r[c]) or None, axis=1)
     dep["test_probable"] = raisons["age_moins_50"]
     dep["hors_cible_moins_60"] = dep["age"].fillna(99) < 60
+    # Les exports des alertes peuvent être plus anciens que celui des tests : un test fait après le
+    # dernier export des alertes n'a pas encore ses alertes. La limite avance seule au prochain export.
+    limite = date_export_alertes()
+    dep["couvert_par_alertes"] = True if limite is None else pd.to_datetime(dep["date_depistage"]) <= limite
 
     dep["experimentation"] = site_experimentation(dep["code_postal"], dep["code_insee"])
     con.register("dep_df", dep)
@@ -496,6 +512,33 @@ def creer_vues(con):
         """)
 
 
+def charger_ipa(con):
+    """Infirmiers en pratique avancée (IPA) de Normandie : liste transmise par le Gérontopôle le 11/11/2026.
+
+    Ceux en « pathologies chroniques stabilisées » peuvent faire la levée de doute et le Step 2."""
+    fichiers = sorted(DONNEES.glob("liste_INFIRMIER_IPA*.xlsx"))
+    if not fichiers:
+        print("(liste_INFIRMIER_IPA absente : table offre_ipa non créée)")
+        return
+    ipa = pd.read_excel(fichiers[-1], dtype=str)
+    ipa = pd.DataFrame({
+        "id_rpps": ipa["numrpps"],
+        "nom": ipa["Nom"],
+        "prenom": ipa["prenom"],
+        "specialite": ipa["libsav_faire"],
+        "pathologies_chroniques": ipa["libsav_faire"].str.contains("pathologies chroniques", case=False, na=False),
+        "mode_exercice": ipa["libell__mode_exercice"].map({"Salarié": "salarie", "Lib,indé": "liberal"}),
+        "structure": ipa["socrai_structactiv"],
+        "code_insee": ipa["codcomm_act"],
+        "commune": ipa["libcomm_act"],
+        "departement": ipa["dept"],
+        "date_maj": pd.to_datetime(ipa["date_maj"], format="%d/%m/%Y", errors="coerce").dt.date,
+    })
+    con.register("ipa_df", ipa)
+    con.execute("CREATE TABLE offre_ipa AS SELECT * FROM ipa_df")
+    con.unregister("ipa_df")
+
+
 def main():
     DONNEES.mkdir(parents=True, exist_ok=True)
     if ENTREPOT.exists():
@@ -505,6 +548,7 @@ def main():
     loc = LocalisateurCommune(communes)
     charger_observatoire(con)
     charger_offre_publique(con, loc)
+    charger_ipa(con)
     charger_icope(con, loc)
     from charger_prevention import charger_prevention  # importé ici : les deux fichiers s'importent l'un l'autre
     charger_prevention(con, loc)

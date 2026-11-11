@@ -18,7 +18,7 @@ from construire_entrepot import DONNEES, ENTREPOT
 SORTIE = DONNEES / "entrepot_icope.xlsx"
 
 DESCRIPTIONS = {
-    "icope_depistage": "ICOPE étape 1 : une ligne par dépistage (âge, sexe, commune, modalité, 9 alertes, test retenu, essai probable, one-shot de professionnel)",
+    "icope_depistage": "ICOPE étape 1 : une ligne par dépistage (âge, sexe, commune, modalité, 9 alertes, test retenu, essai probable, one-shot de professionnel, couvert par l'export des alertes)",
     "icope_alerte": "ICOPE étape 1 : les mêmes alertes en format long, une ligne par dépistage et par capacité",
     "icope_alerte_statut": "ICOPE : une ligne par dépistage en alerte, avec le statut de l'alerte (traitée, en cours, non traitée)",
     "icope_traitement": "ICOPE : une ligne par action menée sur une alerte (appel, levée de doute, orientation...) ; une alerte peut en avoir plusieurs",

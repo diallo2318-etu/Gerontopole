@@ -19,11 +19,13 @@ def frequence(con):
     alertes['domaine'] = alertes['domaine'].map(DOMAINES)
 
     total = con.sql("SELECT count(*) FROM icope_depistage").fetchone()[0]
-    retenus = con.sql("SELECT count(*) FROM icope_depistage WHERE retenu").fetchone()[0]
+    apres = con.sql("SELECT count(*) FROM icope_depistage WHERE NOT couvert_par_alertes").fetchone()[0]
+    retenus = con.sql("SELECT count(*) FROM icope_depistage WHERE retenu AND couvert_par_alertes").fetchone()[0]
     perimetre = pd.DataFrame({
-        "Indicateur": ["Tests au départ", "Tests après doublons du même jour",
+        "Indicateur": ["Tests au départ", "Tests faits après le dernier export des alertes (analysés au prochain export)",
+                       "Tests après doublons du même jour",
                        "Essais probables retirés (moins de 50 ans)", "Tests analysés", "Personnes analysées"],
-        "Valeur": [total, retenus, retenus - len(tests), len(tests), tests['participant'].nunique()]})
+        "Valeur": [total, apres, retenus, retenus - len(tests), len(tests), tests['participant'].nunique()]})
 
     nb_alertes = tests['nb_alertes'].value_counts().sort_index().reset_index()
     nb_alertes.columns = ["Nombre d'alertes", 'Nombre de tests']

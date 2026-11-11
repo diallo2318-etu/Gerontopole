@@ -4,7 +4,7 @@ Entrepôt de données régional et outil d'orientation du programme ICOPE (OMS) 
 
 | Partie | Sujet | Emplacement |
 |---|---|---|
-| 1 | Alertes et profils patients | `partie1_alertes/` |
+| 1 | Alertes et profils des personnes | `partie1_alertes/` |
 | 2 | Nettoyage, statistiques, cohortes | `scripts_aissatou/` |
 | 3 | Offre de prévention et professionnels | `entrepot/` |
 
@@ -24,14 +24,17 @@ pip install -r requirements.txt
 |---|---|---|
 | Exports ICOPE Monitor (`bdi_etape1`, `bdi_etape2`, `bdi_professionnels`, `bdi_alertes`, `bdi_traitements_alertes`) | à mettre dans votre dossier personnel `~/donnees_icope/` | 1, 3 |
 | 5 fichiers « Actions collectives », liste des professionnels formés, « complet bdi_professionnels » | `~/donnees_icope/` | 3 |
+| `liste_INFIRMIER_IPA_NORMANDIE.xlsx` (infirmiers en pratique avancée, reçus le 11/11/2026, facultatif) | `~/donnees_icope/` | 3 |
 | `bdi_etape1_2026-10-09_12-10_969191.xlsx` | racine du projet | 2 |
+
+S'il y a plusieurs exports d'un même fichier dans `~/donnees_icope/`, l'entrepôt prend le plus récent.
 
 Fichiers de référence versionnés dans `entrepot/` (nécessaires à la reconstruction) :
 
 | Fichier | Contenu |
 |---|---|
-| `communes_experimentation.csv` | 162 communes du Centre Manche (reçues du Gérontopôle le 06/11/2026) |
-| `territoires_experimentation.csv` | codes postaux d'Elbeuf et Lisieux, en attendant leurs listes de communes |
+| `communes_experimentation.csv` | 162 communes du Centre Manche (reçues du Gérontopôle le 06/11/2026) et 178 communes du GHT d'Elbeuf (reçues le 11/11/2026) |
+| `territoires_experimentation.csv` | code postal de Lisieux, en attendant sa liste de communes |
 
 Autre dossier de données : `export DONNEES_ICOPE=/chemin/vers/le/dossier`.
 
@@ -101,6 +104,7 @@ python3 entrepot/exporter_excel.py             # entrepot_icope.xlsx (facultatif
 | `v_action_commune` | communes où chaque action est accessible |
 | `offre_pro_forme_icope` | professionnels formés à ICOPE |
 | `offre_centre_agirc_arrco` | centres Agirc-Arrco |
+| `offre_ipa` | infirmiers en pratique avancée (colonne `pathologies_chroniques` : levée de doute et Step 2) |
 | `ref_professionnel_role` | professionnels classés par rôle : `levee_de_doute`, `bilan_prevention`, `etape2` |
 
 Test du calcul de distance (commune, domaine) :
@@ -120,7 +124,9 @@ Rattachement des actions aux zones (UTAS, MDS, secteurs) : remplir `~/donnees_ic
 - Moins de 60 ans conservés dans les analyses, exclus du parcours de soins.
 
 **Partie 1 – tests analysés**
-- Un test par personne et par jour (le dernier) ; essais probables (moins de 50 ans) retirés : 2 834 tests, 2 342 alertes.
+- Un test par personne et par jour (le dernier) ; essais probables (moins de 50 ans) retirés.
+- Seulement les tests faits avant le dernier export des alertes (colonne `couvert_par_alertes`), pour que tests et alertes s'arrêtent à la même date. La limite avance seule quand on ajoute un nouvel export des alertes.
+- Avec les exports actuels (tests du 06/11, alertes du 17/10) : 2 911 tests, 2 413 alertes.
 - Pourcentages par domaine calculés sur les tests où la question a été posée.
 - Cases calculées sur moins de 30 tests laissées vides.
 

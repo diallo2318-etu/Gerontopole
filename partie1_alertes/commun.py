@@ -14,7 +14,9 @@ DOSSIER = os.path.expanduser(os.environ.get("DONNEES_ICOPE", "~/donnees_icope"))
 
 # Règles de la partie 1 (décidées avec Marine) : un test par personne et par jour (le dernier),
 # sans les essais probables (moins de 50 ans). Les moins de 60 ans sont gardés.
-TESTS_ANALYSES = "d.retenu AND NOT d.test_probable"
+# Seulement les tests faits avant le dernier export des alertes (couvert_par_alertes), pour que
+# tests et alertes s'arrêtent à la même date.
+TESTS_ANALYSES = "d.retenu AND NOT d.test_probable AND d.couvert_par_alertes"
 
 DOMAINES = {
     'cognition': 'Cognition', 'nutrition': 'Nutrition', 'vision': 'Vision',

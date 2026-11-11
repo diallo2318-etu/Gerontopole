@@ -31,7 +31,7 @@ def devenir(con):
     alertes = toutes[(toutes['retenu'] == True) & (toutes['test_probable'] == False)].copy()
     perimetre = pd.DataFrame({
         "Indicateur": ["Alertes au départ",
-                       "Alertes sans test dans l'export étape 1 (surtout créées après le 08/10/2026)",
+                       "Alertes sans test dans l'export étape 1",
                        "Alertes sur un test en doublon le même jour",
                        "Alertes sur un essai probable (moins de 50 ans)", "Alertes analysées", "Personnes concernées"],
         "Valeur": [len(toutes), toutes['retenu'].isna().sum(), (toutes['retenu'] == False).sum(),
