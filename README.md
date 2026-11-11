@@ -116,7 +116,7 @@ python3 entrepot/orientation.py "Vire Normandie" vision
 
 Domaines : `vision`, `audition`, `cognition`, `nutrition`, `psychologie`, `mobilite`, `social`, `aidant`, `incontinence`.
 
-Rattachement des actions aux zones (UTAS, MDS, secteurs) : remplir `~/donnees_icope/territoires_a_rattacher.csv` (colonne `codes_insee`, séparateur `|`), l'enregistrer sous `ref_territoire_action.csv`, puis reconstruire l'entrepôt.
+Rattachement des actions aux zones (UTAS, MDS, secteurs) : remplir `~/donnees_icope/territoires_a_rattacher.csv` (colonne `codes_insee`, séparateur `|`), l'enregistrer sous `ref_territoire_action.csv`, puis reconstruire l'entrepôt. Pour la Seine-Maritime, `bases/utas_seine_maritime.csv` donne l'UTAS de chaque commune (open data du Département 76, 2022).
 
 ### 5. Parcours (travail commun)
 

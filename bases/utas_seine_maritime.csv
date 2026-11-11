@@ -1,0 +1,709 @@
+code_insee;commune;utas;intercommunalite
+76001;Allouville-Bellefosse;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76002;Alvimare;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76004;Ambrumesnil;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76005;Amfreville-la-Mi-Voie;UTAS Rouen;Métropole Rouen Normandie
+76006;Amfreville-les-Champs;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76007;Anceaumeville;UTAS Rouen;CC Inter-Caux-Vexin
+76008;Ancourt;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76009;Ancourteville-sur-Héricourt;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76010;Ancretiéville-Saint-Victor;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76011;Ancretteville-sur-Mer;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76012;Angerville-Bailleul;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76013;Angerville-la-Martel;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76014;Angerville-l'Orcher;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76015;Angiens;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76016;Anglesqueville-la-Bras-Long;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76017;Anglesqueville-l'Esneval;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76018;Val-de-Saâne;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76019;Anneville-sur-Scie;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76020;Anneville-Ambourville;UTAS Boucles de Seine;Métropole Rouen Normandie
+76021;Annouville-Vilmesnil;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76022;Anquetierville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76023;Anvéville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76024;Ardouval;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76025;Argueil;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76026;Arques-la-Bataille;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76028;Aubéguimont;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76029;Aubermesnil-aux-Érables;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76030;Aubermesnil-Beaumais;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76032;Auberville-la-Manuel;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76033;Auberville-la-Renault;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76034;Val-de-Scie;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76035;Aumale;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76036;Auppegard;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76038;Authieux-Ratiéville;UTAS Rouen;CC Inter-Caux-Vexin
+76039;Les Authieux-sur-le-Port-Saint-Ouen;UTAS Rouen;Métropole Rouen Normandie
+76040;Autigny;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76041;Les Hauts-de-Caux;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76042;Auvilliers;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76043;Auzebosc;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76045;Auzouville-l'Esneval;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76046;Auzouville-sur-Ry;UTAS Rouen;CC Inter-Caux-Vexin
+76047;Auzouville-sur-Saâne;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76048;Avesnes-en-Bray;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76049;Avesnes-en-Val;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76050;Avremesnil;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76051;Bacqueville-en-Caux;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76052;Bailleul-Neuville;UTAS Dieppe/Neufchâtel;CC de Londinières
+76053;Baillolet;UTAS Dieppe/Neufchâtel;CC de Londinières
+76054;Bailly-en-Rivière;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76055;Baons-le-Comte;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76056;Bardouville;UTAS Boucles de Seine;Métropole Rouen Normandie
+76057;Barentin;UTAS Boucles de Seine;CC Caux - Austreberthe
+76058;Baromesnil;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76059;Bazinval;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76060;Beaubec-la-Rosière;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76062;Beaumont-le-Hareng;UTAS Dieppe/Neufchâtel;CC Inter-Caux-Vexin
+76063;Beauval-en-Caux;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76064;Beaurepaire;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76065;Beaussault;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76066;Beautot;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76067;Beauvoir-en-Lyons;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76068;Bec-de-Mortagne;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76069;Belbeuf;UTAS Rouen;Métropole Rouen Normandie
+76070;Bellencombre;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76071;Bellengreville;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76072;Belleville-en-Caux;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76074;La Bellière;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76075;Belmesnil;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76076;Bénarville;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76077;Bénesville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76079;Bénouville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76082;Bernières;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76083;Bertheauville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76084;Bertreville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76085;Bertreville-Saint-Ouen;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76086;Bertrimont;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76087;Berville-en-Caux;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76088;Berville-sur-Seine;UTAS Boucles de Seine;Métropole Rouen Normandie
+76090;Beuzeville-la-Grenier;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76091;Beuzeville-la-Guérard;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76092;Beuzevillette;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76093;Bézancourt;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76094;Bierville;UTAS Rouen;CC Inter-Caux-Vexin
+76095;Bihorel;UTAS Rouen;Métropole Rouen Normandie
+76096;Biville-la-Baignarde;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76097;Biville-la-Rivière;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76099;Blacqueville;UTAS Boucles de Seine;CC Caux - Austreberthe
+76100;Blainville-Crevon;UTAS Rouen;CC Inter-Caux-Vexin
+76101;Blangy-sur-Bresle;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76103;Bonsecours;UTAS Rouen;Métropole Rouen Normandie
+76104;Blosseville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76105;Le Bocasse;UTAS Rouen;CC Inter-Caux-Vexin
+76106;Bois-d'Ennebourg;UTAS Rouen;CC Inter-Caux-Vexin
+76107;Bois-Guilbert;UTAS Rouen;CC Inter-Caux-Vexin
+76108;Bois-Guillaume;UTAS Rouen;Métropole Rouen Normandie
+76109;Bois-Héroult;UTAS Rouen;CC Inter-Caux-Vexin
+76110;Bois-Himont;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76111;Bois-l'Évêque;UTAS Rouen;CC Inter-Caux-Vexin
+76112;Le Bois-Robert;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76113;Boissay;UTAS Rouen;CC Inter-Caux-Vexin
+76114;Bolbec;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76115;Bolleville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76116;Boos;UTAS Rouen;Métropole Rouen Normandie
+76117;Bordeaux-Saint-Clair;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76118;Bornambusc;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76119;Bosc-Bérenger;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76120;Bosc-Bordel;UTAS Rouen;CC Inter-Caux-Vexin
+76121;Bosc-Édeline;UTAS Rouen;CC Inter-Caux-Vexin
+76122;Callengeville;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76123;Bosc-Guérard-Saint-Adrien;UTAS Rouen;CC Inter-Caux-Vexin
+76124;Bosc-Hyons;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76125;Bosc-le-Hard;UTAS Dieppe/Neufchâtel;CC Inter-Caux-Vexin
+76126;Bosc-Mesnil;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76128;Bosville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76129;Boudeville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76130;Bouelles;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76131;La Bouille;UTAS Boucles de Seine;Métropole Rouen Normandie
+76132;Bourdainville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76133;Le Bourg-Dun;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76134;Bourville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76135;Bouville;UTAS Boucles de Seine;CC Caux - Austreberthe
+76136;Brachy;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76138;Bracquetuit;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76139;Bradiancourt;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76140;Brametot;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76141;Bréauté;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76142;Brémontier-Merval;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76143;Bretteville-du-Grand-Caux;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76144;Bretteville-Saint-Laurent;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76146;Buchy;UTAS Rouen;CC Inter-Caux-Vexin
+76147;Bully;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76148;Bures-en-Bray;UTAS Dieppe/Neufchâtel;CC de Londinières
+76149;Butot;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76151;Cailleville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76152;Cailly;UTAS Rouen;CC Inter-Caux-Vexin
+76153;Calleville-les-Deux-Églises;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76154;Campneuseville;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76155;Canehan;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76156;Canouville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76157;Canteleu;UTAS Boucles de Seine;Métropole Rouen Normandie
+76158;Canville-les-Deux-Églises;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76159;Cany-Barville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76160;Carville-la-Folletière;UTAS Boucles de Seine;CC Yvetot Normandie
+76161;Carville-Pot-de-Fer;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76162;Le Catelier;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76163;Catenay;UTAS Rouen;CC Inter-Caux-Vexin
+76164;Rives-en-Seine;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76165;Caudebec-lès-Elbeuf;UTAS Boucles de Seine;Métropole Rouen Normandie
+76166;Le Caule-Sainte-Beuve;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76167;Cauville-sur-Mer;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76168;Les Cent-Acres;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76169;La Cerlangue;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76170;La Chapelle-du-Bourgay;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76171;La Chapelle-Saint-Ouen;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76172;La Chapelle-sur-Dun;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76173;La Chaussée;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76174;Cideville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76175;Clais;UTAS Dieppe/Neufchâtel;CC de Londinières
+76176;Clasville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76177;Claville-Motteville;UTAS Rouen;CC Inter-Caux-Vexin
+76178;Cléon;UTAS Boucles de Seine;Métropole Rouen Normandie
+76179;Clères;UTAS Rouen;CC Inter-Caux-Vexin
+76180;Cleuville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76181;Cléville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76182;Cliponville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76183;Colleville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76184;Colmesnil-Manneville;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76185;Compainville;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76186;Conteville;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76187;Contremoulins;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76188;Cottévrard;UTAS Dieppe/Neufchâtel;CC Inter-Caux-Vexin
+76189;Crasville-la-Mallet;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76190;Crasville-la-Rocquefort;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76192;Criel-sur-Mer;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76193;La Crique;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76194;Criquebeuf-en-Caux;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76195;Criquetot-le-Mauconduit;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76196;Criquetot-l'Esneval;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76197;Criquetot-sur-Longueville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76198;Criquetot-sur-Ouville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76199;Criquiers;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76200;Critot;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76201;Croisy-sur-Andelle;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76202;Croixdalle;UTAS Dieppe/Neufchâtel;CC de Londinières
+76203;Croix-Mare;UTAS Boucles de Seine;CC Yvetot Normandie
+76204;Cropus;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76205;Crosville-sur-Scie;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76206;Cuverville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76207;Cuverville-sur-Yères;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76208;Cuy-Saint-Fiacre;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76209;Dampierre-en-Bray;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76210;Dampierre-Saint-Nicolas;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76211;Dancourt;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76212;Darnétal;UTAS Rouen;Métropole Rouen Normandie
+76213;Daubeuf-Serville;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76214;Dénestanville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76216;Déville-lès-Rouen;UTAS Rouen;Métropole Rouen Normandie
+76217;Dieppe;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76218;Doudeauville;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76219;Doudeville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76220;Douvrend;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76221;Drosay;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76222;Duclair;UTAS Boucles de Seine;Métropole Rouen Normandie
+76223;Écalles-Alix;UTAS Boucles de Seine;CC Yvetot Normandie
+76224;Écrainville;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76225;Écretteville-lès-Baons;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76226;Écretteville-sur-Mer;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76227;Ectot-l'Auber;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76228;Ectot-lès-Baons;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76229;Elbeuf-en-Bray;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76230;Elbeuf-sur-Andelle;UTAS Rouen;CC Inter-Caux-Vexin
+76231;Elbeuf;UTAS Boucles de Seine;Métropole Rouen Normandie
+76232;Életot;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76233;Ellecourt;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76234;Émanville;UTAS Boucles de Seine;CC Caux - Austreberthe
+76235;Envermeu;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76236;Envronville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76237;Épinay-sur-Duclair;UTAS Boucles de Seine;Métropole Rouen Normandie
+76238;Épouville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76239;Épretot;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76240;Épreville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76241;Ermenouville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76242;Ernemont-la-Villette;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76243;Ernemont-sur-Buchy;UTAS Rouen;CC Inter-Caux-Vexin
+76244;Esclavelles;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76245;Eslettes;UTAS Rouen;CC Inter-Caux-Vexin
+76247;Esteville;UTAS Rouen;CC Inter-Caux-Vexin
+76249;Étaimpuis;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76250;Étainhus;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76251;Étalleville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76252;Étalondes;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76253;Étoutteville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76254;Étretat;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76255;Eu;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76257;Fallencourt;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76258;Terres-de-Caux;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76259;Fécamp;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76260;Ferrières-en-Bray;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76261;La Ferté-Saint-Samson;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76262;Fesques;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76263;La Feuillie;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76264;Flamanville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76265;Flamets-Frétils;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76266;Flocques;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76268;Fongueusemare;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76269;Fontaine-en-Bray;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76270;Fontaine-la-Mallet;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76271;Fontaine-le-Bourg;UTAS Rouen;CC Inter-Caux-Vexin
+76272;Fontaine-le-Dun;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76273;Fontaine-sous-Préaux;UTAS Rouen;Métropole Rouen Normandie
+76274;La Fontelaye;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76275;Fontenay;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76276;Forges-les-Eaux;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76278;Foucarmont;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76279;Foucart;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76280;Fréauville;UTAS Dieppe/Neufchâtel;CC de Londinières
+76281;La Frénaye;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76282;Freneuse;UTAS Boucles de Seine;Métropole Rouen Normandie
+76283;Fresles;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76284;Fresnay-le-Long;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76285;Fresne-le-Plan;UTAS Rouen;CC Inter-Caux-Vexin
+76286;Fresnoy-Folny;UTAS Dieppe/Neufchâtel;CC de Londinières
+76287;Fresquiennes;UTAS Boucles de Seine;CC Inter-Caux-Vexin
+76288;Freulleville;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76289;Saint Martin de l'If;UTAS Boucles de Seine;CC Yvetot Normandie
+76290;Frichemesnil;UTAS Rouen;CC Inter-Caux-Vexin
+76291;Froberville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76292;Fry;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76293;Fultot;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76294;La Gaillarde;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76295;Gaillefontaine;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76296;Gainneville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76297;Gancourt-Saint-Étienne;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76298;Ganzeville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76299;Gerponville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76300;Gerville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76302;Goderville;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76303;Gommerville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76304;Gonfreville-Caillot;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76305;Gonfreville-l'Orcher;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76306;Gonnetot;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76307;Gonneville-la-Mallet;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76308;Gonneville-sur-Scie;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76309;Gonzeville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76311;Goupillières;UTAS Boucles de Seine;CC Caux - Austreberthe
+76312;Gournay-en-Bray;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76313;Gouy;UTAS Rouen;Métropole Rouen Normandie
+76314;Graimbouville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76315;Grainville-la-Teinturière;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76316;Grainville-sur-Ry;UTAS Rouen;CC Inter-Caux-Vexin
+76317;Grainville-Ymauville;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76318;Grand-Camp;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76319;Grand-Couronne;UTAS Boucles de Seine;Métropole Rouen Normandie
+76320;Grandcourt;UTAS Dieppe/Neufchâtel;CC de Londinières
+76321;Les Grandes-Ventes;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76322;Le Grand-Quevilly;UTAS Boucles de Seine;Métropole Rouen Normandie
+76323;Graval;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76324;Grèges;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76325;Grémonville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76327;Greuville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76328;Grigneuseville;UTAS Dieppe/Neufchâtel;CC Inter-Caux-Vexin
+76329;Gruchet-le-Valasse;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76330;Gruchet-Saint-Siméon;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76331;Grugny;UTAS Rouen;CC Inter-Caux-Vexin
+76332;Grumesnil;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76333;Guerville;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76334;Gueures;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76335;Gueutteville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76336;Gueutteville-les-Grès;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76338;La Hallotière;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76339;Le Hanouard;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76340;Harcanville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76341;Harfleur;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76342;Hattenville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76343;Haucourt;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76344;Haudricourt;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76345;Haussez;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76346;Hautot-l'Auvray;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76347;Hautot-le-Vatois;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76348;Hautot-Saint-Sulpice;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76349;Hautot-sur-Mer;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76350;Hautot-sur-Seine;UTAS Boucles de Seine;Métropole Rouen Normandie
+76351;Le Havre;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76352;La Haye;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76353;Héberville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76354;Hénouville;UTAS Boucles de Seine;Métropole Rouen Normandie
+76355;Héricourt-en-Caux;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76356;Hermanville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76357;Hermeville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76358;Le Héron;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76359;Héronchelles;UTAS Rouen;CC Inter-Caux-Vexin
+76360;Heugleville-sur-Scie;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76361;Heuqueville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76362;Heurteauville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76363;Hodeng-au-Bosc;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76364;Hodeng-Hodenger;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76365;Houdetot;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76366;Le Houlme;UTAS Rouen;Métropole Rouen Normandie
+76367;Houppeville;UTAS Rouen;Métropole Rouen Normandie
+76368;Houquetot;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76369;La Houssaye-Béranger;UTAS Rouen;CC Inter-Caux-Vexin
+76370;Hugleville-en-Caux;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76371;Les Ifs;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76372;Illois;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76373;Imbleville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76374;Incheville;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76375;Ingouville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76377;Isneauville;UTAS Rouen;Métropole Rouen Normandie
+76378;Jumièges;UTAS Boucles de Seine;Métropole Rouen Normandie
+76379;Lamberville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76380;Lammerville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76381;Landes-Vieilles-et-Neuves;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76382;Lanquetot;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76383;Lestanville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76384;Lillebonne;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76385;Limésy;UTAS Boucles de Seine;CC Caux - Austreberthe
+76386;Limpiville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76387;Lindebeuf;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76388;Lintot;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76389;Lintot-les-Bois;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76390;Les Loges;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76391;La Londe;UTAS Boucles de Seine;Métropole Rouen Normandie
+76392;Londinières;UTAS Dieppe/Neufchâtel;CC de Londinières
+76393;Longmesnil;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76394;Longroy;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76395;Longueil;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76396;Longuerue;UTAS Rouen;CC Inter-Caux-Vexin
+76397;Longueville-sur-Scie;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76398;Louvetot;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76399;Lucy;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76400;Luneray;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76401;Arelaune-en-Seine;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76402;Malaunay;UTAS Rouen;Métropole Rouen Normandie
+76403;Malleville-les-Grès;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76404;Manéglise;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76405;Manéhouville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76406;Maniquerville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76407;Manneville-ès-Plains;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76408;Manneville-la-Goupil;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76409;Mannevillette;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76410;Maromme;UTAS Boucles de Seine;Métropole Rouen Normandie
+76411;Marques;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76412;Martainville-Épreville;UTAS Rouen;CC Inter-Caux-Vexin
+76413;Martigny;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76414;Martin-Église;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76415;Massy;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76416;Mathonville;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76417;Maucomble;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76418;Maulévrier-Sainte-Gertrude;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76419;Mauny;UTAS Boucles de Seine;CC Roumois Seine
+76420;Mauquenchy;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76421;Mélamare;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76422;Melleville;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76423;Ménerval;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76424;Ménonval;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76425;Mentheville;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76426;Mésangueville;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76427;Mesnières-en-Bray;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76428;Le Mesnil-Durdent;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76429;Le Mesnil-Esnard;UTAS Rouen;Métropole Rouen Normandie
+76430;Mesnil-Follemprise;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76431;Le Mesnil-Lieubray;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76432;Mesnil-Mauger;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76433;Mesnil-Panneville;UTAS Boucles de Seine;CC Yvetot Normandie
+76434;Mesnil-Raoul;UTAS Rouen;CC Inter-Caux-Vexin
+76435;Le Mesnil-Réaume;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76436;Le Mesnil-sous-Jumièges;UTAS Boucles de Seine;Métropole Rouen Normandie
+76437;Meulers;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76438;Millebosc;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76439;Mirville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76440;Molagnies;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76441;Monchaux-Soreng;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76442;Monchy-sur-Eu;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76443;Mont-Cauvaire;UTAS Rouen;CC Inter-Caux-Vexin
+76445;Montérolier;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76446;Montigny;UTAS Rouen;CC Inter-Caux-Vexin
+76447;Montivilliers;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76448;Montmain;UTAS Rouen;Métropole Rouen Normandie
+76449;Montreuil-en-Caux;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76450;Montroty;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76451;Mont-Saint-Aignan;UTAS Rouen;Métropole Rouen Normandie
+76452;Montville;UTAS Rouen;CC Inter-Caux-Vexin
+76453;Morgny-la-Pommeraye;UTAS Rouen;CC Inter-Caux-Vexin
+76454;Mortemer;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76455;Morville-sur-Andelle;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76456;Motteville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76457;Moulineaux;UTAS Boucles de Seine;Métropole Rouen Normandie
+76458;Muchedent;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76459;Nesle-Hodeng;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76460;Nesle-Normandeuse;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76461;Neufbosc;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76462;Neufchâtel-en-Bray;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76463;Neuf-Marché;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76464;La Neuville-Chant-d'Oisel;UTAS Rouen;Métropole Rouen Normandie
+76465;Neuville-Ferrières;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76467;Néville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76468;Nointot;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76469;Nolléval;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76470;Normanville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76471;Norville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76472;Notre-Dame-d'Aliermont;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76473;Notre-Dame-de-Bliquetuit;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76474;Notre-Dame-de-Bondeville;UTAS Rouen;Métropole Rouen Normandie
+76475;Franqueville-Saint-Pierre;UTAS Rouen;Métropole Rouen Normandie
+76476;Port-Jérôme-sur-Seine;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76477;Notre-Dame-du-Bec;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76478;Notre-Dame-du-Parc;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76479;Nullemont;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76480;Ocqueville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76481;Octeville-sur-Mer;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76482;Offranville;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76483;Oherville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76484;Oissel;UTAS Boucles de Seine;Métropole Rouen Normandie
+76485;Omonville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76486;Orival;UTAS Boucles de Seine;Métropole Rouen Normandie
+76487;Osmoy-Saint-Valery;UTAS Dieppe/Neufchâtel;CC de Londinières
+76488;Ouainville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76489;Oudalle;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76490;Ourville-en-Caux;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76491;Ouville-l'Abbaye;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76492;Ouville-la-Rivière;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76493;Paluel;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76494;Parc-d'Anxtot;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76495;Pavilly;UTAS Boucles de Seine;CC Caux - Austreberthe
+76497;Petit-Couronne;UTAS Boucles de Seine;Métropole Rouen Normandie
+76498;Le Petit-Quevilly;UTAS Boucles de Seine;Métropole Rouen Normandie
+76499;Petiville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76500;Pierrecourt;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76501;Pierrefiques;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76502;Pierreval;UTAS Rouen;CC Inter-Caux-Vexin
+76503;Pissy-Pôville;UTAS Rouen;CC Inter-Caux-Vexin
+76504;Pleine-Sève;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76505;Pommereux;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76506;Pommeréval;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76507;Ponts-et-Marais;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76508;La Poterie-Cap-d'Antifer;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76509;Préaux;UTAS Rouen;CC Inter-Caux-Vexin
+76510;Prétot-Vicquemare;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76511;Preuseville;UTAS Dieppe/Neufchâtel;CC de Londinières
+76512;Puisenval;UTAS Dieppe/Neufchâtel;CC de Londinières
+76513;Quevillon;UTAS Boucles de Seine;Métropole Rouen Normandie
+76514;Quévreville-la-Poterie;UTAS Rouen;Métropole Rouen Normandie
+76515;Quiberville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76516;Quièvrecourt;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76517;Quincampoix;UTAS Rouen;CC Inter-Caux-Vexin
+76518;Raffetot;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76519;Rainfreville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76520;Réalcamp;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76521;Rebets;UTAS Rouen;CC Inter-Caux-Vexin
+76522;La Remuée;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76523;Rétonval;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76524;Reuville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76526;Ricarville-du-Val;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76527;Richemont;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76528;Rieux;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76529;Riville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76530;Robertot;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76531;Rocquefort;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76532;Rocquemont;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76533;Rogerville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76534;Rolleville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76535;Roncherolles-en-Bray;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76536;Roncherolles-sur-le-Vivier;UTAS Rouen;Métropole Rouen Normandie
+76537;Ronchois;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76538;Rosay;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76540;Rouen;UTAS Rouen;Métropole Rouen Normandie
+76541;Roumare;UTAS Rouen;CC Inter-Caux-Vexin
+76542;Routes;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76543;Rouville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76544;Rouvray-Catillon;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76545;Rouxmesnil-Bouteilles;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76546;Royville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76547;La Rue-Saint-Pierre;UTAS Rouen;CC Inter-Caux-Vexin
+76548;Ry;UTAS Rouen;CC Inter-Caux-Vexin
+76549;Saâne-Saint-Just;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76550;Sahurs;UTAS Boucles de Seine;Métropole Rouen Normandie
+76551;Sainneville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76552;Sainte-Adresse;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76553;Sainte-Agathe-d'Aliermont;UTAS Dieppe/Neufchâtel;CC de Londinières
+76554;Saint-Aignan-sur-Ry;UTAS Rouen;CC Inter-Caux-Vexin
+76555;Saint-André-sur-Cailly;UTAS Rouen;CC Inter-Caux-Vexin
+76556;Saint-Antoine-la-Forêt;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76557;Saint-Arnoult;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76558;Saint-Aubin-Celloville;UTAS Rouen;Métropole Rouen Normandie
+76559;Saint-Aubin-de-Crétot;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76560;Saint-Aubin-Épinay;UTAS Rouen;Métropole Rouen Normandie
+76561;Saint-Aubin-les-Elbeuf;UTAS Boucles de Seine;Métropole Rouen Normandie
+76562;Saint-Aubin-le-Cauf;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76563;Saint-Aubin-Routot;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76564;Saint-Aubin-sur-Mer;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76565;Saint-Aubin-sur-Scie;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76566;Sainte-Austreberthe;UTAS Boucles de Seine;CC Caux - Austreberthe
+76567;Sainte-Beuve-en-Rivière;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76568;Saint-Clair-sur-les-Monts;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76569;Sainte-Colombe;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76570;Saint-Crespin;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76571;Sainte-Croix-sur-Buchy;UTAS Rouen;CC Inter-Caux-Vexin
+76572;Saint-Denis-d'Aclon;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76573;Saint-Denis-le-Thiboult;UTAS Rouen;CC Inter-Caux-Vexin
+76574;Saint-Denis-sur-Scie;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76575;Saint-Étienne-du-Rouvray;UTAS Boucles de Seine;Métropole Rouen Normandie
+76576;Saint-Eustache-la-Forêt;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76577;Sainte-Foy;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76578;Sainte-Geneviève;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76580;Saint-Georges-sur-Fontaine;UTAS Rouen;CC Inter-Caux-Vexin
+76581;Saint-Germain-des-Essourts;UTAS Rouen;CC Inter-Caux-Vexin
+76582;Saint-Germain-d'Étables;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76583;Saint-Germain-sous-Cailly;UTAS Rouen;CC Inter-Caux-Vexin
+76584;Saint-Germain-sur-Eaulne;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76585;Saint-Gilles-de-Crétot;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76586;Saint-Gilles-de-la-Neuville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76587;Sainte-Hélène-Bondeville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76588;Saint-Hellier;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76589;Saint-Honoré;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76590;Saint-Jacques-d'Aliermont;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76591;Saint-Jacques-sur-Darnétal;UTAS Rouen;Métropole Rouen Normandie
+76592;Saint-Jean-de-Folleville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76593;Saint-Jean-de-la-Neuville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76594;Saint-Jean-du-Cardonnay;UTAS Rouen;CC Inter-Caux-Vexin
+76595;Saint-Jouin-Bruneval;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76596;Saint-Laurent-de-Brèvedent;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76597;Saint-Laurent-en-Caux;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76598;Saint-Léger-aux-Bois;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76599;Saint-Léger-du-Bourg-Denis;UTAS Rouen;Métropole Rouen Normandie
+76600;Saint-Léonard;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76601;Saint-Lucien;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76602;Saint-Maclou-de-Folleville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76603;Saint-Maclou-la-Brière;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76604;Saint-Mards;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76605;Sainte-Marguerite-sur-Mer;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76606;Morienne;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76608;Sainte-Marguerite-sur-Duclair;UTAS Boucles de Seine;Métropole Rouen Normandie
+76609;Sainte-Marie-au-Bosc;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76610;Sainte-Marie-des-Champs;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76611;Saint-Martin-aux-Arbres;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76612;Saint-Martin-au-Bosc;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76613;Saint-Martin-aux-Buneaux;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76614;Saint-Martin-de-Boscherville;UTAS Boucles de Seine;Métropole Rouen Normandie
+76615;Saint-Martin-du-Bec;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76616;Saint-Martin-du-Manoir;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76617;Saint-Martin-du-Vivier;UTAS Rouen;Métropole Rouen Normandie
+76618;Petit-Caux;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76619;Saint-Martin-le-Gaillard;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76620;Saint-Martin-l'Hortier;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76621;Saint-Martin-Osmonville;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76622;Saint-Maurice-d'Ételan;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76623;Saint-Michel-d'Halescourt;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76624;Saint-Nicolas-d'Aliermont;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76626;Saint-Nicolas-de-la-Haie;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76627;Saint-Nicolas-de-la-Taille;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76628;Saint-Ouen-du-Breuil;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76629;Saint-Ouen-le-Mauger;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76630;Saint-Ouen-sous-Bailly;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76631;Saint-Paër;UTAS Boucles de Seine;Métropole Rouen Normandie
+76632;Saint-Pierre-Bénouville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76634;Saint-Pierre-de-Manneville;UTAS Boucles de Seine;Métropole Rouen Normandie
+76635;Saint-Pierre-des-Jonquières;UTAS Dieppe/Neufchâtel;CC de Londinières
+76636;Saint-Pierre-de-Varengeville;UTAS Boucles de Seine;Métropole Rouen Normandie
+76637;Saint-Pierre-en-Port;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76638;Saint-Pierre-en-Val;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76640;Saint-Pierre-lès-Elbeuf;UTAS Boucles de Seine;Métropole Rouen Normandie
+76641;Saint-Pierre-le-Vieux;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76642;Saint-Pierre-le-Viger;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76644;Saint-Rémy-Boscrocourt;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76645;Saint-Riquier-en-Rivière;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76646;Saint-Riquier-ès-Plains;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76647;Saint-Romain-de-Colbosc;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76648;Saint-Saëns;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76649;Saint-Saire;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76650;Saint-Sauveur-d'Émalleville;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76651;Saint-Sylvain;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76652;Saint-Vaast-d'Équiqueville;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76653;Saint-Vaast-Dieppedalle;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76654;Saint-Vaast-du-Val;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76655;Saint-Valery-en-Caux;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76656;Saint-Victor-l'Abbaye;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76657;Saint-Vigor-d'Ymonville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76658;Saint-Vincent-Cramesnil;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76660;Sandouville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76662;Sassetot-le-Malgardé;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76663;Sassetot-le-Mauconduit;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76664;Sasseville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76665;Sauchay;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76666;Saumont-la-Poterie;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76667;Sauqueville;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76668;Saussay;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76669;Sausseuzemare-en-Caux;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76670;Senneville-sur-Fécamp;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76671;Sept-Meules;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76672;Serqueux;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76673;Servaville-Salmonville;UTAS Rouen;CC Inter-Caux-Vexin
+76675;Sierville;UTAS Rouen;CC Inter-Caux-Vexin
+76676;Sigy-en-Bray;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76677;Smermesnil;UTAS Dieppe/Neufchâtel;CC de Londinières
+76678;Sommery;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76679;Sommesnil;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76680;Sorquainville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76681;Sotteville-lès-Rouen;UTAS Boucles de Seine;Métropole Rouen Normandie
+76682;Sotteville-sous-le-Val;UTAS Boucles de Seine;Métropole Rouen Normandie
+76683;Sotteville-sur-Mer;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76684;Tancarville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76685;Thérouldeville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76686;Theuville-aux-Maillots;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76688;Thiergeville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76689;Thiétreville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76690;Thil-Manneville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76691;Le Thil-Riberpré;UTAS Dieppe/Neufchâtel;CC des Quatre Rivières
+76692;Thiouville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76693;Le Tilleul;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76694;Tocqueville-en-Caux;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76695;Tocqueville-les-Murs;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76697;Torcy-le-Grand;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76698;Torcy-le-Petit;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76699;Le Torp-Mesnil;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76700;Tôtes;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76702;Touffreville-la-Corbeline;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76703;Touffreville-sur-Eu;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76705;Tourville-la-Rivière;UTAS Boucles de Seine;Métropole Rouen Normandie
+76706;Tourville-les-Ifs;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76707;Tourville-sur-Arques;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76708;Toussaint;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76709;Le Trait;UTAS Boucles de Seine;Métropole Rouen Normandie
+76710;Trémauville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76711;Le Tréport;UTAS Dieppe/Neufchâtel;CC des Villes Soeurs
+76712;La Trinité-du-Mont;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76714;Les Trois-Pierres;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76715;Trouville;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76716;Turretot;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76717;Val-de-la-Haye;UTAS Boucles de Seine;Métropole Rouen Normandie
+76718;Valliquerville;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76719;Valmont;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76720;Varengeville-sur-Mer;UTAS Dieppe/Neufchâtel;CA de la Région Dieppoise
+76721;Varneville-Bretteville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76723;Vassonville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76724;Vatierville;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76725;Vattetot-sous-Beaumont;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76726;Vattetot-sur-Mer;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76727;Vatteville-la-Rue;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76728;La Vaupalière;UTAS Rouen;CC Inter-Caux-Vexin
+76730;Veauville-lès-Quelles;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76731;Vénestanville;UTAS Dieppe/Neufchâtel;CC Terroir de Caux
+76732;Butot-Vénesville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76733;Ventes-Saint-Rémy;UTAS Dieppe/Neufchâtel;CC Communauté Bray-Eawy
+76734;Vergetot;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76735;Veules-les-Roses;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76736;Veulettes-sur-Mer;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76737;Vibeuf;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76738;Vieux-Manoir;UTAS Rouen;CC Inter-Caux-Vexin
+76739;Vieux-Rouen-sur-Bresle;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76740;La Vieux-Rue;UTAS Rouen;CC Inter-Caux-Vexin
+76741;Villainville;UTAS Le Havre Pointe de Caux;CU Le Havre Seine Métropole
+76743;Villers-Écalles;UTAS Boucles de Seine;CC Caux - Austreberthe
+76744;Villers-sous-Foucarmont;UTAS Dieppe/Neufchâtel;CC Interrégionale Aumale - Blangy-sur-Bresle
+76745;Villy-sur-Yères;UTAS Dieppe/Neufchâtel;CC Falaises du Talou
+76746;Vinnemerville;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76747;Virville;UTAS Le Havre Pointe de Caux;CC Campagne-De-Caux
+76748;Vittefleur;UTAS Entre Seine et Mer;CC de la Côte d'Albâtre
+76749;Wanchy-Capval;UTAS Dieppe/Neufchâtel;CC de Londinières
+76750;Yainville;UTAS Boucles de Seine;Métropole Rouen Normandie
+76751;Yébleron;UTAS Entre Seine et Mer;CA Caux Seine Agglo
+76752;Yerville;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76753;Ymare;UTAS Rouen;Métropole Rouen Normandie
+76754;Yport;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76755;Ypreville-Biville;UTAS Entre Seine et Mer;CA Fécamp Caux Littoral Agglomération
+76756;Yquebeuf;UTAS Rouen;CC Inter-Caux-Vexin
+76757;Yvecrique;UTAS Entre Seine et Mer;CC Plateau de Caux-Doudeville-Yerville
+76758;Yvetot;UTAS Entre Seine et Mer;CC Yvetot Normandie
+76759;Yville-sur-Seine;UTAS Boucles de Seine;Métropole Rouen Normandie
