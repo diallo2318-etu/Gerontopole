@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boussole ICOPE · Parcours de prévention en Normandie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="barre">
+    <a class="marque" href="/" aria-label="Boussole ICOPE, accueil">
+      <svg class="marque-logo" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M20 7l4.5 13L20 33l-4.5-13z" fill="currentColor" opacity=".18"/>
+        <path d="M20 7l4.5 13h-9z" fill="currentColor"/>
+        <circle cx="20" cy="20" r="2.2" fill="var(--papier)"/>
+      </svg>
+      <span>
+        <strong>Boussole ICOPE</strong>
+        <small>Le bon interlocuteur, au plus près de chez la personne</small>
+      </span>
+    </a>
+    <dl class="chiffres" id="chiffres" aria-label="L'offre dans l'outil"></dl>
+  </header>
+
+  <main class="page">
+    <!-- ================================================= Saisie -->
+    <aside class="saisie" aria-label="La personne">
+      <form id="formulaire" class="carte formulaire" novalidate>
+        <h1 class="titre-form">Construire un parcours</h1>
+        <p class="sous-titre">Après un test ICOPE (Step 1), trois informations suffisent.</p>
+
+        <fieldset class="champ">
+          <legend><span class="num">1</span>Où habite la personne ?</legend>
+          <div class="combo" id="combo">
+            <svg class="combo-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <input id="commune" type="text" autocomplete="off" spellcheck="false"
+                   placeholder="Commune ou code postal" role="combobox"
+                   aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions">
+            <button type="button" class="combo-effacer" id="effacer" aria-label="Effacer la commune" hidden>×</button>
+            <ul id="suggestions" class="suggestions" role="listbox" hidden></ul>
+          </div>
+          <p class="aide" id="aide-commune">Ex. « Saint-Lô », « 14400 » (plusieurs communes) ou un code INSEE.</p>
+        </fieldset>
+
+        <fieldset class="champ">
+          <legend><span class="num">2</span>Quel âge a-t-elle ?</legend>
+          <div class="age">
+            <button type="button" class="pas" data-pas="-1" aria-label="Un an de moins">−</button>
+            <input id="age" type="number" inputmode="numeric" min="18" max="110" value="72" aria-describedby="aide-age">
+            <span class="unite">ans</span>
+            <button type="button" class="pas" data-pas="1" aria-label="Un an de plus">+</button>
+          </div>
+          <p class="aide aide-age" id="aide-age"></p>
+        </fieldset>
+
+        <fieldset class="champ">
+          <legend><span class="num">3</span>Quelles alertes au Step 1 ?<span class="compteur" id="compteur"></span></legend>
+          <div class="alertes" id="alertes" role="group"></div>
+          <p class="aide">Aucune alerte : l'outil propose seulement des actions de prévention.</p>
+        </fieldset>
+
+        <button type="submit" class="bouton-principal" id="valider" disabled>
+          Construire le parcours
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="erreur" id="erreur" role="alert" hidden></p>
+      </form>
+
+      <section class="carte profils" aria-labelledby="titre-profils">
+        <h2 id="titre-profils">Profils types <span>partie 1</span></h2>
+        <div id="profils" class="liste-profils"></div>
+      </section>
+    </aside>
+
+    <!-- ================================================= Résultats -->
+    <section class="resultats" id="resultats" aria-live="polite" aria-busy="false">
+      <div class="accueil" id="accueil">
+        <p class="surtitre">Parcours ICOPE · Normandie</p>
+        <h2>Qui vérifie l'alerte, vers qui orienter, et quoi proposer près de chez elle ?</h2>
+        <ol class="etapes-accueil">
+          <li><span>1</span><div><strong>Levée de doute</strong><p>Le lieu le plus proche qui peut confirmer l'alerte, selon l'âge.</p></div></li>
+          <li><span>2</span><div><strong>Orientation, plan A, B ou C</strong><p>Le professionnel idéal s'il est assez proche, sinon une solution de repli, expliquée.</p></div></li>
+          <li><span>3</span><div><strong>Step 2 et prévention</strong><p>L'évaluation approfondie et les ateliers accessibles depuis sa commune.</p></div></li>
+        </ol>
+        <p class="accueil-pied">Choisissez un profil type à gauche pour une démonstration en un clic.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    Distances à vol d'oiseau entre centres des communes. Sources : Annuaire Santé (RPPS), FINESS, Mon bilan prévention,
+    Agirc-Arrco, Sport Santé Normandie, actions collectives des 5 départements. Les professionnels formés à ICOPE
+    (liste privée) sont affichés sans nom. Projet ICOPE Normandie, Gérontopôle.
+  </footer>
+
+  <script src="/static/vendor/leaflet/leaflet.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

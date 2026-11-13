@@ -155,18 +155,30 @@ python3 entrepot/verifier_parcours.py
 python3 entrepot/verifier_parcours.py --domaine vision
 ```
 
-### 6. Interface du parcours (bloc 2)
+### 6. Boussole ICOPE : l'interface du parcours (bloc 2)
 
 Après l'entrepôt et `construire_table_roles.py` :
 
 ```bash
-streamlit run interface/app.py
+python3 interface/serveur.py      # puis ouvrir http://localhost:8000
 ```
 
-La page s'ouvre dans le navigateur. On entre la commune ou le code postal, l'âge et les alertes (ou on choisit un des 5 profils types de la partie 1 dans la barre de gauche). Elle affiche la levée de doute, les professionnels de chaque alerte (plan A / B / C, avec la distance), le Step 2 et les actions de prévention proches pour les capacités sans alerte.
+On choisit la commune (suggestions pendant la frappe : nom, code postal ou code INSEE), l'âge et les alertes, puis **Construire le parcours** (ou un des 5 profils types de la partie 1). La page affiche :
 
-- Le calcul est dans `interface/moteur_parcours.py`, utilisable sans interface : `python3 interface/moteur_parcours.py "Vire Normandie" 72 vision audition`.
-- Une capacité sans parcours écrit dans `parcours_capacites.csv` affiche les métiers du référentiel d'alertes, sans plan.
+- une frise des étapes : levée de doute, orientation pour chaque alerte, Step 2, avec le plan retenu (A / B / C), les 3 professionnels les plus proches (adresse, distance, téléphone) et **« Pourquoi ce plan ? »** (chaque plan essayé : trouvé, trop loin, absent, liste à obtenir) ;
+- une carte (la personne, les professionnels proposés, le rayon de recherche au survol d'une étape) ;
+- les indicateurs du parcours et les actions de prévention proches pour les capacités sans alerte ;
+- une fiche imprimable (bouton **Imprimer la fiche**). L'adresse de la page (`#50502/84/cognition,mobilite`) permet de rouvrir ou partager un parcours.
+
+| Fichier | Rôle |
+|---|---|
+| `interface/moteur_parcours.py` | calcul du parcours (utilisable seul : `python3 interface/moteur_parcours.py "Vire Normandie" 72 vision`) |
+| `interface/serveur.py` | API FastAPI : `/api/meta`, `/api/communes`, `/api/parcours` (documentation : http://localhost:8000/api/docs) |
+| `interface/static/` | la page (HTML, CSS, JavaScript) ; Leaflet 1.9.4 est inclus, seul le fond de carte OpenStreetMap demande internet |
+| `tests/test_interface.py` | tests de l'API : `python3 -m pytest tests/` |
+
+- Le serveur n'écoute que sur l'ordinateur (127.0.0.1) : l'entrepôt contient des données de santé, même si la page n'affiche que l'offre (annuaires publics).
+- Une capacité sans parcours écrit dans `parcours_capacites.csv` affiche les métiers du référentiel d'alertes (« Parcours à venir »).
 - Les professionnels formés à ICOPE (liste privée) sont affichés sans nom ni coordonnées.
 - Maisons sport-santé : `bases/maisons_sport_sante_normandie.csv` (Sport Santé Normandie, consulté le 13/11/2026), table `offre_maison_sport_sante`, source `maison_sport_sante` dans le parcours.
 

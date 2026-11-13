@@ -108,6 +108,9 @@ class Etape:
     titre: str
     plans: list
     note: str = ""
+    type: str = ""      # levee_de_doute, orientation, etape2, moins_60
+    domaine: str = ""   # capacité de l'alerte (étape orientation)
+    a_parcours: bool = True  # False : capacité sans parcours écrit (métiers du référentiel)
 
     @property
     def retenu(self):
@@ -147,6 +150,12 @@ def trouver_communes(con, texte):
     return [Commune(*l) for l in lignes if l[2] is not None]
 
 
+def commune_par_code(con, code_insee):
+    l = con.execute("SELECT code_insee, nom, latitude, longitude FROM ref_commune WHERE code_insee = $c",
+                    {"c": code_insee}).fetchall()
+    return Commune(*l[0]) if l and l[0][2] is not None else None
+
+
 def plus_proches(con, source, valeur, commune, nombre=3):
     """Les `nombre` offres les plus proches de la commune (un même professionnel n'apparaît qu'une fois)."""
     sql = OFFRE_SQL[source]
@@ -156,10 +165,10 @@ def plus_proches(con, source, valeur, commune, nombre=3):
     try:
         return con.execute(f"""
             WITH o AS ({sql}),
-            d AS (SELECT o.*, c.nom AS commune, round({DISTANCE_KM}, 1) AS distance_km
+            d AS (SELECT o.*, c.nom AS commune, c.latitude, c.longitude, round({DISTANCE_KM}, 1) AS distance_km
                   FROM o JOIN ref_commune c USING (code_insee)
                   QUALIFY row_number() OVER (PARTITION BY o.identifiant ORDER BY distance_km) = 1)
-            SELECT nom, detail, adresse, code_postal, commune, distance_km, telephone
+            SELECT nom, detail, adresse, code_postal, commune, distance_km, telephone, latitude, longitude
             FROM d ORDER BY distance_km, nom LIMIT {int(nombre)}""", params).df()
     except duckdb.CatalogException:   # table absente de l'entrepôt (fichier pas encore reçu)
         return pd.DataFrame()
@@ -227,22 +236,23 @@ def parcours_personne(con, commune, age, alertes, nombre=3):
     etapes = []
     if age < 60:
         etapes.append(Etape("Moins de 60 ans : un conseil", evaluer(con, p[p.etape == "moins_60"], commune, nombre),
-                            "Pas d'orientation avant 60 ans (décision du Gérontopôle)."))
+                            "Pas d'orientation avant 60 ans (décision du Gérontopôle).", type="moins_60"))
         return etapes, []
     if alertes:
         etapes.append(Etape("1. Levée de doute : qui vérifie l'alerte ?",
                             evaluer(con, filtre_age(p[p.etape == "levee_de_doute"], age), commune, nombre),
-                            f"Propositions pour une personne de {age} ans."))
+                            f"Propositions pour une personne de {age} ans.", type="levee_de_doute"))
         for d in alertes:
             lignes = filtre_age(p[(p.domaine == d) & (p.etape == "orientation")], age)
             titre = f"2. Alerte {CAPACITES[d].lower()} confirmée : vers qui orienter ?"
             if len(lignes):
-                etapes.append(Etape(titre, evaluer(con, lignes, commune, nombre)))
+                etapes.append(Etape(titre, evaluer(con, lignes, commune, nombre), type="orientation", domaine=d))
             else:
                 etapes.append(Etape(titre, offre_referentiel(con, d, commune, nombre),
-                                    "Parcours pas encore écrit pour cette capacité : métiers du référentiel d'alertes, sans plan A/B/C."))
+                                    "Parcours pas encore écrit pour cette capacité : métiers du référentiel d'alertes, sans plan A/B/C.",
+                                    type="orientation", domaine=d, a_parcours=False))
         etapes.append(Etape("3. Évaluation approfondie (Step 2)",
-                            evaluer(con, filtre_age(p[p.etape == "etape2"], age), commune, nombre)))
+                            evaluer(con, filtre_age(p[p.etape == "etape2"], age), commune, nombre), type="etape2"))
     # Prévention : pour chaque capacité sans alerte, le premier plan qui trouve des actions
     prevention = []
     for d in CAPACITES:
