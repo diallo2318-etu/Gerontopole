@@ -75,8 +75,18 @@ python3 scripts_aissatou/mon_script.py             # Rapport_Audit_Qualite.xlsx
 python3 scripts_aissatou/nettoyage.py              # Base_Nettoyee.xlsx
 python3 scripts_aissatou/statistiques.py           # Base_Statistiques.xlsx
 python3 scripts_aissatou/statistiques_completes.py # Base_Statistiques_Completes.xlsx
-python3 scripts_aissatou/cohortes.py               # Resultats_Cohortes_Filtrees.xlsx
+python3 scripts_aissatou/cohortes.py               # Resultats_Cohortes.xlsx
+python3 scripts_aissatou/avant_apres_2025.py       # Analyse_Avant_Apres_2025.xlsx
+python3 scripts_aissatou/tags_cfppa.py             # Analyse_Tags_CFPPA.xlsx
 ```
+
+`nettoyage.py` prend l'export le plus récent et écrit `Base_Nettoyee.xlsx` avec deux onglets : `Donnees` (la base) et `Bilan` (lignes au départ, date de l'export), lus par les scripts suivants.
+
+| Script | Contenu |
+|---|---|
+| `cohortes.py` | Toutes les personnes de 60 ans et plus, en 3 cohortes ; description (sexe, âge) ; suivi calculé seulement chez celles qui auraient déjà dû refaire le test (premier test il y a plus de 6 mois, ou plus d'un an, à la date de l'export) |
+| `avant_apres_2025.py` | Âge (Mann-Whitney) et modalité du test (khi-deux) avant / après 2025 ; tests par mois ; mentions de la Carsat (colonnes `source`, `tags`, `centre`). Renseigner `DATE_CAMPAGNE_CARSAT` en haut du script pour comparer avant / après la campagne |
+| `tags_cfppa.py` | Tests orientés par les CFPPA (tag « la Poste CFPPA France ») comparés aux autres tests |
 
 Règles de nettoyage (validées par Marine Le Roux, 22/10/2026) :
 
@@ -85,7 +95,8 @@ Règles de nettoyage (validées par Marine Le Roux, 22/10/2026) :
 | Un test par personne et par jour | on garde le dernier |
 | Tests « one-shot » de professionnels | colonne `one_shot_pro` |
 | Moins de 60 ans | colonne `moins_60_ans` |
-| Fenêtre de suivi (cohortes) | exclusion des premiers tests de moins de 365 jours |
+| Cohortes | toutes les personnes sont gardées, même entrées depuis moins d'un an |
+| Suivi | % calculé seulement chez les personnes dont le premier test date de plus de 6 mois (ou 1 an) |
 
 ### 4. Partie 3 – Offre de prévention
 
@@ -116,7 +127,11 @@ python3 entrepot/orientation.py "Vire Normandie" vision
 
 Domaines : `vision`, `audition`, `cognition`, `nutrition`, `psychologie`, `mobilite`, `social`, `aidant`, `incontinence`.
 
-Rattachement des actions aux zones (UTAS, MDS, secteurs) : remplir `~/donnees_icope/territoires_a_rattacher.csv` (colonne `codes_insee`, séparateur `|`), l'enregistrer sous `ref_territoire_action.csv`, puis reconstruire l'entrepôt. Pour la Seine-Maritime, `bases/utas_seine_maritime.csv` donne l'UTAS de chaque commune (open data du Département 76, 2022).
+Rattachement des actions aux zones : `python3 entrepot/rattacher_territoires.py` écrit `~/donnees_icope/ref_territoire_action.csv` pour les UTAS de Seine-Maritime (`bases/utas_seine_maritime.csv`) et les territoires d'action sociale du Calvados (`bases/territoires_action_sociale_calvados.csv`, construit depuis les contours publiés sur data.calvados.fr : une commune appartient au territoire qui contient son centre), puis reconstruire l'entrepôt.
+
+Sans `liste_INFIRMIER_IPA_NORMANDIE.xlsx`, la table `offre_ipa` est construite depuis l'Annuaire Santé (savoir-faire « Exercice infirmier en pratique avancée… », colonne `source`).
+
+Pour les autres zones (secteurs de la Manche), remplir `~/donnees_icope/territoires_a_rattacher.csv` (colonne `codes_insee`, séparateur `|`), l'enregistrer sous `ref_territoire_action.csv`, puis reconstruire l'entrepôt. Pour la Seine-Maritime, `bases/utas_seine_maritime.csv` donne l'UTAS de chaque commune (open data du Département 76, 2022).
 
 ### 5. Parcours (travail commun)
 
@@ -127,7 +142,7 @@ Le parcours de chaque capacité est décrit dans `entrepot/parcours_capacites.cs
 | `domaine` | `vision`, `audition`, `cognition`… ou `tous` (levée de doute, Step 2, moins de 60 ans) |
 | `etape` | `levee_de_doute`, `etape2`, `orientation` (alerte confirmée), `sans_alerte`, `moins_60` |
 | `plan` | `A` (le plus adapté), `B` si le plan A est trop loin ou absent, puis `C` |
-| `source` | où chercher : `rpps_profession`, `finess_categorie`, `ipa`, `mon_bilan_prevention`, `agirc_arrco`, `pro_forme_icope`, `action_collective` (mots-clés séparés par `\|`), `conseil`, `a_obtenir` |
+| `source` | où chercher : `rpps_profession`, `finess_categorie`, `ipa`, `mon_bilan_prevention`, `agirc_arrco`, `pro_forme_icope`, `action_collective` (mots-clés séparés par `\|`), `action_domaine` (actions classées dans cette capacité par l'entrepôt, colonne `domaine_icope` : `mobilite`, `nutrition`, `psychologie`, `social`…), `conseil`, `a_obtenir` |
 | `valeur` | le métier (écrit comme dans `referentiel_alertes.csv`), les mots-clés ou le texte du conseil |
 | `distance_max_km` | au-delà, on passe au plan suivant (vide : pas de limite) |
 | `age_min`, `age_max` | si la proposition dépend de l'âge (ex. Mon bilan prévention : 60-65 et 70-75 ans) |
@@ -139,6 +154,21 @@ Vérifier le fichier (métiers bien écrits, plan proposé selon la commune) :
 python3 entrepot/verifier_parcours.py
 python3 entrepot/verifier_parcours.py --domaine vision
 ```
+
+### 6. Interface du parcours (bloc 2)
+
+Après l'entrepôt et `construire_table_roles.py` :
+
+```bash
+streamlit run interface/app.py
+```
+
+La page s'ouvre dans le navigateur. On entre la commune ou le code postal, l'âge et les alertes (ou on choisit un des 5 profils types de la partie 1 dans la barre de gauche). Elle affiche la levée de doute, les professionnels de chaque alerte (plan A / B / C, avec la distance), le Step 2 et les actions de prévention proches pour les capacités sans alerte.
+
+- Le calcul est dans `interface/moteur_parcours.py`, utilisable sans interface : `python3 interface/moteur_parcours.py "Vire Normandie" 72 vision audition`.
+- Une capacité sans parcours écrit dans `parcours_capacites.csv` affiche les métiers du référentiel d'alertes, sans plan.
+- Les professionnels formés à ICOPE (liste privée) sont affichés sans nom ni coordonnées.
+- Maisons sport-santé : `bases/maisons_sport_sante_normandie.csv` (Sport Santé Normandie, consulté le 13/11/2026), table `offre_maison_sport_sante`, source `maison_sport_sante` dans le parcours.
 
 ## Règles
 

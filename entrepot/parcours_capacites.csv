@@ -26,3 +26,19 @@ cognition;orientation;B;ipa;Infirmier en pratique avancée, pathologies chroniqu
 cognition;orientation;C;conseil;En parler au médecin traitant à la prochaine visite;;;;
 cognition;sans_alerte;A;action_collective;mémoire|cognitiv|cerveau;;;;Atelier mémoire
 cognition;sans_alerte;B;action_collective;bien vieillir|prévention;;;;Atelier de prévention générale
+mobilite;orientation;A;rpps_profession;Masseur-Kinésithérapeute;20;;;Rééducation, travail de l'équilibre et prévention des chutes (sur prescription du médecin)
+mobilite;orientation;B;maison_sport_sante;Maison sport-santé;30;;;Activité physique encadrée et adaptée à la personne (liste Sport Santé Normandie, 35 lieux)
+mobilite;orientation;C;rpps_profession;Pédicure-Podologue;;;;Pieds douloureux, chaussage adapté : une cause fréquente de chute
+mobilite;orientation;C;conseil;En parler au médecin traitant à la prochaine visite;;;;Après une chute, ou si la marche se dégrade vite : consulter sans attendre
+mobilite;sans_alerte;A;action_domaine;mobilite;;;;Atelier équilibre, gym douce, marche (actions classées « activité physique » dans l'entrepôt)
+mobilite;sans_alerte;B;action_collective;bien vieillir|prévention;;;;Atelier de prévention générale
+nutrition;orientation;A;rpps_profession;Diététicien;20;;;Bilan de l'alimentation et conseils en cas de perte de poids ou d'appétit (consultation souvent non remboursée)
+nutrition;orientation;B;rpps_profession;Chirurgien-Dentiste;20;;;Des dents abîmées ou un appareil mal adapté font souvent moins manger
+nutrition;orientation;C;conseil;En parler au médecin traitant à la prochaine visite;;;;Se peser chaque mois, une perte de poids rapide doit faire consulter. En cas de difficulté pour avaler, le médecin peut prescrire un bilan chez l'orthophoniste
+nutrition;sans_alerte;A;action_domaine;nutrition;;;;Atelier nutrition, cuisine, repas partagés (actions classées « nutrition » dans l'entrepôt)
+nutrition;sans_alerte;B;action_collective;bien vieillir|prévention;;;;Atelier de prévention générale
+psychologie;orientation;A;rpps_profession;Psychologue;20;;;Écoute et accompagnement, séances remboursées avec le dispositif « Mon soutien psy »
+psychologie;orientation;B;rpps_profession;Médecin|Psychiatrie;30;;;Spécialiste, plus rare : distance plus large
+psychologie;orientation;C;conseil;En parler au médecin traitant à la prochaine visite;;;;En cas d'idées noires : appeler le 3114 (numéro national de prévention du suicide, gratuit, 24 h/24)
+psychologie;sans_alerte;A;action_domaine;psychologie;;;;Atelier bien-être, sophrologie, sommeil (actions classées « santé mentale et bien-être » dans l'entrepôt)
+psychologie;sans_alerte;B;action_domaine;social;;;;Activités pour rompre l'isolement (actions classées « lien social »)

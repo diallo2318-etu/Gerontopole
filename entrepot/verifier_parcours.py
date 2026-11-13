@@ -29,8 +29,11 @@ OFFRE = {
     "mon_bilan_prevention": "SELECT DISTINCT code_insee FROM offre_mon_bilan_prevention WHERE ? IS NOT NULL",
     "agirc_arrco": "SELECT DISTINCT code_insee FROM offre_centre_agirc_arrco WHERE ? IS NOT NULL",
     "pro_forme_icope": "SELECT DISTINCT code_insee FROM offre_pro_forme_icope WHERE ? IS NOT NULL",
-    "a_obtenir": None, "conseil": None, "action_collective": None,
+    "maison_sport_sante": "SELECT DISTINCT code_insee FROM offre_maison_sport_sante WHERE ? IS NOT NULL",
+    "a_obtenir": None, "conseil": None, "action_collective": None, "action_domaine": None,
 }
+# Âges testés quand une proposition dépend de l'âge (ex. Mon bilan prévention : 60-65 et 70-75 ans)
+AGES_TESTES = [62, 68, 72, 80]
 
 
 def distances_au_plus_proche(con, communes, source, valeur):
@@ -64,6 +67,9 @@ def controler(con, parcours):
         elif l.source == "rpps_profession" and not con.execute(
                 "SELECT count(*) FROM v_offre_par_domaine WHERE critere = ?", [l.valeur]).fetchone()[0]:
             problemes.append(f"{ligne} : « {l.valeur} » absent de v_offre_par_domaine (ajouter le métier à referentiel_alertes.csv)")
+        elif l.source == "action_domaine" and not con.execute(
+                "SELECT count(*) FROM offre_action_collective WHERE domaine_icope = ?", [l.valeur]).fetchall()[0][0]:
+            problemes.append(f"{ligne} : aucune action collective classée « {l.valeur} » (colonne domaine_icope)")
     return problemes
 
 
@@ -73,7 +79,7 @@ def plan_retenu(con, communes, lignes):
     for plan in sorted(lignes.plan.unique()):
         possible = pd.Series(False, index=communes.index)
         for _, l in lignes[lignes.plan == plan].iterrows():
-            if l.source in ("conseil", "action_collective"):
+            if l.source in ("conseil", "action_collective", "action_domaine"):
                 possible[:] = True
                 continue
             d = distances_au_plus_proche(con, communes, l.source, l.valeur)
@@ -104,14 +110,20 @@ def main():
     resultats = []
     for (domaine, etape), lignes in parcours[parcours.etape.isin(["levee_de_doute", "etape2", "orientation"])].groupby(
             ["domaine", "etape"], sort=False):
-        retenu = plan_retenu(con, communes, lignes)
-        part = communes.groupby(retenu)["population"].sum() / communes["population"].sum() * 100
-        resultats.append({"Capacité": domaine, "Étape": etape,
-                          **{f"Plan {p} (% pop.)": round(part.get(p, 0), 1) for p in ["A", "B", "C"]},
-                          "Aucun (% pop.)": round(part.get("aucun", 0), 1)})
+        # Si une proposition dépend de l'âge, on refait le calcul pour plusieurs âges
+        depend_age = lignes[["age_min", "age_max"]].notna().any().any()
+        for age in (AGES_TESTES if depend_age else [None]):
+            sous = lignes if age is None else lignes[(lignes.age_min.isna() | (lignes.age_min <= age))
+                                                     & (lignes.age_max.isna() | (lignes.age_max >= age))]
+            retenu = plan_retenu(con, communes, sous)
+            part = communes.groupby(retenu)["population"].sum() / communes["population"].sum() * 100
+            resultats.append({"Capacité": domaine, "Étape": etape, "Âge": f"{age} ans" if age else "tous",
+                              **{f"Plan {p} (% pop.)": round(part.get(p, 0), 1) for p in ["A", "B", "C"]},
+                              "Aucun (% pop.)": round(part.get("aucun", 0), 1)})
     print("\nPlan proposé selon la commune (part de la population de Normandie) :")
     print(pd.DataFrame(resultats).to_string(index=False))
-    print("\nRemarque : les tranches d'âge (age_min, age_max) ne sont pas prises en compte ici.")
+    print("\nRemarques : distance à vol d'oiseau entre centres des communes ; une source « a_obtenir » "
+          "(liste pas encore disponible) n'est jamais proposée, on passe au plan suivant.")
 
 
 if __name__ == "__main__":
