@@ -1,20 +1,31 @@
 import pandas as pd
 import glob
+import re
 
-# 1. Trouver le fichier source
-fichiers = glob.glob("bdi_etape1_*.xlsx")
-fichier_source = fichiers[0]
+# 1. Trouver le fichier source (le plus récent s'il y en a plusieurs : la date est dans le nom)
+fichiers = sorted(glob.glob("bdi_etape1_*.xlsx"))
+if not fichiers:
+    raise SystemExit("ERREUR : Je ne trouve pas le fichier bdi_etape1_*.xlsx dans le dossier.")
+fichier_source = fichiers[-1]
 print(f"--- Nettoyage du fichier : {fichier_source} ---")
+
+# Date de l'export, lue dans le nom du fichier (ex. bdi_etape1_2026-10-09_... -> 2026-10-09)
+trouve = re.search(r"\d{4}-\d{2}-\d{2}", fichier_source)
+date_export = pd.Timestamp(trouve.group()) if trouve else None
 
 # 2. Charger les données
 df = pd.read_excel(fichier_source)
 total_initial = len(df)
 
 # 3. Appliquer la Règle 1 : doublons le même jour (garder le dernier)
-# On trie d'abord par participant et par date
-df = df.sort_values(by=['participant', 'date_etape1'])
-# On supprime les doublons en gardant la dernière ligne
-df = df.drop_duplicates(subset=['participant', 'date_etape1'], keep='last')
+# Le « dernier » test du jour est celui qui a le plus grand numéro (colonne num),
+# comme dans l'entrepôt. On compare les jours, sans l'heure.
+df['jour'] = pd.to_datetime(df['date_etape1'], errors='coerce', format='mixed').dt.normalize()
+df['num_tri'] = pd.to_numeric(df['num'], errors='coerce')
+df = df.sort_values(by=['participant', 'jour', 'num_tri'])
+# On supprime les doublons en gardant la dernière ligne (le plus grand numéro)
+df = df.drop_duplicates(subset=['participant', 'jour'], keep='last')
+df = df.drop(columns=['jour', 'num_tri'])
 total_apres_doublons = len(df)
 
 # 4. Appliquer la Règle 2 : marquer les one-shot professionnels
@@ -26,11 +37,19 @@ df.loc[(df['saisie'] == 'professionnel') & (nb_participants_par_createur == 1), 
 
 # 5. Appliquer la Règle 3 : marquer les moins de 60 ans
 df['moins_60_ans'] = 'NON'
-df.loc[df['age_etape1'] < 60, 'moins_60_ans'] = 'OUI'
+df.loc[pd.to_numeric(df['age_etape1'], errors='coerce') < 60, 'moins_60_ans'] = 'OUI'
 
 # 6. Sauvegarder la base propre
+# Onglet 1 « Donnees » : la base nettoyée (lu par les scripts suivants)
+# Onglet 2 « Bilan » : les chiffres du nettoyage (lignes au départ, date de l'export)
+bilan = pd.DataFrame({
+    "Indicateur": ["Fichier source", "Date de l'export", "Lignes au départ", "Lignes après suppression des doublons"],
+    "Valeur": [fichier_source, date_export.strftime("%Y-%m-%d") if date_export is not None else "", total_initial, total_apres_doublons]
+})
 fichier_sortie = "Base_Nettoyee.xlsx"
-df.to_excel(fichier_sortie, index=False)
+with pd.ExcelWriter(fichier_sortie, engine='openpyxl') as writer:
+    df.to_excel(writer, sheet_name='Donnees', index=False)
+    bilan.to_excel(writer, sheet_name='Bilan', index=False)
 
 # 7. Afficher le bilan
 print("\n--- BILAN DU NETTOYAGE ---")
