@@ -40,7 +40,7 @@ async function demarrer() {
   ].map(([t, v]) => `<div><dt>${t}</dt><dd>${nf.format(v)}</dd></div>`).join("");
 
   $("#alertes").innerHTML = etat.meta.capacites.map((cap) => `
-    <button type="button" class="alerte" data-code="${cap.code}" aria-pressed="false"
+    <button type="button" class="alerte" data-code="${cap.code}" data-cap="${cap.code}" aria-pressed="false"
             title="${cap.a_parcours ? "" : "Parcours pas encore écrit (bloc 3) : métiers du référentiel"}">
       ${icone(cap.code)}<span>${esc(cap.nom.replace(/ \(.*\)/, ""))}</span>
       ${cap.a_parcours ? "" : '<i class="a-venir" aria-label="parcours à venir"></i>'}
@@ -52,7 +52,7 @@ async function demarrer() {
   });
 
   $("#profils").innerHTML = etat.meta.profils.map((p, i) => `
-    <button type="button" class="profil" data-i="${i}">
+    <button type="button" class="profil" data-i="${i}" data-cap="${esc(p.alertes[0] || "")}">
       <strong>${esc(p.titre)}</strong><small>${esc(p.pourquoi)}</small><span class="det">${esc(p.detail)}</span>
     </button>`).join("");
   $("#profils").addEventListener("click", (e) => {
@@ -60,6 +60,9 @@ async function demarrer() {
     if (b) chargerProfil(etat.meta.profils[+b.dataset.i]);
   });
 
+  const accueil = $("#accueil");
+  if (accueil) accueil.insertAdjacentHTML("beforeend", `<div class="palette-capacites" aria-label="Les 9 capacités ICOPE">${
+    etat.meta.capacites.map((c) => `<span data-cap="${c.code}">${icone(c.code)}${esc(c.nom.replace(/ \(.*\)/, ""))}</span>`).join("")}</div>`);
   brancherCommune();
   brancherAge();
   $("#formulaire").addEventListener("submit", (e) => { e.preventDefault(); lancer(); });
@@ -329,7 +332,7 @@ function carteEtape(e, i, numero, age) {
   const rayon = Math.max(0, ...(retenu?.propositions || []).map((p) => p.distance_max_km || 0));
   const pourquoi = e.a_parcours && e.plans.length > 1
     ? `<details class="pourquoi"><summary>${SVG_CHEVRON}Pourquoi le plan ${esc(e.plan_retenu || "–")} ?</summary>${echelle(e)}</details>` : "";
-  return `<li class="etape" style="${couleurs(e.a_parcours ? e.plan_retenu : null)}">
+  return `<li class="etape"${e.domaine ? ` data-cap="${esc(e.domaine)}"` : ""} style="${couleurs(e.a_parcours ? e.plan_retenu : null)}">
     <div class="etape-rail"><span class="etape-noeud">${t.icone ? icone(t.icone) : esc(e.plan_retenu || "·")}</span></div>
     <article class="carte etape-carte" data-rayon="${rayon}" data-plan="${esc(e.plan_retenu || "")}">
       <div class="etape-tete"><div><p class="etape-sur">${esc(t.sur)}</p><h3 class="etape-titre">${esc(t.titre)}</h3>
@@ -382,7 +385,7 @@ function afficherResultat(r) {
     <div><h3 class="bloc-titre">Prévention près de chez elle</h3>
     <p class="bloc-sous">Pour les capacités sans alerte : les actions qui couvrent le plus petit territoire d'abord.</p></div>
     ${r.prevention.length ? `<div class="prevention">${r.prevention.map((b) => `
-      <article class="carte action-carte">
+      <article class="carte action-carte" data-cap="${esc(b.domaine)}">
         <div class="action-tete">${icone(b.domaine)}<strong>${esc(caps[b.domaine] || b.domaine_nom)}</strong>${b.generique ? '<span class="tag">générale</span>' : ""}</div>
         <ul>${b.actions.map((a) => `<li><strong>${esc(a.action)}</strong><span>${esc([a.porteur, a.lieu && a.lieu.length < 90 ? a.lieu : ""].filter(Boolean).join(" · "))}</span></li>`).join("")}</ul>
       </article>`).join("")}</div>` : '<p class="bloc-sous">Aucune action de prévention trouvée pour cette commune.</p>'}` : "";
@@ -391,7 +394,7 @@ function afficherResultat(r) {
     <p class="fiche-entete">Fiche parcours ICOPE · ${esc(p.commune)} · ${p.age} ans · ${new Date().toLocaleDateString("fr-FR")}</p>
     <div class="entete-resultat">
       <div><p class="surtitre">Parcours proposé</p><h2>${esc(p.commune)}, ${p.age} ans</h2>
-        <div class="puces">${p.alertes.length ? p.alertes.map((a) => `<span class="puce alerte-puce">${icone(a)}${esc(caps[a])}</span>`).join("")
+        <div class="puces">${p.alertes.length ? p.alertes.map((a) => `<span class="puce alerte-puce" data-cap="${a}">${icone(a)}${esc(caps[a])}</span>`).join("")
           : '<span class="puce">Aucune alerte</span>'}</div></div>
       <div class="actions-entete">
         <button type="button" class="bouton-secondaire" id="imprimer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9V3.5h10V9"/><rect x="3.5" y="9" width="17" height="8" rx="2"/><path d="M7 14h10v6.5H7z"/></svg>Imprimer la fiche</button>

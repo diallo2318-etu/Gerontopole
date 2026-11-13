@@ -334,3 +334,106 @@ svg { stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round
   .etape { break-inside: avoid; }
   .tel { color: #000; }
 }
+
+/* =====================================================================================
+   COULEURS : une couleur par capacité, en-tête coloré, plans plus francs
+   ===================================================================================== */
+:root {
+  --plan-a: #1f9d55;  --plan-a-doux: #dff5e7;
+  --plan-b: #d98a10;  --plan-b-doux: #fdf0d5;
+  --plan-c: #e0573c;  --plan-c-doux: #fde4dd;
+  --marque: #17705f;  --marque-2: #105a4c;  --marque-doux: #ddf1ea;
+  --entete: #0f3f37;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --entete: #0c2a25; --plan-a: #4cc27f; --plan-b: #f0b14a; --plan-c: #f27c63; --marque: #4fc2a6; --marque-2: #6fd3ba; }
+}
+[data-cap="vision"]       { --cap: #4f5bd5; }
+[data-cap="audition"]     { --cap: #8b5cf6; }
+[data-cap="cognition"]    { --cap: #c2417a; }
+[data-cap="mobilite"]     { --cap: #e0731a; }
+[data-cap="nutrition"]    { --cap: #3f9b3a; }
+[data-cap="psychologie"]  { --cap: #e0567a; }
+[data-cap="incontinence"] { --cap: #1f8fc9; }
+[data-cap="social"]       { --cap: #0f9b8e; }
+[data-cap="aidant"]       { --cap: #c79a12; }
+@media (prefers-color-scheme: dark) {
+  [data-cap] { --cap-clair: color-mix(in srgb, var(--cap) 70%, white); }
+}
+[data-cap] { --cap-doux: color-mix(in srgb, var(--cap) 13%, var(--surface)); --cap-texte: var(--cap-clair, var(--cap)); }
+
+/* En-tête */
+.barre {
+  background:
+    radial-gradient(600px 300px at 96% -40%, rgba(240, 177, 74, .85), transparent 65%),
+    radial-gradient(560px 300px at 70% 150%, rgba(224, 86, 122, .70), transparent 65%),
+    radial-gradient(520px 280px at 40% -80%, rgba(139, 92, 246, .65), transparent 65%),
+    radial-gradient(460px 260px at 2% 140%, rgba(31, 143, 201, .80), transparent 65%),
+    linear-gradient(100deg, #0f3f37, #145a4d 55%, #0f3f37);
+  border-bottom: 0; color: #fff; padding-block: 22px;
+}
+.marque, .marque strong { color: #fff; }
+.marque small { color: rgba(255, 255, 255, .72); }
+.marque-logo { color: #f0b14a; }
+.marque-logo circle:first-child { stroke: #fff; }
+.marque-logo circle:last-child { fill: var(--entete); }
+.chiffres div { padding: 8px 14px; border-radius: 12px; background: rgba(255, 255, 255, .09); border: 1px solid rgba(255, 255, 255, .14); }
+.chiffres dt { color: rgba(255, 255, 255, .72); }
+.chiffres dd { color: #fff; }
+
+/* Formulaire */
+.num { background: var(--marque); color: #fff; }
+.alerte svg { color: var(--cap-texte); }
+.alerte:hover { border-color: var(--cap); background: var(--cap-doux); }
+.alerte[aria-pressed="true"] { background: var(--cap); border-color: var(--cap); color: #fff; box-shadow: 0 6px 16px -8px var(--cap); }
+.alerte[aria-pressed="true"] svg { color: #fff; }
+@media (prefers-color-scheme: dark) { .alerte[aria-pressed="true"], .alerte[aria-pressed="true"] svg { color: #fff; } }
+.bouton-principal { background: linear-gradient(135deg, var(--marque), #1f8fc9); box-shadow: 0 10px 22px -12px var(--marque); }
+.bouton-principal:hover:not(:disabled) { background: linear-gradient(135deg, var(--marque-2), #1877a8); }
+.profil { border-left: 4px solid var(--cap, var(--marque)); }
+.profil:hover { background: var(--cap-doux, var(--marque-doux)); border-color: var(--cap, var(--marque)); }
+
+/* Accueil */
+.accueil { background: var(--surface); border: 1px solid var(--trait); border-style: solid; box-shadow: var(--ombre); position: relative; overflow: hidden; }
+.accueil::after {
+  content: ""; position: absolute; right: -80px; top: -80px; width: 280px; height: 280px; border-radius: 50%;
+  background: conic-gradient(from 0deg, #4f5bd5, #8b5cf6, #c2417a, #e0567a, #e0731a, #c79a12, #3f9b3a, #0f9b8e, #1f8fc9, #4f5bd5);
+  opacity: .16; filter: blur(2px);
+}
+.accueil h2 em { font-style: normal; background: linear-gradient(transparent 62%, color-mix(in srgb, #f0b14a 55%, transparent) 62%); }
+.etapes-accueil li:nth-child(1) { --c: var(--plan-a); }
+.etapes-accueil li:nth-child(2) { --c: #4f5bd5; }
+.etapes-accueil li:nth-child(3) { --c: #e0731a; }
+.etapes-accueil li { border-top: 4px solid var(--c); background: color-mix(in srgb, var(--c) 6%, var(--surface)); }
+.etapes-accueil li > span { background: var(--c); color: #fff; }
+.palette-capacites { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.palette-capacites span { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 999px; background: var(--cap-doux); color: var(--cap-texte); font-size: 13px; font-weight: 600; }
+.palette-capacites svg { width: 16px; height: 16px; }
+
+/* Résultats */
+.surtitre { color: var(--marque); }
+.puce.alerte-puce { background: var(--cap-doux); color: var(--cap-texte); }
+.indicateur { position: relative; overflow: hidden; border-top: 4px solid var(--k); background: color-mix(in srgb, var(--k) 7%, var(--surface)); }
+.indicateur:nth-child(1) { --k: var(--plan-a); }
+.indicateur:nth-child(2) { --k: #1f8fc9; }
+.indicateur:nth-child(3) { --k: #e0731a; }
+.indicateur dd { color: var(--k); }
+.indicateur::after { content: ""; position: absolute; right: -24px; bottom: -24px; width: 90px; height: 90px; border-radius: 50%; background: var(--k); opacity: .09; }
+.etape-carte { border-left: 5px solid var(--c, var(--trait-fort)); }
+.etape-noeud { background: var(--c); color: #fff; box-shadow: 0 0 0 4px var(--c-doux); border: 0; }
+.etape[data-cap] .etape-noeud { background: var(--cap); box-shadow: 0 0 0 4px var(--cap-doux); }
+.etape[data-cap] .etape-sur { color: var(--cap-texte); }
+.etape-noeud svg { color: #fff; width: 22px; height: 22px; }
+.badge-plan { background: var(--c); color: #fff; box-shadow: 0 4px 12px -6px var(--c); }
+.badge-plan::before { background: rgba(255, 255, 255, .8); }
+.offre-metier { color: var(--cap-texte, var(--marque)); }
+.distance { color: var(--c, var(--encre)); }
+.conseil { background: color-mix(in srgb, #4f5bd5 10%, var(--surface)); border-left: 4px solid #4f5bd5; }
+.conseil svg { color: #4f5bd5; }
+.bloc-titre { display: inline-block; background: linear-gradient(transparent 64%, color-mix(in srgb, #3f9b3a 30%, transparent) 64%); }
+.action-carte { border-top: 5px solid var(--cap); background: linear-gradient(180deg, var(--cap-doux), var(--surface) 70%); }
+.action-tete svg { width: 34px; height: 34px; padding: 7px; border-radius: 10px; background: var(--cap); color: #fff; }
+.action-tete strong { color: var(--cap-texte); }
+.action-carte li { padding-left: 10px; border-left: 3px solid color-mix(in srgb, var(--cap) 45%, transparent); }
+.bouton-secondaire:hover { background: var(--marque-doux); }
+@media print { .barre { background: none; } .etape-noeud, .badge-plan { print-color-adjust: exact; -webkit-print-color-adjust: exact; } }
