@@ -235,6 +235,14 @@ def charger_offre_publique(con, loc):
     con.register("mbp_df", mbp)
     con.execute("CREATE TABLE offre_mon_bilan_prevention AS SELECT * FROM mbp_df")
 
+    # Maisons sport-santé (activité physique adaptée) : liste de Sport Santé Normandie, consultée le 13/11/2026
+    mss = pd.read_csv(BASES / "maisons_sport_sante_normandie.csv", sep=";", dtype=str)
+    mss = localiser(mss, loc, "code_postal", "ville")
+    mss["departement"] = mss["code_postal"].str[:2]
+    con.register("mss_df", mss)
+    con.execute("CREATE TABLE offre_maison_sport_sante AS SELECT * FROM mss_df")
+    con.unregister("mss_df")
+
 
 def charger_icope(con, loc):
     # ---- Étape 1 : dépistages
@@ -519,7 +527,19 @@ def charger_ipa(con):
     Ceux en « pathologies chroniques stabilisées » peuvent faire la levée de doute et le Step 2."""
     fichiers = sorted(DONNEES.glob("liste_INFIRMIER_IPA*.xlsx"))
     if not fichiers:
-        print("(liste_INFIRMIER_IPA absente : table offre_ipa non créée)")
+        # Sans la liste du Gérontopôle, on prend les IPA de l'Annuaire Santé (RPPS), déjà chargé :
+        # ils y sont repérés par leur savoir-faire « Exercice infirmier en pratique avancée ... ».
+        con.execute("""
+            CREATE TABLE offre_ipa AS
+            SELECT DISTINCT id_rpps, nom, prenom, savoir_faire AS specialite,
+                   savoir_faire ILIKE '%pathologies chroniques%' AS pathologies_chroniques,
+                   CASE WHEN mode_exercice = 'liberal' THEN 'liberal' ELSE 'salarie' END AS mode_exercice,
+                   structure, code_insee, commune, departement, CAST(NULL AS DATE) AS date_maj,
+                   'annuaire_rpps' AS source
+            FROM offre_rpps
+            WHERE profession ILIKE 'infirmier%' AND savoir_faire ILIKE '%pratique avanc%'""")
+        n = con.execute("SELECT count(DISTINCT id_rpps), count(DISTINCT id_rpps) FILTER (WHERE pathologies_chroniques) FROM offre_ipa").fetchall()[0]
+        print(f"(liste_INFIRMIER_IPA absente : offre_ipa construite depuis l'Annuaire Santé, {n[0]} IPA dont {n[1]} en pathologies chroniques)")
         return
     ipa = pd.read_excel(fichiers[-1], dtype=str)
     ipa = pd.DataFrame({
@@ -534,6 +554,7 @@ def charger_ipa(con):
         "commune": ipa["libcomm_act"],
         "departement": ipa["dept"],
         "date_maj": pd.to_datetime(ipa["date_maj"], format="%d/%m/%Y", errors="coerce").dt.date,
+        "source": "liste_gerontopole",
     })
     con.register("ipa_df", ipa)
     con.execute("CREATE TABLE offre_ipa AS SELECT * FROM ipa_df")

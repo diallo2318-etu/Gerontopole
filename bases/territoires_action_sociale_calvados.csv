@@ -1,0 +1,527 @@
+code_insee;commune;territoire_action_sociale;source
+14001;Ablon;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14003;Agy;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14005;Valambray;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14006;Amayé-sur-Orne;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14007;Amayé-sur-Seulles;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14009;Amfreville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14012;Angerville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14014;Colomby-Anguerny;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14015;Anisy;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14016;Annebault;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14019;Arganchy;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14020;Argences;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14021;Arromanches-les-Bains;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14022;Asnelles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14023;Asnières-en-Bessin;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14024;Auberville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14025;Aubigny;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14026;Audrieu;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14027;Les Monts d'Aunay;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14030;Authie;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14032;Les Authieux-sur-Calonne;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14033;Auvillars;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14034;Avenay;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14035;Balleroy-sur-Drôme;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14036;Banneville-la-Campagne;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14037;Malherbe-sur-Ajon;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14038;Banville;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14039;Barbery;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14040;Barbeville;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14041;Barneville-la-Bertran;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14042;Baron-sur-Odon;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14043;Barou-en-Auge;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14044;Basly;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14045;Basseneville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14046;Bavent;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14047;Bayeux;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14049;Bazenville;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14050;La Bazoque;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14053;Beaumais;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14054;Beaumesnil;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14055;Beaumont-en-Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14057;Bellengreville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14059;Benerville-sur-Mer;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14060;Bénouville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14061;Souleuvre en Bocage;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14062;Bény-sur-Mer;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14063;Bernesq;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14064;Bernières-d'Ailly;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14066;Bernières-sur-Mer;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14068;Biéville-Beuville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14069;Beuvillers;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14070;Beuvron-en-Auge;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14076;Blainville-sur-Orne;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14077;Blangy-le-Château;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14078;Blay;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14079;Blonville-sur-Mer;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14080;Le Bô;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14082;La Boissière;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14083;Bonnebosq;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14084;Bonnemaison;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14085;Bonneville-la-Louvet;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14086;Bonneville-sur-Touques;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14087;Bonnœil;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14088;Bons-Tassilly;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14089;Bougy;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14090;Boulon;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14091;Bourgeauville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14092;Bourguébus;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14093;Branville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14096;Brémoy;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14097;Bretteville-le-Rabet;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14098;Thue et Mue;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14100;Bretteville-sur-Laize;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14101;Bretteville-sur-Odon;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14102;Le Breuil-en-Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14103;Le Breuil-en-Bessin;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14104;Le Brévedent;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14106;Bréville-les-Monts;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14107;Bricqueville;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14110;Brucourt;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14111;Bucéels;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14116;Le Bû-sur-Rouvres;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14117;Cabourg;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14118;Caen;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14119;Cagny;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14120;Cahagnes;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14121;Cahagnolles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14122;La Caine;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14123;Cairon;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14124;La Cambe;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14125;Cambes-en-Plaine;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14126;Cambremer;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14127;Campagnolles;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14130;Campigny;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14131;Canapville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14132;Canchy;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14134;Canteloup;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14135;Carcagny;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14136;Cardonville;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14137;Carpiquet;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14138;Cartigny-l'Épinay;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14140;Castillon;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14141;Castillon-en-Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14143;Caumont-sur-Aure;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14145;Cauvicourt;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14146;Cauville;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14147;Cernay;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14149;Cesny-aux-Vignes;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14150;Cesny-les-Sources;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14159;Chouain;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14160;Cintheaux;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14161;Clarbec;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14162;Clécy;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14163;Cléville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14165;Colleville-sur-Mer;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14166;Colleville-Montgomery;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14167;Colombelles;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14168;Colombières;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14169;Colombiers-sur-Seulles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14171;Combray;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14172;Commes;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14173;Condé-sur-Ifs;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14174;Condé-en-Normandie;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14175;Condé-sur-Seulles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14177;Coquainvilliers;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14179;Cordebugle;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14180;Cordey;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14181;Cormelles-le-Royal;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14182;Cormolain;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14183;Cossesseville;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14184;Cottun;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14190;Courcy;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14191;Courseulles-sur-Mer;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14193;Courtonne-la-Meurdrac;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14194;Courtonne-les-Deux-Églises;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14195;Courvaudon;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14196;Crépon;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14197;Cresserons;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14198;Cresseveuille;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14200;Creully sur Seulles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14202;Cricquebœuf;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14203;Cricqueville-en-Auge;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14204;Cricqueville-en-Bessin;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14205;Cristot;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14206;Crocy;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14207;Croisilles;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14209;Crouay;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14211;Culey-le-Patry;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14214;Cussy;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14215;Cuverville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14216;Damblainville;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14218;Danestal;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14220;Deauville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14221;Démouville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14223;Le Détroit;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14224;Deux-Jumeaux;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14225;Dives-sur-Mer;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14226;Donnay;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14227;Douville-en-Auge;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14228;Douvres-la-Délivrande;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14229;Dozulé;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14230;Drubec;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14231;Beaufour-Druval;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14232;Ducy-Sainte-Marguerite;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14236;Ellon;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14237;Émiéville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14238;Englesqueville-en-Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14239;Englesqueville-la-Percée;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14240;Épaney;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14241;Épinay-sur-Odon;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14242;Épron;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14243;Équemauville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14244;Eraines;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14245;Ernes;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14246;Escoville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14248;Espins;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14249;Esquay-Notre-Dame;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14250;Esquay-sur-Seulles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14251;Esson;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14252;Estrées-la-Campagne;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14254;Éterville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14256;Étréham;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14257;Évrecy;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14258;Falaise;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14260;Fauguernon;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14261;Le Faulq;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14266;Feuguerolles-Bully;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14269;Fierville-les-Parcs;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14270;Firfol;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14271;Fleury-sur-Orne;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14272;La Folie;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14273;La Folletière-Abenon;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14274;Fontaine-Étoupefour;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14275;Fontaine-Henry;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14276;Fontaine-le-Pin;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14277;Fontenay-le-Marmion;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14278;Fontenay-le-Pesnel;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14280;Formentin;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14281;Formigny La Bataille;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14282;Foulognes;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14283;Fourches;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14284;Fourneaux-le-Val;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14285;Le Fournet;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14286;Fourneville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14287;Frénouville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14288;Le Fresne-Camilly;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14289;Fresné-la-Mère;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14290;Fresney-le-Puceux;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14291;Fresney-le-Vieux;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14293;Fumichon;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14297;Gavrus;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14298;Géfosse-Fontenay;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14299;Genneville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14301;Giberville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14302;Glanville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14303;Glos;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14304;Gonneville-sur-Honfleur;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14305;Gonneville-sur-Mer;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14306;Gonneville-en-Auge;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14308;Goustranville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14309;Gouvix;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14310;Grainville-Langannerie;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14311;Grainville-sur-Odon;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14312;Grandcamp-Maisy;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14316;Grangues;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14318;Graye-sur-Mer;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14319;Grentheville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14320;Grimbosq;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14322;Guéron;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14325;Hermanville-sur-Mer;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14326;Hermival-les-Vaux;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14327;Hérouville-Saint-Clair;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14328;Hérouvillette;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14329;Heuland;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14332;La Hoguette;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14333;Honfleur;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14334;L'Hôtellerie;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14335;Hotot-en-Auge;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14336;Hottot-les-Bagues;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14337;La Houblonnière;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14338;Houlgate;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14341;Ifs;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14342;Isigny-sur-Mer;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14343;Les Isles-Bardel;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14344;Janville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14345;Jort;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14346;Juaye-Mondaye;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14347;Dialan sur Chaîne;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14348;Juvigny-sur-Seulles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14349;Laize-Clinchamps;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14352;Landelles-et-Coupigny;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14353;Landes-sur-Ajon;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14354;Langrune-sur-Mer;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14355;Ponts sur Seulles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14357;Terres de Druance;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14358;Léaupartie;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14360;Leffard;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14362;Lessard-et-le-Chêne;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14364;Lingèvres;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14365;Lion-sur-Mer;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14366;Lisieux;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14367;Lison;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14368;Lisores;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14369;Litteau;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14370;Le Molay-Littry;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14371;Livarot-Pays-d'Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14374;Les Loges;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14375;Les Loges-Saulces;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14377;Longues-sur-Mer;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14378;Longueville;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14379;Longvillers;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14380;Loucelles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14381;Louvagny;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14383;Louvigny;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14384;Luc-sur-Mer;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14385;Magny-en-Bessin;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14389;Maisoncelles-Pelvey;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14390;Maisoncelles-sur-Ajon;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14391;Maisons;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14393;Maizet;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14394;Maizières;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14396;Maltot;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14397;Mandeville-en-Bessin;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14398;Manerbe;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14399;Manneville-la-Pipard;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14400;Le Manoir;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14401;Manvieux;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14402;Le Marais-la-Chapelle;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14403;Marolles;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14404;Martainville;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14405;Martigny-sur-l'Ante;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14406;Moulins-en-Bessin;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14407;Mathieu;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14408;Saint-Martin-de-May;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14409;Merville-Franceville-Plage;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14410;Méry-Bissières-en-Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14411;Meslay;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14412;Le Mesnil-au-Grain;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14419;Le Mesnil-Eudes;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14421;Le Mesnil-Guillaume;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14424;Le Mesnil-Robert;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14425;Le Mesnil-Simon;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14426;Le Mesnil-sur-Blangy;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14427;Le Mesnil-Villement;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14430;Meuvaines;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14431;Mézidon Vallée d'Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14435;Les Monceaux;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14436;Monceaux-en-Bessin;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14437;Mondeville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14438;Mondrainville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14439;Monfréville;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14445;Montfiquet;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14446;Montigny;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14448;Montreuil-en-Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14449;Monts-en-Bessin;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14452;Morteaux-Coulibœuf;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14453;Mosles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14454;Mouen;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14455;Moulines;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14456;Moult-Chicheboville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14457;Les Moutiers-en-Auge;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14458;Les Moutiers-en-Cinglais;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14460;Moyaux;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14461;Mutrécy;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14465;Nonant;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14466;Norolles;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14467;Noron-l'Abbaye;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14468;Noron-la-Poterie;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14469;Norrey-en-Auge;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14473;Notre-Dame-de-Livaye;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14474;Notre-Dame-d'Estrées-Corbon;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14475;Val d'Arry;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14476;Olendon;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14478;Orbec;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14480;Osmanville;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14482;Ouézy;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14483;Ouffières;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14484;Ouilly-du-Houley;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14486;Ouilly-le-Tesson;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14487;Ouilly-le-Vicomte;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14488;Ouistreham;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14491;Parfouru-sur-Odon;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14492;Pennedepie;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14494;Périers-en-Auge;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14495;Périers-sur-le-Dan;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14496;Périgny;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14497;Perrières;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14498;Pertheville-Ners;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14499;Petiville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14500;Pierrefitte-en-Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14501;Pierrefitte-en-Cinglais;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14502;Pierrepont;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14504;Le Pin;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14506;Planquery;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14509;Plumetot;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14510;La Pommeraye;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14511;Pont-Bellanger;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14512;Pontécoulant;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14514;Pont-l'Évêque;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14515;Port-en-Bessin-Huppain;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14516;Potigny;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14519;Préaux-Bocage;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14520;Le Pré-d'Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14522;Prêtreville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14524;Putot-en-Auge;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14527;Belle Vie en Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14528;Quetteville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14529;Ranchy;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14530;Ranville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14531;Rapilly;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14533;Repentigny;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14534;Reux;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14535;Reviers;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14536;La Rivière-Saint-Sauveur;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14538;Castine-en-Plaine;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14540;Rocques;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14541;La Roque-Baignard;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14542;Rosel;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14543;Rots;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14546;Rouvres;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14547;Rubercy;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14550;Rumesnil;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14552;Ryes;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14554;Le Castelet;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14555;Saint-André-d'Hébertot;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14556;Saint-André-sur-Orne;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14557;Saint-Arnoult;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14558;Saint-Aubin-d'Arquenay;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14559;Saint-Aubin-des-Bois;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14562;Saint-Aubin-sur-Mer;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14563;Saint-Benoît-d'Hébertot;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14565;Saint-Côme-de-Fresné;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14566;Saint-Contest;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14569;Sainte-Croix-sur-Mer;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14570;Valorbiquet;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14571;Saint-Denis-de-Mailloc;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14572;Saint-Denis-de-Méré;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14574;Saint-Désir;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14575;Saint-Étienne-la-Thillaye;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14576;Val-de-Vie;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14578;Saint-Gatien-des-Bois;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14579;Seulline;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14581;Aurseulles;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14582;Saint-Germain-de-Livet;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14586;Saint-Germain-du-Pert;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14587;Saint-Germain-la-Blanche-Herbe;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14588;Saint-Germain-Langot;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14589;Saint-Germain-le-Vasson;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14590;Sainte-Honorine-de-Ducy;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14591;Aure sur Mer;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14592;Sainte-Honorine-du-Fay;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14593;Saint-Hymer;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14595;Saint-Jean-de-Livet;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14598;Saint-Jouin;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14601;Saint-Julien-sur-Calonne;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14602;Saint-Lambert;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14603;Saint-Laurent-de-Condel;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14605;Saint-Laurent-sur-Mer;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14606;Saint-Léger-Dubosq;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14607;Saint-Louet-sur-Seulles;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14609;Saint-Loup-Hors;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14610;Saint-Manvieu-Norrey;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14613;Saint-Marcouf;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14614;Sainte-Marguerite-d'Elle;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14619;Sainte-Marie-Outre-l'Eau;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14620;Saint-Martin-aux-Chartrains;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14621;Saint-Martin-de-Bienfaite-la-Cressonnière;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14622;Saint-Martin-de-Blagny;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14625;Saint-Martin-de-la-Lieue;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14626;Saint-Martin-de-Mailloc;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14627;Saint-Martin-de-Mieux;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14630;Saint-Martin-des-Entrées;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14635;Saint-Omer;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14637;Saint-Ouen-du-Mesnil-Oger;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14639;Saint-Ouen-le-Pin;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14640;Saint-Pair;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14643;Saint-Paul-du-Vernay;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14644;Saint-Philbert-des-Champs;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14645;Saint-Pierre-Azif;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14646;Saint-Pierre-Canivet;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14648;Saint-Pierre-des-Ifs;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14649;Saint-Pierre-du-Bû;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14650;Saint-Pierre-du-Fresne;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14651;Saint-Pierre-du-Jonquet;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14652;Saint-Pierre-du-Mont;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14654;Saint-Pierre-en-Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14656;Saint-Rémy;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14657;Saint-Samson;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14658;Noues de Sienne;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14659;Saint-Sylvain;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14660;Saint-Vaast-en-Auge;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14661;Saint-Vaast-sur-Seulles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14663;Saint-Vigor-le-Grand;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14664;Sallen;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14665;Sallenelles;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14666;Sannerville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14667;Saon;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14668;Saonnet;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14669;Sassy;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14672;Val de Drôme;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14674;Soignolles;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14675;Soliers;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14676;Sommervieu;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14677;Soulangy;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14678;Soumont-Saint-Quentin;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14679;Subles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14680;Sully;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14681;Surrain;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14682;Surville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14684;Tessel;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14685;Thaon;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14687;Le Theil-en-Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14689;Thury-Harcourt-le-Hom;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14692;Tilly-sur-Seulles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14694;Le Torquesne;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14698;Touffréville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14699;Touques;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14700;Tour-en-Bessin;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14701;Tourgéville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14705;Tournières;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14706;Tourville-en-Auge;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14707;Tourville-sur-Odon;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14708;Tracy-Bocage;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14709;Tracy-sur-Mer;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14710;Tréprel;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14711;Trévières;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14712;Troarn;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14713;Montillières-sur-Orne;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14714;Le Tronquay;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14715;Trouville-sur-Mer;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14716;Trungy;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14719;Urville;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14720;Ussy;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14721;Vacognes-Neuilly;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14723;Valsemé;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14724;Varaville;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14726;Valdallière;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14728;Vaucelles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14731;Vauville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14732;Vaux-sur-Aure;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14733;Vaux-sur-Seulles;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14734;Vendes;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14735;Vendeuvre;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14737;Versainville;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14738;Verson;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14739;Ver-sur-Mer;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14740;La Vespière-Friardel;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14741;Le Vey;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14742;Vicques;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14743;Victot-en-Auge;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14744;Vienne-en-Bessin;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14745;Vierville-sur-Mer;Bessin;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14747;Vieux;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14748;Vieux-Bourg;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14751;Vignats;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14752;Villers-Bocage;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14753;Villers-Canivet;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14754;Villers-sur-Mer;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14755;Villerville;Pays d'Auge;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14756;La Villette;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14758;Villons-les-Buissons;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14759;Villy-lez-Falaise;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14760;Villy-Bocage;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14761;Vimont;Caen élargi;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14762;Vire Normandie;Bocage;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune
+14764;Pont-d'Ouilly;Falaise;contours data.calvados.fr (territoires_action_sociale.geojson), centre de la commune

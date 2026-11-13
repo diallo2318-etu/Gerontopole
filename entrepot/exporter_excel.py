@@ -29,6 +29,8 @@ DESCRIPTIONS = {
     "offre_rpps": "Annuaire Santé : professionnels de santé de Normandie et leurs lieux d'exercice",
     "offre_finess": "FINESS : établissements sanitaires et médico-sociaux de Normandie",
     "offre_mon_bilan_prevention": "Professionnels qui font le bilan de prévention en Normandie",
+    "offre_maison_sport_sante": "Maisons sport-santé de Normandie (Sport Santé Normandie, consulté le 13/11/2026)",
+    "offre_ipa": "Infirmiers en pratique avancée (liste du Gérontopôle, ou Annuaire Santé à défaut)",
     "v_offre_par_domaine": "Vue : l'offre utile à chaque capacité ICOPE, d'après l'organigramme",
     "ref_alerte_professionnel": "Métiers et structures par capacité (organigramme du Gérontopôle)",
     "ref_commune": "Les 2 644 communes de Normandie : codes, intercommunalité, population, coordonnées",
