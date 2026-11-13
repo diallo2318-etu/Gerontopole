@@ -6,6 +6,10 @@ Produit : Analyse_Tags_CFPPA.xlsx
 import pandas as pd
 
 df = pd.read_excel("Base_Nettoyee.xlsx", sheet_name='Donnees')
+bilan_nettoyage = pd.read_excel("Base_Nettoyee.xlsx", sheet_name='Bilan').set_index('Indicateur')['Valeur']
+# Nombre de tests CFPPA dans l'export brut (avant la suppression des doublons du même jour)
+brut = pd.read_excel(bilan_nettoyage["Fichier source"], dtype=str, usecols=['participant', 'tags'])
+cfppa_brut = int(brut['tags'].str.contains('cfppa', case=False, na=False).sum())
 df['date_etape1'] = pd.to_datetime(df['date_etape1'], errors='coerce', format='mixed')
 df['age_etape1'] = pd.to_numeric(df['age_etape1'], errors='coerce')
 df['tags'] = df['tags'].astype('string').str.strip()
@@ -16,7 +20,12 @@ tags = df['tags'].fillna('(aucun tag)').value_counts().rename_axis('Tag').reset_
 # 2. Les tests CFPPA
 df['cfppa'] = df['tags'].str.contains('cfppa', case=False, na=False)
 cfppa = df[df['cfppa']].copy()
-print(f"Tests avec un tag CFPPA : {len(cfppa)} (attendu : 52 d'après l'export du 05/11)")
+ecart = cfppa_brut - len(cfppa)
+print(f"Tests avec un tag CFPPA : {cfppa_brut} dans l'export brut, {len(cfppa)} après le nettoyage"
+      + (f" ({ecart} retiré{'s' if ecart > 1 else ''} : doublon du même jour, le test gardé est le dernier, sans le tag)" if ecart else ""))
+comptage = pd.DataFrame({'Indicateur': ["Tests CFPPA dans l'export brut", "Tests CFPPA après nettoyage",
+                                        "Écart (doublons du même jour : le test gardé est le dernier du jour)"],
+                         'Nombre': [cfppa_brut, len(cfppa), ecart]})
 
 # 3. Description des tests CFPPA, comparés aux autres
 def decrire(g, nom):
@@ -37,6 +46,7 @@ par_mois = par_mois.rename_axis('Mois').reset_index(name='Tests CFPPA')
 par_dep = cfppa['cp'].astype(str).str[:2].value_counts().rename_axis('Département').reset_index(name='Tests CFPPA')
 
 with pd.ExcelWriter("Analyse_Tags_CFPPA.xlsx", engine='openpyxl') as writer:
+    comptage.to_excel(writer, sheet_name='0_Comptage', index=False)
     tags.to_excel(writer, sheet_name='1_Tous_les_tags', index=False)
     comparaison.to_excel(writer, sheet_name='2_CFPPA_vs_autres', index=False)
     par_mois.to_excel(writer, sheet_name='3_Par_mois', index=False)

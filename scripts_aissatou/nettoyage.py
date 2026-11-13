@@ -39,12 +39,18 @@ df.loc[(df['saisie'] == 'professionnel') & (nb_participants_par_createur == 1), 
 df['moins_60_ans'] = 'NON'
 df.loc[pd.to_numeric(df['age_etape1'], errors='coerce') < 60, 'moins_60_ans'] = 'OUI'
 
+# 5 bis. Marquer les essais probables : moins de 50 ans (règle de l'équipe, partie 1). On marque, on ne supprime pas.
+df['essai_probable'] = 'NON'
+df.loc[pd.to_numeric(df['age_etape1'], errors='coerce') < 50, 'essai_probable'] = 'OUI'
+
 # 6. Sauvegarder la base propre
 # Onglet 1 « Donnees » : la base nettoyée (lu par les scripts suivants)
 # Onglet 2 « Bilan » : les chiffres du nettoyage (lignes au départ, date de l'export)
 bilan = pd.DataFrame({
-    "Indicateur": ["Fichier source", "Date de l'export", "Lignes au départ", "Lignes après suppression des doublons"],
-    "Valeur": [fichier_source, date_export.strftime("%Y-%m-%d") if date_export is not None else "", total_initial, total_apres_doublons]
+    "Indicateur": ["Fichier source", "Date de l'export", "Lignes au départ", "Lignes après suppression des doublons",
+                   "Essais probables (moins de 50 ans) marqués"],
+    "Valeur": [fichier_source, date_export.strftime("%Y-%m-%d") if date_export is not None else "", total_initial,
+               total_apres_doublons, int((df['essai_probable'] == 'OUI').sum())]
 })
 fichier_sortie = "Base_Nettoyee.xlsx"
 with pd.ExcelWriter(fichier_sortie, engine='openpyxl') as writer:
@@ -57,4 +63,5 @@ print(f"Lignes au départ : {total_initial}")
 print(f"Lignes après suppression des doublons : {total_apres_doublons}")
 print(f"Tests 'one-shot' de professionnels marqués : {(df['one_shot_pro'] == 'OUI').sum()}")
 print(f"Personnes de moins de 60 ans marquées : {(df['moins_60_ans'] == 'OUI').sum()}")
+print(f"Essais probables (moins de 50 ans) marqués : {(df['essai_probable'] == 'OUI').sum()}")
 print(f"\n✅ Fichier '{fichier_sortie}' généré avec succès.")

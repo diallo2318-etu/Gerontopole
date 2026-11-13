@@ -11,6 +11,13 @@ from scipy.stats import chi2_contingency, mannwhitneyu
 DATE_CAMPAGNE_CARSAT = None
 
 df = pd.read_excel("Base_Nettoyee.xlsx", sheet_name='Donnees')
+# Les essais probables (moins de 50 ans) sont exclus, comme dans la partie 1
+total_tests = len(df)
+if 'essai_probable' in df:
+    df = df[df['essai_probable'] != 'OUI'].copy()
+perimetre = pd.DataFrame({'Indicateur': ["Tests de la base nettoyée", "Essais probables exclus (moins de 50 ans)", "Tests analysés"],
+                          'Valeur': [total_tests, total_tests - len(df), len(df)]})
+print(f"Tests analysés : {len(df)} (sur {total_tests}, essais probables de moins de 50 ans exclus)")
 df['date_etape1'] = pd.to_datetime(df['date_etape1'], errors='coerce', format='mixed')
 df['age_etape1'] = pd.to_numeric(df['age_etape1'], errors='coerce')
 df['periode'] = df['date_etape1'].dt.year.map(lambda a: 'Avant 2025' if a < 2025 else '2025 et après')
@@ -62,7 +69,7 @@ valeurs_carsat = pd.concat([df.loc[df[c].astype(str).str.contains('carsat', case
                             for c in colonnes], ignore_index=True)
 
 # 5. Avant / après la campagne Carsat, si sa date est connue
-feuilles = [('1_Age', [age, age_test]), ('2_Modalite', [modalite, modalite_test]), ('3_Par_mois', [par_mois]),
+feuilles = [('0_Perimetre', [perimetre]), ('1_Age', [age, age_test]), ('2_Modalite', [modalite, modalite_test]), ('3_Par_mois', [par_mois]),
             ('4_Carsat', [carsat, valeurs_carsat])]
 if DATE_CAMPAGNE_CARSAT:
     debut = pd.Timestamp(DATE_CAMPAGNE_CARSAT)

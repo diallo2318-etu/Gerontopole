@@ -11,8 +11,10 @@ with pd.ExcelWriter("Base_Statistiques.xlsx", engine='openpyxl') as writer:
 
     # --- Tableau 1 : Bilan du nettoyage ---
     bilan = pd.DataFrame({
-        "Indicateur": ["Lignes au départ", "Lignes après nettoyage", "Tests one-shot marqués", "Personnes < 60 ans marquées"],
-        "Valeur": [lignes_depart, len(df), (df['one_shot_pro'] == 'OUI').sum(), (df['moins_60_ans'] == 'OUI').sum()]
+        "Indicateur": ["Lignes au départ", "Lignes après nettoyage", "Tests one-shot marqués", "Personnes < 60 ans marquées",
+                       "Essais probables (< 50 ans) marqués"],
+        "Valeur": [lignes_depart, len(df), (df['one_shot_pro'] == 'OUI').sum(), (df['moins_60_ans'] == 'OUI').sum(),
+                  (df['essai_probable'] == 'OUI').sum() if 'essai_probable' in df else None]
     })
     bilan.to_excel(writer, sheet_name='1_Bilan', index=False)
 

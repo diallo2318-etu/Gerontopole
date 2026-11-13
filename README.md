@@ -95,6 +95,7 @@ Règles de nettoyage (validées par Marine Le Roux, 22/10/2026) :
 | Un test par personne et par jour | on garde le dernier |
 | Tests « one-shot » de professionnels | colonne `one_shot_pro` |
 | Moins de 60 ans | colonne `moins_60_ans` |
+| Moins de 50 ans (essai probable) | colonne `essai_probable`, exclue de l'analyse avant / après 2025 |
 | Cohortes | toutes les personnes sont gardées, même entrées depuis moins d'un an |
 | Suivi | % calculé seulement chez les personnes dont le premier test date de plus de 6 mois (ou 1 an) |
 
@@ -142,7 +143,7 @@ Le parcours de chaque capacité est décrit dans `entrepot/parcours_capacites.cs
 | `domaine` | `vision`, `audition`, `cognition`… ou `tous` (levée de doute, Step 2, moins de 60 ans) |
 | `etape` | `levee_de_doute`, `etape2`, `orientation` (alerte confirmée), `sans_alerte`, `moins_60` |
 | `plan` | `A` (le plus adapté), `B` si le plan A est trop loin ou absent, puis `C` |
-| `source` | où chercher : `rpps_profession`, `finess_categorie`, `ipa`, `mon_bilan_prevention`, `agirc_arrco`, `pro_forme_icope`, `action_collective` (mots-clés séparés par `\|`), `action_domaine` (actions classées dans cette capacité par l'entrepôt, colonne `domaine_icope` : `mobilite`, `nutrition`, `psychologie`, `social`…), `conseil`, `a_obtenir` |
+| `source` | où chercher : `rpps_profession`, `finess_categorie`, `ipa`, `mon_bilan_prevention`, `agirc_arrco`, `pro_forme_icope`, `maison_sport_sante`, `action_collective` (mots-clés séparés par `\|`), `action_domaine` (actions classées dans cette capacité par l'entrepôt, colonne `domaine_icope` : `mobilite`, `nutrition`, `psychologie`, `social`…), `conseil`, `a_obtenir` |
 | `valeur` | le métier (écrit comme dans `referentiel_alertes.csv`), les mots-clés ou le texte du conseil |
 | `distance_max_km` | au-delà, on passe au plan suivant (vide : pas de limite) |
 | `age_min`, `age_max` | si la proposition dépend de l'âge (ex. Mon bilan prévention : 60-65 et 70-75 ans) |
