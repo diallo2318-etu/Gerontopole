@@ -53,16 +53,14 @@ async function demarrer() {
 
   $("#profils").innerHTML = etat.meta.profils.map((p, i) => `
     <button type="button" class="profil" data-i="${i}" data-cap="${esc(p.alertes[0] || "")}">
-      <strong>${esc(p.titre)}</strong><small>${esc(p.pourquoi)}</small><span class="det">${esc(p.detail)}</span>
+      <span class="profil-icones">${p.alertes.map((a) => `<i data-cap="${a}">${icone(a)}</i>`).join("")}</span>
+      <strong>${esc(p.titre)}</strong>
+      <span class="profil-qui">${esc(p.commune)} · ${p.age} ans</span>
+      <small>${esc(p.pourquoi)}</small>
+      <span class="profil-go" aria-hidden="true">Voir le parcours →</span>
     </button>`).join("");
-  $("#profils").addEventListener("click", (e) => {
-    const b = e.target.closest(".profil");
-    if (b) chargerProfil(etat.meta.profils[+b.dataset.i]);
-  });
-
-  const accueil = $("#accueil");
-  if (accueil) accueil.insertAdjacentHTML("beforeend", `<div class="palette-capacites" aria-label="Les 9 capacités ICOPE">${
-    etat.meta.capacites.map((c) => `<span data-cap="${c.code}">${icone(c.code)}${esc(c.nom.replace(/ \(.*\)/, ""))}</span>`).join("")}</div>`);
+  brancherProfils();
+  etat.accueil = $("#resultats").innerHTML;
   brancherCommune();
   brancherAge();
   $("#formulaire").addEventListener("submit", (e) => { e.preventDefault(); lancer(); });
@@ -411,8 +409,25 @@ function afficherResultat(r) {
     ${prevention}`;
 
   $("#imprimer").addEventListener("click", () => window.print());
-  $("#nouvelle").addEventListener("click", () => { window.scrollTo({ top: 0, behavior: "smooth" }); $("#commune").focus(); $("#commune").select(); });
+  $("#nouvelle").addEventListener("click", retourAccueil);
   dessinerCarte(p);
+}
+
+function brancherProfils() {
+  $("#profils").addEventListener("click", (e) => {
+    const b = e.target.closest(".profil");
+    if (b) chargerProfil(etat.meta.profils[+b.dataset.i]);
+  });
+}
+
+function retourAccueil() {
+  detruireCarte();
+  $("#resultats").innerHTML = etat.accueil;
+  brancherProfils();
+  history.replaceState(null, "", location.pathname);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  $("#commune").focus();
+  $("#commune").select();
 }
 
 /* ------------------------------------------------------------------ Carte */

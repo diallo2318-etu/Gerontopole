@@ -27,15 +27,15 @@ STATIC = Path(__file__).resolve().parent / "static"
 
 # 5 profils types de la partie 1 (partie1_alertes/1_personnes_en_alerte.py), avec une commune d'exemple
 PROFILS = [
-    {"titre": "Vision seule", "detail": "65 ans · hors sites", "code_insee": "14762", "age": 65, "alertes": ["vision"],
+    {"titre": "Vision seule", "detail": "65 ans · hors sites", "code_insee": "14762", "commune": "Vire Normandie", "age": 65, "alertes": ["vision"],
      "pourquoi": "Le cas le plus fréquent : une seule alerte."},
-    {"titre": "Cognition + mobilité", "detail": "84 ans · Manche", "code_insee": "50502", "age": 84,
+    {"titre": "Cognition + mobilité", "detail": "84 ans · Manche", "code_insee": "50502", "commune": "Saint-Lô", "age": 84,
      "alertes": ["cognition", "mobilite"], "pourquoi": "Profil type du Step 2 : très âgée, plusieurs alertes."},
-    {"titre": "Psychologie", "detail": "55 ans", "code_insee": "76540", "age": 55, "alertes": ["psychologie"],
+    {"titre": "Psychologie", "detail": "55 ans", "code_insee": "76540", "commune": "Rouen", "age": 55, "alertes": ["psychologie"],
      "pourquoi": "Hors de la cible ICOPE : que lui propose-t-on ?"},
-    {"titre": "Nutrition + mobilité", "detail": "75 ans · Calvados", "code_insee": "14366", "age": 75,
+    {"titre": "Nutrition + mobilité", "detail": "75 ans · Calvados", "code_insee": "14366", "commune": "Lisieux", "age": 75,
      "alertes": ["nutrition", "mobilite"], "pourquoi": "Territoire où les alertes sont peu traitées."},
-    {"titre": "Audition + vision", "detail": "74 ans · Orne", "code_insee": "61001", "age": 74,
+    {"titre": "Audition + vision", "detail": "74 ans · Orne", "code_insee": "61001", "commune": "Alençon", "age": 74,
      "alertes": ["audition", "vision"], "pourquoi": "Personne souvent déjà suivie."},
 ]
 

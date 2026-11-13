@@ -32,7 +32,6 @@
     <aside class="saisie" aria-label="La personne">
       <form id="formulaire" class="carte formulaire" novalidate>
         <h1 class="titre-form">Construire un parcours</h1>
-        <p class="sous-titre">Après un test ICOPE (Step 1), trois informations suffisent.</p>
 
         <fieldset class="champ">
           <legend><span class="num">1</span>Où habite la personne ?</legend>
@@ -44,7 +43,7 @@
             <button type="button" class="combo-effacer" id="effacer" aria-label="Effacer la commune" hidden>×</button>
             <ul id="suggestions" class="suggestions" role="listbox" hidden></ul>
           </div>
-          <p class="aide" id="aide-commune">Ex. « Saint-Lô », « 14400 » (plusieurs communes) ou un code INSEE.</p>
+          <p class="aide" id="aide-commune">Nom, code postal ou code INSEE.</p>
         </fieldset>
 
         <fieldset class="champ">
@@ -61,7 +60,6 @@
         <fieldset class="champ">
           <legend><span class="num">3</span>Quelles alertes au Step 1 ?<span class="compteur" id="compteur"></span></legend>
           <div class="alertes" id="alertes" role="group"></div>
-          <p class="aide">Aucune alerte : l'outil propose seulement des actions de prévention.</p>
         </fieldset>
 
         <button type="submit" class="bouton-principal" id="valider" disabled>
@@ -71,23 +69,24 @@
         <p class="erreur" id="erreur" role="alert" hidden></p>
       </form>
 
-      <section class="carte profils" aria-labelledby="titre-profils">
-        <h2 id="titre-profils">Profils types <span>partie 1</span></h2>
-        <div id="profils" class="liste-profils"></div>
-      </section>
     </aside>
 
     <!-- ================================================= Résultats -->
     <section class="resultats" id="resultats" aria-live="polite" aria-busy="false">
       <div class="accueil" id="accueil">
         <p class="surtitre">Parcours ICOPE · Normandie</p>
-        <h2>Qui vérifie l'alerte, <em>vers qui orienter</em>, et quoi proposer <em>près de chez elle</em> ?</h2>
+        <h2>Après une alerte ICOPE, le bon interlocuteur <span class="accent">au plus près de chez la personne</span>.</h2>
+        <p class="chapo">Levée de doute, orientation vers le professionnel adapté avec des solutions de repli expliquées,
+          évaluation approfondie et ateliers de prévention : tout le parcours en un clic.</p>
+
+        <div class="profils-titre"><h3>Essayer un profil type</h3><span>les 5 profils de la partie 1</span></div>
+        <div id="profils" class="liste-profils"></div>
+
         <ol class="etapes-accueil">
-          <li><span>1</span><div><strong>Levée de doute</strong><p>Le lieu le plus proche qui peut confirmer l'alerte, selon l'âge.</p></div></li>
-          <li><span>2</span><div><strong>Orientation, plan A, B ou C</strong><p>Le professionnel idéal s'il est assez proche, sinon une solution de repli, expliquée.</p></div></li>
-          <li><span>3</span><div><strong>Step 2 et prévention</strong><p>L'évaluation approfondie et les ateliers accessibles depuis sa commune.</p></div></li>
+          <li><span>1</span><div><strong>Levée de doute</strong><p>Qui peut confirmer l'alerte, selon l'âge.</p></div></li>
+          <li><span>2</span><div><strong>Plan A, B ou C</strong><p>L'idéal s'il est proche, sinon un repli expliqué.</p></div></li>
+          <li><span>3</span><div><strong>Step 2 et prévention</strong><p>Évaluation approfondie et ateliers proches.</p></div></li>
         </ol>
-        <p class="accueil-pied">Choisissez un profil type à gauche pour une démonstration en un clic.</p>
       </div>
     </section>
   </main>

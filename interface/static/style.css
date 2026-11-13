@@ -437,3 +437,73 @@ svg { stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round
 .action-carte li { padding-left: 10px; border-left: 3px solid color-mix(in srgb, var(--cap) 45%, transparent); }
 .bouton-secondaire:hover { background: var(--marque-doux); }
 @media print { .barre { background: none; } .etape-noeud, .badge-plan { print-color-adjust: exact; -webkit-print-color-adjust: exact; } }
+
+/* =====================================================================================
+   VERSION 3 : formulaire compact (bouton toujours visible), accueil-vitrine, en-tête net
+   ===================================================================================== */
+.page { max-width: 1560px; grid-template-columns: minmax(330px, 380px) minmax(0, 1fr); }
+
+/* En-tête : un dégradé net vert -> bleu, un seul halo chaud */
+.barre {
+  background:
+    radial-gradient(420px 220px at 100% 0%, rgba(240, 177, 74, .45), transparent 70%),
+    linear-gradient(105deg, #0e4a40 0%, #13675a 38%, #1b5f86 72%, #2d4aa0 100%);
+  padding-block: 18px;
+}
+
+/* Formulaire compact : tout tient à l'écran, le bouton reste visible */
+.saisie { top: 16px; max-height: calc(100vh - 32px); }
+.formulaire { padding: 20px 22px 18px; display: flex; flex-direction: column; max-height: calc(100vh - 32px); overflow: auto; }
+.titre-form { font-size: 21px; margin-bottom: 6px; }
+.champ { padding: 12px 0; }
+.champ legend { margin-bottom: 8px; }
+.combo input, .age input { height: 42px; }
+.pas { width: 36px; height: 36px; }
+.aide { margin-top: 6px; font-size: 12.5px; }
+.aide-age { padding: 6px 9px; font-size: 12.5px; line-height: 1.4; }
+.alertes { gap: 6px; }
+.alerte { grid-template-columns: 22px 1fr; justify-items: start; align-items: center; gap: 8px; padding: 9px 10px; text-align: left; font-size: 13px; }
+.alerte svg { width: 20px; height: 20px; }
+.alerte .a-venir { top: 5px; right: 5px; }
+.bouton-principal { position: sticky; bottom: 0; margin-top: 12px; height: 50px; flex: none; }
+.formulaire::after { content: ""; display: block; height: 1px; flex: none; }
+
+/* Accueil-vitrine */
+.accueil { padding: clamp(24px, 3.4vw, 44px); }
+.accueil::after { display: none; }
+.accueil h2 { max-width: 26ch; font-size: clamp(28px, 2.9vw, 40px); line-height: 1.12; }
+.accueil h2 .accent {
+  background: linear-gradient(100deg, #17705f, #1f8fc9 55%, #4f5bd5);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.chapo { max-width: 62ch; margin: 14px 0 0; color: var(--encre-2); font-size: 16px; }
+.profils-titre { display: flex; align-items: baseline; gap: 10px; margin: 30px 0 12px; }
+.profils-titre h3 { margin: 0; font: 600 18px var(--serif); }
+.profils-titre span { color: var(--encre-3); font-size: 13px; }
+.liste-profils { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; }
+.profil {
+  position: relative; display: grid; grid-template-columns: 1fr; align-content: start; gap: 4px; text-align: left;
+  padding: 16px 16px 14px; border-radius: 14px; border: 1px solid var(--trait); border-left-width: 1px;
+  border-top: 4px solid var(--cap, var(--marque));
+  background: linear-gradient(180deg, var(--cap-doux, var(--marque-doux)) 0%, var(--surface) 75%);
+  cursor: pointer; transition: transform .15s, box-shadow .15s;
+}
+.profil:hover { transform: translateY(-3px); box-shadow: 0 14px 28px -16px var(--cap, var(--marque)); background: linear-gradient(180deg, var(--cap-doux, var(--marque-doux)) 0%, var(--surface) 75%); }
+.profil:focus-visible { outline-offset: 3px; }
+.profil-icones { display: flex; gap: 6px; margin-bottom: 8px; }
+.profil-icones i { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--cap); }
+.profil-icones svg { width: 19px; height: 19px; color: #fff; }
+.profil strong { font: 600 16px/1.25 var(--serif); }
+.profil-qui { color: var(--encre-2); font-size: 13px; font-weight: 600; }
+.profil small { grid-column: auto; color: var(--encre-3); font-size: 12.5px; line-height: 1.4; }
+.profil-go { margin-top: 8px; color: var(--cap-texte, var(--marque)); font-size: 13px; font-weight: 700; }
+
+.etapes-accueil { margin-top: 26px; gap: 12px; }
+.etapes-accueil li { padding: 12px 14px; border-top-width: 3px; }
+.etapes-accueil li > span { width: 26px; height: 26px; font-size: 13px; }
+.etapes-accueil p { font-size: 13px; }
+
+@media (max-width: 900px) { .saisie, .formulaire { max-height: none; } .bouton-principal { position: static; } }
+.liste-profils { grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); }
+.alerte { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 4px; padding: 9px 4px 8px; font-size: 12.5px; }
+.alerte svg { width: 20px; height: 20px; }
