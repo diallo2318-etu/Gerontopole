@@ -22,10 +22,15 @@
         <small>Le bon interlocuteur, au plus près de chez la personne</small>
       </span>
     </a>
+    <nav class="onglets" aria-label="Rubriques">
+      <a href="#" data-vue="parcours" aria-current="page">Parcours</a>
+      <a href="#couverture" data-vue="couverture">Couverture du territoire</a>
+      <a href="#statistiques" data-vue="statistiques">Statistiques ICOPE</a>
+    </nav>
     <dl class="chiffres" id="chiffres" aria-label="L'offre dans l'outil"></dl>
   </header>
 
-  <main class="page">
+  <main class="page vue" id="vue-parcours">
     <!-- ================================================= Saisie -->
     <aside class="saisie" aria-label="La personne">
       <form id="formulaire" class="carte formulaire" novalidate>
@@ -92,6 +97,11 @@
     </section>
   </main>
 
+  <section class="vue vue-large" id="vue-couverture" hidden aria-labelledby="titre-couverture"></section>
+  <section class="vue vue-large" id="vue-statistiques" hidden aria-labelledby="titre-statistiques"></section>
+
+  <div class="infobulle" id="infobulle" role="tooltip" hidden></div>
+
   <footer class="pied">
     Distances à vol d'oiseau entre centres des communes. Sources : Annuaire Santé (RPPS), FINESS, Mon bilan prévention,
     Agirc-Arrco, Sport Santé Normandie, actions collectives des 5 départements. Les professionnels formés à ICOPE
@@ -100,5 +110,6 @@
 
   <script src="/static/vendor/leaflet/leaflet.js"></script>
   <script src="/static/app.js"></script>
+  <script src="/static/onglets.js"></script>
 </body>
 </html>

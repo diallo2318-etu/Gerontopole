@@ -22,6 +22,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
 from moteur_parcours import CAPACITES, charger_parcours, commune_par_code, connecter, parcours_personne
+from analyses import couverture as calcul_couverture, options_couverture, statistiques as calcul_statistiques
 
 STATIC = Path(__file__).resolve().parent / "static"
 
@@ -167,6 +168,23 @@ def parcours(demande: Demande):
         "prevention": [{"domaine": d, "domaine_nom": CAPACITES[d], "plan": plan, "generique": plan != "A",
                         "actions": lignes(a)} for d, plan, a in prevention],
     }
+
+
+@app.get("/api/couverture/options")
+def couverture_options():
+    return options_couverture()
+
+
+@app.get("/api/couverture")
+def couverture(etape: str = Query(max_length=40), age: int = Query(72, ge=60, le=110)):
+    if etape not in {o["cle"] for o in options_couverture()}:
+        raise HTTPException(422, "Étape inconnue")
+    return calcul_couverture(_connexion(), etape, age)
+
+
+@app.get("/api/statistiques")
+def statistiques():
+    return calcul_statistiques(_connexion())
 
 
 app.mount("/static", StaticFiles(directory=STATIC), name="static")

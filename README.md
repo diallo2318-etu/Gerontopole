@@ -176,7 +176,17 @@ On choisit la commune (suggestions pendant la frappe : nom, code postal ou code 
 | `interface/moteur_parcours.py` | calcul du parcours (utilisable seul : `python3 interface/moteur_parcours.py "Vire Normandie" 72 vision`) |
 | `interface/serveur.py` | API FastAPI : `/api/meta`, `/api/communes`, `/api/parcours` (documentation : http://localhost:8000/api/docs) |
 | `interface/static/` | la page (HTML, CSS, JavaScript) ; Leaflet 1.9.4 est inclus, seul le fond de carte OpenStreetMap demande internet |
+| `interface/analyses.py` | calculs des onglets **Couverture du territoire** et **Statistiques ICOPE** |
+| `interface/static/onglets.js` | les deux onglets (carte des communes, graphiques en SVG) |
 | `tests/test_interface.py` | tests de l'API : `python3 -m pytest tests/` |
+
+Trois onglets :
+
+- **Parcours** : le parcours d'une personne (ci-dessus).
+- **Couverture du territoire** : chaque commune de Normandie colorée selon le plan obtenu (A, B, C ou aucune offre) pour une étape du parcours et un âge ; part de la population par plan ; communes les plus peuplées sans plan A. Données publiques uniquement.
+- **Statistiques ICOPE** : tests par mois et par modalité, avant / après 2025, cohortes et suivi (partie 2), devenir des alertes par capacité (partie 1, avec l'accord de Mariatou). Chiffres agrégés ; un pourcentage calculé sur moins de 30 tests n'est pas affiché. Mêmes règles que les scripts : un test par personne et par jour, sans les essais (moins de 50 ans).
+
+Couleurs des graphiques et des plans vérifiées pour le daltonisme (la couleur n'est jamais la seule information : taille et contour des points, libellés, info-bulles).
 
 - Le serveur n'écoute que sur l'ordinateur (127.0.0.1) : l'entrepôt contient des données de santé, même si la page n'affiche que l'offre (annuaires publics).
 - Une capacité sans parcours écrit dans `parcours_capacites.csv` affiche les métiers du référentiel d'alertes (« Parcours à venir »).

@@ -122,3 +122,28 @@ def test_page_et_fichiers_statiques():
     assert "Boussole ICOPE" in client.get("/").text
     for f in ("style.css", "app.js", "vendor/leaflet/leaflet.js"):
         assert client.get(f"/static/{f}").status_code == 200
+
+
+# ---------------------------------------------------------------- Onglets Couverture et Statistiques
+def test_couverture_options_et_resume():
+    options = client.get("/api/couverture/options").json()
+    cles = [o["cle"] for o in options]
+    assert "levee_de_doute" in cles and "orientation:mobilite" in cles
+    r = client.get("/api/couverture", params={"etape": "levee_de_doute", "age": 80}).json()
+    assert len(r["communes"]) == 2644
+    assert abs(sum(x["population_pct"] for x in r["resume"]) - 100) < 0.5
+    assert next(x for x in r["resume"] if x["plan"] == "A")["communes"] == 0  # Mon bilan prévention : pas à 80 ans
+
+
+def test_couverture_etape_inconnue():
+    assert client.get("/api/couverture", params={"etape": "inconnue"}).status_code == 422
+
+
+def test_statistiques_agregees_et_coherentes():
+    s = client.get("/api/statistiques").json()
+    texte = json.dumps(s, ensure_ascii=False)
+    for cle in ("participant", "id_depistage", "ddn"):
+        assert cle not in texte
+    assert s["chiffres"]["alertes"] == 2413          # même périmètre que la partie 1
+    assert sum(c["personnes"] for c in s["cohortes"]) > 2000
+    assert all(len(v) == len(s["par_mois"]["mois"]) for v in s["par_mois"]["series"].values())
