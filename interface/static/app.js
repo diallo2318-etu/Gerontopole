@@ -156,9 +156,9 @@ function majAideAge() {
   const a = +$("#age").value, aide = $("#aide-age");
   let texte, couleur;
   if (!a || a < 18 || a > 110) { texte = "Âge entre 18 et 110 ans."; couleur = "var(--plan-c)"; }
-  else if (a < 60) { texte = "Moins de 60 ans : un conseil seulement, pas d'orientation (décision du Gérontopôle)."; couleur = "var(--plan-b)"; }
-  else if ((a >= 60 && a <= 65) || (a >= 70 && a <= 75)) { texte = "Mon bilan prévention est pris en charge à cet âge : c'est le plan A de la levée de doute."; couleur = "var(--plan-a)"; }
-  else { texte = "Mon bilan prévention n'est pas pris en charge à cet âge : la levée de doute passe par un autre lieu."; couleur = "var(--plan-b)"; }
+  else if (a < 60) { texte = `À ${a} ans, la personne est hors de la cible ICOPE : un conseil seulement, sans orientation (décision du Gérontopôle).`; couleur = "var(--plan-b)"; }
+  else if ((a >= 60 && a <= 65) || (a >= 70 && a <= 75)) { texte = `À ${a} ans, « Mon bilan prévention » (rendez-vous gratuit de l'Assurance maladie) est proposé : c'est le premier choix pour vérifier l'alerte.`; couleur = "var(--plan-a)"; }
+  else { texte = `À ${a} ans, « Mon bilan prévention » n'est pas proposé (réservé aux 60-65 et 70-75 ans) : l'outil cherche un autre lieu pour vérifier l'alerte.`; couleur = "var(--plan-b)"; }
   aide.textContent = texte;
   aide.style.setProperty("--point", couleur);
 }
@@ -247,7 +247,7 @@ function raisonRepli(e, age) {
   if (!e.plan_retenu || e.plan_retenu === "A" || !e.a_parcours) return "";
   // Chaque plan essayé avant celui retenu, avec la raison pour laquelle il a été écarté
   const parties = [];
-  if (e.plans[0] && e.plans[0].plan !== "A") parties.push(`plan A non proposé à ${age} ans`);
+  if (e.plans[0] && e.plans[0].plan !== "A") parties.push(`plan A (Mon bilan prévention) non proposé à ${age} ans, réservé aux 60-65 et 70-75 ans`);
   for (const p of e.plans) {
     if (p.retenu) break;
     const raisons = p.propositions.map(raison).filter(Boolean);

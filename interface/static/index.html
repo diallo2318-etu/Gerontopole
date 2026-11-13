@@ -6,7 +6,7 @@
   <title>Boussole ICOPE · Parcours de prévention en Normandie</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="/static/style.css">
 </head>
@@ -14,10 +14,8 @@
   <header class="barre">
     <a class="marque" href="/" aria-label="Boussole ICOPE, accueil">
       <svg class="marque-logo" viewBox="0 0 40 40" aria-hidden="true">
-        <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2"/>
-        <path d="M20 7l4.5 13L20 33l-4.5-13z" fill="currentColor" opacity=".18"/>
-        <path d="M20 7l4.5 13h-9z" fill="currentColor"/>
-        <circle cx="20" cy="20" r="2.2" fill="var(--papier)"/>
+        <path d="M20 37s-12-10.3-12-20.2a12 12 0 0 1 24 0C32 26.7 20 37 20 37z" fill="#fff"/>
+        <path d="M17.6 10.5h4.8v4.3h4.3v4.8h-4.3v4.3h-4.8v-4.3h-4.3v-4.8h4.3z" fill="var(--marque)"/>
       </svg>
       <span>
         <strong>Boussole ICOPE</strong>
@@ -74,6 +72,9 @@
     <!-- ================================================= Résultats -->
     <section class="resultats" id="resultats" aria-live="polite" aria-busy="false">
       <div class="accueil" id="accueil">
+        <svg class="pouls" viewBox="0 0 600 120" aria-hidden="true" preserveAspectRatio="none">
+          <path d="M0 70h170l14-26 18 52 20-86 22 96 16-36h120l12-18 14 30 10-12h184"/>
+        </svg>
         <p class="surtitre">Parcours ICOPE · Normandie</p>
         <h2>Après une alerte ICOPE, le bon interlocuteur <span class="accent">au plus près de chez la personne</span>.</h2>
         <p class="chapo">Levée de doute, orientation vers le professionnel adapté avec des solutions de repli expliquées,

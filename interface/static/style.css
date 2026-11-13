@@ -551,3 +551,97 @@ body {
 .accueil { background: rgba(255, 255, 255, .55); -webkit-backdrop-filter: blur(10px) saturate(1.2); backdrop-filter: blur(10px) saturate(1.2); border-color: rgba(255, 255, 255, .7); }
 .etapes-accueil li { background: rgba(255, 255, 255, .7); }
 @media (prefers-color-scheme: dark) { .accueil { background: rgba(27, 33, 30, .7); border-color: var(--trait); } .etapes-accueil li { background: rgba(27, 33, 30, .6); } }
+
+/* =====================================================================================
+   THÈME SANTÉ : bleu médical et turquoise, police ronde, plans en feu tricolore
+   ===================================================================================== */
+:root {
+  --serif: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --sans: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --papier: #edf4fb; --surface: #ffffff; --surface-2: #f5f9fd;
+  --encre: #13233a; --encre-2: #45566e; --encre-3: #74849a;
+  --trait: #dfe8f3; --trait-fort: #c9d6e6;
+  --marque: #0b63ce; --marque-2: #084fa8; --marque-doux: #e3eefc;
+  --soin: #0ea5a4; --soin-doux: #dff6f5;
+  --plan-a: #16a34a; --plan-a-doux: #dcfce7;
+  --plan-b: #ea8a0c; --plan-b-doux: #fef0d9;
+  --plan-c: #dc3b3b; --plan-c-doux: #fde2e2;
+  --entete: #0b4fa8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --papier: #0d1726; --surface: #142034; --surface-2: #19273d;
+    --encre: #e8eef7; --encre-2: #b4c1d3; --encre-3: #8494aa; --trait: #24344d; --trait-fort: #31445f;
+    --marque: #5aa2f5; --marque-2: #82b9f7; --marque-doux: #17304f; --soin: #3fd0c9; --soin-doux: #113a3d;
+    --plan-a: #4ade80; --plan-a-doux: #133722; --plan-b: #fbbf24; --plan-b-doux: #3a2c0d; --plan-c: #f87171; --plan-c-doux: #3d1a1a;
+  }
+}
+[data-cap="vision"] { --cap: #4f6bed; } [data-cap="audition"] { --cap: #8b5cf6; } [data-cap="cognition"] { --cap: #d0457f; }
+[data-cap="mobilite"] { --cap: #f0761c; } [data-cap="nutrition"] { --cap: #22a35a; } [data-cap="psychologie"] { --cap: #ec5b86; }
+[data-cap="incontinence"] { --cap: #0b8fd6; } [data-cap="social"] { --cap: #0ea5a4; } [data-cap="aidant"] { --cap: #d29a0b; }
+
+body {
+  font-family: var(--sans); letter-spacing: .005em;
+  background:
+    radial-gradient(900px 540px at -5% 5%, rgba(14, 165, 164, .16), transparent 62%),
+    radial-gradient(900px 560px at 105% 15%, rgba(11, 99, 206, .14), transparent 62%),
+    radial-gradient(1000px 600px at 50% 110%, rgba(14, 165, 164, .10), transparent 62%),
+    var(--papier);
+  background-attachment: fixed;
+}
+@media (prefers-color-scheme: dark) {
+  body { background: radial-gradient(900px 540px at -5% 5%, rgba(14, 165, 164, .14), transparent 62%),
+    radial-gradient(900px 560px at 105% 15%, rgba(11, 99, 206, .18), transparent 62%), var(--papier); background-attachment: fixed; }
+}
+
+/* Titres : police ronde, gras, sans empattements */
+.marque strong, .titre-form, .accueil h2, .entete-resultat h2, .etape-titre, .bloc-titre, .profil strong,
+.profils-titre h3, .action-tete strong, .indicateur dd, .chiffres dd, .distance, .etape-noeud, .echelon-lettre, .age input {
+  font-family: var(--sans); letter-spacing: -.015em;
+}
+.accueil h2, .entete-resultat h2 { font-weight: 800; }
+.titre-form, .etape-titre, .profil strong, .profils-titre h3, .bloc-titre { font-weight: 700; }
+.indicateur dd, .chiffres dd, .age input { font-weight: 800; }
+.distance { font-weight: 700; }
+
+/* En-tête : bleu médical vers turquoise */
+.barre {
+  background: radial-gradient(500px 240px at 100% 0%, rgba(255, 255, 255, .16), transparent 70%),
+              linear-gradient(100deg, #0a4fae 0%, #0b63ce 45%, #0e9fa0 100%);
+}
+.marque-logo { width: 42px; height: 42px; filter: drop-shadow(0 3px 6px rgba(0, 0, 0, .2)); }
+.marque-logo circle { display: none; }
+.marque strong { font-size: 22px; font-weight: 800; }
+
+/* Accueil : ligne de pouls en décor */
+.accueil { background: rgba(255, 255, 255, .72); }
+.accueil .pouls { position: absolute; top: 34px; right: 0; width: min(46%, 520px); height: 110px; opacity: .55; pointer-events: none; }
+.pouls path { fill: none; stroke: var(--soin); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round;
+  stroke-dasharray: 1200; stroke-dashoffset: 1200; animation: tracer 2.4s ease-out .2s forwards; }
+@keyframes tracer { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .pouls path { animation: none; stroke-dashoffset: 0; } }
+.surtitre { color: var(--soin); }
+.accueil h2 .accent { background: linear-gradient(100deg, var(--marque), var(--soin)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.etapes-accueil li:nth-child(1) { --c: var(--marque); }
+.etapes-accueil li:nth-child(2) { --c: var(--soin); }
+.etapes-accueil li:nth-child(3) { --c: var(--plan-a); }
+
+/* Formulaire */
+.num { background: var(--soin); }
+.bouton-principal { background: linear-gradient(100deg, var(--marque), var(--soin)); border-radius: 999px; box-shadow: 0 12px 24px -12px var(--marque); }
+.bouton-principal:hover:not(:disabled) { background: linear-gradient(100deg, var(--marque-2), #0b8c8b); }
+.combo input.choisie { background: var(--soin-doux); border-color: var(--soin); }
+.alerte, .profil, .carte, .bouton-secondaire, .combo input, .age input, .pas { border-radius: 16px; }
+.alerte { border-radius: 14px; }
+.bouton-secondaire { border-radius: 999px; }
+
+/* Résultats */
+.indicateur:nth-child(1) { --k: var(--plan-a); }
+.indicateur:nth-child(2) { --k: var(--marque); }
+.indicateur:nth-child(3) { --k: var(--soin); }
+.pin-personne { background: var(--marque); }
+.conseil { background: var(--soin-doux); border-left-color: var(--soin); }
+.conseil svg { color: var(--soin); }
+.bloc-titre { background: linear-gradient(transparent 64%, color-mix(in srgb, var(--soin) 25%, transparent) 64%); }
+.legende i[style*="--marque"] { background: var(--marque); }
+.accueil .pouls { top: 12px; height: 58px; width: min(42%, 480px); opacity: .6; }
