@@ -507,3 +507,47 @@ svg { stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round
 .liste-profils { grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); }
 .alerte { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 4px; padding: 9px 4px 8px; font-size: 12.5px; }
 .alerte svg { width: 20px; height: 20px; }
+
+/* Fond coloré : vert d'eau + halos doux (les cartes blanches ressortent) */
+:root { --papier: #e6efeb; --surface-2: #f6f9f7; }
+body {
+  background:
+    radial-gradient(900px 520px at -5% 8%, rgba(31, 143, 201, .20), transparent 62%),
+    radial-gradient(820px 520px at 105% 22%, rgba(139, 92, 246, .16), transparent 62%),
+    radial-gradient(1000px 620px at 45% 108%, rgba(240, 177, 74, .24), transparent 62%),
+    radial-gradient(700px 480px at 70% 55%, rgba(31, 157, 85, .10), transparent 65%),
+    var(--papier);
+  background-attachment: fixed;
+}
+.carte { box-shadow: 0 1px 2px rgba(15, 63, 55, .06), 0 14px 34px -18px rgba(15, 63, 55, .35); border-color: rgba(15, 63, 55, .10); }
+@media (prefers-color-scheme: dark) {
+  :root { --papier: #111917; --surface-2: #1f2724; }
+  body {
+    background:
+      radial-gradient(900px 520px at -5% 8%, rgba(31, 143, 201, .16), transparent 62%),
+      radial-gradient(820px 520px at 105% 22%, rgba(139, 92, 246, .14), transparent 62%),
+      radial-gradient(1000px 620px at 45% 108%, rgba(240, 177, 74, .10), transparent 62%),
+      var(--papier);
+    background-attachment: fixed;
+  }
+}
+@media print { body { background: #fff; } }
+:root { --papier: #dbe8e2; }
+@media (prefers-color-scheme: dark) { :root { --papier: #111917; } }
+body {
+  background:
+    radial-gradient(900px 560px at -5% 6%, rgba(31, 143, 201, .30), transparent 62%),
+    radial-gradient(820px 560px at 105% 20%, rgba(139, 92, 246, .24), transparent 62%),
+    radial-gradient(1000px 640px at 45% 110%, rgba(240, 177, 74, .32), transparent 62%),
+    radial-gradient(700px 480px at 72% 55%, rgba(31, 157, 85, .14), transparent 65%),
+    var(--papier);
+  background-attachment: fixed;
+}
+@media (prefers-color-scheme: dark) {
+  body { background: radial-gradient(900px 520px at -5% 8%, rgba(31, 143, 201, .16), transparent 62%),
+    radial-gradient(820px 520px at 105% 22%, rgba(139, 92, 246, .14), transparent 62%), var(--papier); background-attachment: fixed; }
+}
+@media print { body { background: #fff; } }
+.accueil { background: rgba(255, 255, 255, .55); -webkit-backdrop-filter: blur(10px) saturate(1.2); backdrop-filter: blur(10px) saturate(1.2); border-color: rgba(255, 255, 255, .7); }
+.etapes-accueil li { background: rgba(255, 255, 255, .7); }
+@media (prefers-color-scheme: dark) { .accueil { background: rgba(27, 33, 30, .7); border-color: var(--trait); } .etapes-accueil li { background: rgba(27, 33, 30, .6); } }
